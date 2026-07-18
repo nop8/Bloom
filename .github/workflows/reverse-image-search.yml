@@ -13,7 +13,7 @@ permissions:
 jobs:
   reverse-search:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
         with:
@@ -23,122 +23,108 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Search SauceNAO, IQDB and ascii2d
+      - name: Search URL-based reverse-image engines
         continue-on-error: true
         run: |
-          python -m pip install --quiet requests beautifulsoup4 lxml
+          python -m pip install --quiet requests beautifulsoup4 lxml playwright
+          python -m playwright install --with-deps chromium
           python <<'PY'
           import json
           import traceback
           from pathlib import Path
-          from urllib.parse import urljoin
+          from urllib.parse import quote, urljoin
 
           import requests
           from bs4 import BeautifulSoup
+          from playwright.sync_api import sync_playwright
 
-          image_path = Path('reverse-image-temp/source.png')
-          out = Path('reverse-image-temp/results-engines')
+          image_url = 'https://iqdb.org/thu/thu_c9acf468.jpg'
+          out = Path('reverse-image-temp/results-url-engines')
           out.mkdir(parents=True, exist_ok=True)
-          report = {}
-          headers = {
-              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36',
-              'Accept-Language': 'en-US,en;q=0.9',
+
+          engines = {
+              'saucenao': 'https://saucenao.com/search.php?db=999&dbmaski=32768&url=' + quote(image_url, safe=''),
+              'ascii2d': 'https://ascii2d.net/search/url/' + image_url,
+              'tineye': 'https://tineye.com/search?url=' + quote(image_url, safe=''),
+              'yandex': 'https://yandex.com/images/search?rpt=imageview&url=' + quote(image_url, safe=''),
+              'bing': 'https://www.bing.com/images/searchbyimage?cbir=sbi&imgurl=' + quote(image_url, safe=''),
+              'google_lens': 'https://lens.google.com/uploadbyurl?url=' + quote(image_url, safe='') + '&safe=off',
           }
 
-          # SauceNAO JSON API (anonymous access)
-          try:
-              with image_path.open('rb') as f:
-                  r = requests.post(
-                      'https://saucenao.com/search.php',
-                      headers=headers,
-                      data={'output_type': '2', 'numres': '50', 'db': '999'},
-                      files={'file': ('source.png', f, 'image/png')},
-                      timeout=120,
-                  )
-              report['saucenao_status'] = r.status_code
-              report['saucenao_content_type'] = r.headers.get('content-type')
-              (out / 'saucenao_raw.txt').write_text(r.text, encoding='utf-8')
+          ua = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36'
+          headers = {'User-Agent': ua, 'Accept-Language': 'en-US,en;q=0.9'}
+          report = {'image_url': image_url, 'engines': {}}
+
+          # First pass: ordinary HTTP, useful when results are server-rendered.
+          for name, url in engines.items():
+              item = {'requested_url': url}
               try:
-                  (out / 'saucenao.json').write_text(
-                      json.dumps(r.json(), indent=2, ensure_ascii=False), encoding='utf-8'
-                  )
-              except Exception:
-                  pass
-          except Exception as exc:
-              report['saucenao_error'] = repr(exc)
-              report['saucenao_traceback'] = traceback.format_exc()
-
-          # IQDB HTML search
-          try:
-              with image_path.open('rb') as f:
-                  r = requests.post(
-                      'https://iqdb.org/',
-                      headers=headers,
-                      files={'file': ('source.png', f, 'image/png')},
-                      timeout=120,
-                  )
-              report['iqdb_status'] = r.status_code
-              report['iqdb_url'] = r.url
-              (out / 'iqdb.html').write_text(r.text, encoding='utf-8')
-              soup = BeautifulSoup(r.text, 'lxml')
-              iqdb_links = []
-              for a in soup.find_all('a', href=True):
-                  iqdb_links.append({
-                      'text': a.get_text(' ', strip=True),
-                      'url': urljoin(r.url, a['href']),
+                  r = requests.get(url, headers=headers, timeout=120, allow_redirects=True)
+                  item.update({
+                      'http_status': r.status_code,
+                      'http_final_url': r.url,
+                      'http_title': BeautifulSoup(r.text, 'lxml').title.get_text(' ', strip=True) if BeautifulSoup(r.text, 'lxml').title else '',
+                      'http_length': len(r.content),
                   })
-              (out / 'iqdb_links.json').write_text(
-                  json.dumps(iqdb_links, indent=2, ensure_ascii=False), encoding='utf-8'
-              )
-          except Exception as exc:
-              report['iqdb_error'] = repr(exc)
-              report['iqdb_traceback'] = traceback.format_exc()
+                  (out / f'{name}-http.html').write_text(r.text, encoding='utf-8', errors='replace')
+                  soup = BeautifulSoup(r.text, 'lxml')
+                  links = [
+                      {'text': a.get_text(' ', strip=True), 'url': urljoin(r.url, a.get('href'))}
+                      for a in soup.find_all('a', href=True)
+                  ]
+                  (out / f'{name}-http-links.json').write_text(json.dumps(links, indent=2, ensure_ascii=False), encoding='utf-8')
+              except Exception as exc:
+                  item['http_error'] = repr(exc)
+                  item['http_traceback'] = traceback.format_exc()
+              report['engines'][name] = item
 
-          # ascii2d HTML search
-          try:
-              session = requests.Session()
-              session.headers.update(headers)
-              landing = session.get('https://ascii2d.net/', timeout=60)
-              token = None
-              soup = BeautifulSoup(landing.text, 'lxml')
-              token_input = soup.find('input', {'name': 'authenticity_token'})
-              if token_input:
-                  token = token_input.get('value')
-              data = {'authenticity_token': token} if token else {}
-              with image_path.open('rb') as f:
-                  r = session.post(
-                      'https://ascii2d.net/search/file',
-                      data=data,
-                      files={'file': ('source.png', f, 'image/png')},
-                      timeout=120,
-                      allow_redirects=True,
-                  )
-              report['ascii2d_status'] = r.status_code
-              report['ascii2d_url'] = r.url
-              (out / 'ascii2d.html').write_text(r.text, encoding='utf-8')
-              soup = BeautifulSoup(r.text, 'lxml')
-              ascii_links = []
-              for a in soup.find_all('a', href=True):
-                  ascii_links.append({
-                      'text': a.get_text(' ', strip=True),
-                      'url': urljoin(r.url, a['href']),
-                  })
-              (out / 'ascii2d_links.json').write_text(
-                  json.dumps(ascii_links, indent=2, ensure_ascii=False), encoding='utf-8'
+          # Second pass: real Chromium for JavaScript-rendered engines.
+          with sync_playwright() as p:
+              browser = p.chromium.launch(headless=True, args=['--no-sandbox', '--disable-blink-features=AutomationControlled'])
+              context = browser.new_context(
+                  user_agent=ua,
+                  locale='en-US',
+                  viewport={'width': 1440, 'height': 1200},
               )
-          except Exception as exc:
-              report['ascii2d_error'] = repr(exc)
-              report['ascii2d_traceback'] = traceback.format_exc()
+              for name, url in engines.items():
+                  item = report['engines'][name]
+                  page = context.new_page()
+                  try:
+                      response = page.goto(url, wait_until='domcontentloaded', timeout=120000)
+                      page.wait_for_timeout(12000)
+                      item.update({
+                          'browser_status': response.status if response else None,
+                          'browser_final_url': page.url,
+                          'browser_title': page.title(),
+                      })
+                      body = page.locator('body').inner_text(timeout=30000)
+                      links = page.locator('a').evaluate_all(
+                          "els => els.map(a => ({text: (a.innerText || a.getAttribute('aria-label') || '').trim(), url: a.href, aria: a.getAttribute('aria-label')}))"
+                      )
+                      images = page.locator('img').evaluate_all(
+                          "els => els.map(i => ({alt: i.alt || '', src: i.src || '', width: i.naturalWidth || 0, height: i.naturalHeight || 0}))"
+                      )
+                      (out / f'{name}-browser-body.txt').write_text(body, encoding='utf-8')
+                      (out / f'{name}-browser.html').write_text(page.content(), encoding='utf-8')
+                      (out / f'{name}-browser-links.json').write_text(json.dumps(links, indent=2, ensure_ascii=False), encoding='utf-8')
+                      (out / f'{name}-browser-images.json').write_text(json.dumps(images, indent=2, ensure_ascii=False), encoding='utf-8')
+                      page.screenshot(path=str(out / f'{name}-browser.png'), full_page=True)
+                  except Exception as exc:
+                      item['browser_error'] = repr(exc)
+                      item['browser_traceback'] = traceback.format_exc()
+                  finally:
+                      page.close()
+              browser.close()
 
           (out / 'report.json').write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding='utf-8')
           print(json.dumps(report, indent=2, ensure_ascii=False))
           PY
 
-      - name: Commit reverse-search results
+      - name: Commit URL-engine results
         if: always()
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add reverse-image-temp/results-engines || true
-          git commit -m "Store reverse image engine results" || exit 0
+          git add reverse-image-temp/results-url-engines || true
+          git commit -m "Store URL reverse image results" || exit 0
           git push origin HEAD:temp-reverse-image-search
