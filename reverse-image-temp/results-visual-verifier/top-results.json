@@ -1,0 +1,3752 @@
+[
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/yandex-browser-links.json",
+    "text": "Similar images",
+    "page_url": "https://yandex.com/images/search?rpt=imageview&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&cbir_page=similar",
+    "image_url": "https://avatars.mds.yandex.net/get-images-cbir/4548676/4xWM81kj7Vy0cT7fFlDDvg7309/orig",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/get-images-cbir/4548676/4xWM81kj7Vy0cT7fFlDDvg7309/orig",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      141,
+      150
+    ],
+    "hash_distances": {
+      "phash": 0,
+      "dhash": 0,
+      "ahash": 0,
+      "whash": 0
+    },
+    "hash_score": 1.0,
+    "mse_similarity": 0.9073214525300495,
+    "orb_score": 0.6170212765957447,
+    "orb_good": 58,
+    "orb_total": 72,
+    "combined_score": 0.9721964357590148
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/yandex-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/get-images-cbir/4548676/4xWM81kj7Vy0cT7fFlDDvg7309/preview",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/get-images-cbir/4548676/4xWM81kj7Vy0cT7fFlDDvg7309/preview",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      141,
+      150
+    ],
+    "hash_distances": {
+      "phash": 0,
+      "dhash": 0,
+      "ahash": 0,
+      "whash": 0
+    },
+    "hash_score": 1.0,
+    "mse_similarity": 0.8934886198812888,
+    "orb_score": 0.6063829787234043,
+    "orb_good": 57,
+    "orb_total": 68,
+    "combined_score": 0.9680465859643866
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/yandex-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/get-images-cbir/4548676/4xWM81kj7Vy0cT7fFlDDvg7309/ocr",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/get-images-cbir/4548676/4xWM81kj7Vy0cT7fFlDDvg7309/ocr",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      141,
+      150
+    ],
+    "hash_distances": {
+      "phash": 0,
+      "dhash": 0,
+      "ahash": 0,
+      "whash": 0
+    },
+    "hash_score": 1.0,
+    "mse_similarity": 0.8934886198812888,
+    "orb_score": 0.6063829787234043,
+    "orb_good": 57,
+    "orb_total": 68,
+    "combined_score": 0.9680465859643866
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://www.bing.com/th/id/OIP.w_fpN8B0-Jj_rxJ7FSLI3AAAAA?w=205&h=170&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "http_status": 200,
+    "final_url": "https://www.bing.com/th/id/OIP.w_fpN8B0-Jj_rxJ7FSLI3AAAAA?w=205&h=170&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      205,
+      170
+    ],
+    "hash_distances": {
+      "phash": 22,
+      "dhash": 23,
+      "ahash": 23,
+      "whash": 22
+    },
+    "hash_score": 0.6484375,
+    "mse_similarity": 0.08816396223999487,
+    "orb_score": 0.44680851063829785,
+    "orb_good": 42,
+    "orb_total": 61,
+    "combined_score": 0.5330898136719985
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "dod",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=b14b9b15dcf64b1ab0e64c99f69dfee089874d81-6579542-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=b14b9b15dcf64b1ab0e64c99f69dfee089874d81-6579542-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      480,
+      270
+    ],
+    "hash_distances": {
+      "phash": 24,
+      "dhash": 22,
+      "ahash": 23,
+      "whash": 28
+    },
+    "hash_score": 0.62109375,
+    "mse_similarity": 0.07382131723182749,
+    "orb_score": 0.18085106382978725,
+    "orb_good": 17,
+    "orb_total": 54,
+    "combined_score": 0.4722585959674206
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/yandex-browser-images.json",
+    "text": "DC News - Page 55 of 3004 - Manga, Anime News 24x7",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=8920cc1e485e8685d41429ec7c5cfb98fc49f226-10848716-images-thumbs&n=13&w=296&h=180",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=8920cc1e485e8685d41429ec7c5cfb98fc49f226-10848716-images-thumbs&n=13&w=296&h=180",
+    "content_type": "image/webp",
+    "dimensions": [
+      296,
+      164
+    ],
+    "hash_distances": {
+      "phash": 36,
+      "dhash": 42,
+      "ahash": 30,
+      "whash": 32
+    },
+    "hash_score": 0.453125,
+    "mse_similarity": 0.10194348687144099,
+    "orb_score": 0.3191489361702128,
+    "orb_good": 30,
+    "orb_total": 62,
+    "combined_score": 0.4298017960614323
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-links.json",
+    "text": "Discuss Everything About Black Clover Wiki | Fandom",
+    "page_url": "https://www.bing.com/images/search?view=detailV2&ccid=w%2ffpN8B0&id=F56C87C275DA326EF25EC81793C4264E8164D04C&thid=OIP.w_fpN8B0-Jj_rxJ7FSLI3AAAAA&mediaurl=https%3a%2f%2fstatic.wikia.nocookie.net%2fblackclover%2fimages%2f1%2f16%2fTengentsu.png%2frevision%2flatest%2fsmart%2fwidth%2f400%2fheight%2f225%3fcb%3d20230226165145&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.c3f7e937c074f898ffaf127b1522c8dc%3frik%3dTNBkgU4mxJMXyA%26pid%3dImgRaw%26r%3d0&exph=225&expw=400&q=Junji+Ito&mode=overlay&FORM=VSMAINC&ck=62B14B5E99322433181EF86C70306203&idpp=serp",
+    "image_url": "https://static.wikia.nocookie.net/blackclover/images/1/16/Tengentsu.png/revision/latest/smart/width/400/height/225?cb=20230226165145",
+    "http_status": 200,
+    "final_url": "https://static.wikia.nocookie.net/blackclover/images/1/16/Tengentsu.png/revision/latest/smart/width/400/height/225?cb=20230226165145",
+    "content_type": "image/webp",
+    "dimensions": [
+      400,
+      225
+    ],
+    "hash_distances": {
+      "phash": 34,
+      "dhash": 40,
+      "ahash": 36,
+      "whash": 28
+    },
+    "hash_score": 0.4609375,
+    "mse_similarity": 0.08194127195419931,
+    "orb_score": 0.2553191489361702,
+    "orb_good": 24,
+    "orb_total": 67,
+    "combined_score": 0.42809800658625985
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/yandex-browser-images.json",
+    "text": "TENGENTSU EYE Black Clover Chapter 352 Live Reaction - YouTube",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=ffaaa5a85229963a5d2b4aa838656dedc867328b-8567399-images-thumbs&n=13&w=296&h=180",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=ffaaa5a85229963a5d2b4aa838656dedc867328b-8567399-images-thumbs&n=13&w=296&h=180",
+    "content_type": "image/webp",
+    "dimensions": [
+      240,
+      180
+    ],
+    "hash_distances": {
+      "phash": 44,
+      "dhash": 32,
+      "ahash": 29,
+      "whash": 30
+    },
+    "hash_score": 0.47265625,
+    "mse_similarity": 0.049273191553574104,
+    "orb_score": 0.22340425531914893,
+    "orb_good": 21,
+    "orb_total": 53,
+    "combined_score": 0.4087854481575617
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Раскраски для детей и взрослых: Развивайте Воображение вместе с Нами! - happybru",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=e940b9184f703355202ec623e88f20a84eaecf5c-12475401-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=e940b9184f703355202ec623e88f20a84eaecf5c-12475401-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      247,
+      320
+    ],
+    "hash_distances": {
+      "phash": 16,
+      "dhash": 24,
+      "ahash": 24,
+      "whash": 22
+    },
+    "hash_score": 0.6640625,
+    "mse_similarity": 0.08006762586744164,
+    "orb_score": 0.02127659574468085,
+    "orb_good": 2,
+    "orb_total": 57,
+    "combined_score": 0.4020206202070411
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Eye Medusa - Album on Imgur",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=8fc3a7c20878eec9de849361ffac0d13a20fd90a-4607687-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=8fc3a7c20878eec9de849361ffac0d13a20fd90a-4607687-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      480,
+      298
+    ],
+    "hash_distances": {
+      "phash": 22,
+      "dhash": 18,
+      "ahash": 23,
+      "whash": 26
+    },
+    "hash_score": 0.65234375,
+    "mse_similarity": 0.09117257187140963,
+    "orb_score": 0.02127659574468085,
+    "orb_good": 2,
+    "orb_total": 60,
+    "combined_score": 0.39890679150823144
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://www.bing.com/th/id/OIP.7TZVLVnzj0AiPkRG0NWfkAHaHa?w=205&h=205&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "http_status": 200,
+    "final_url": "https://www.bing.com/th/id/OIP.7TZVLVnzj0AiPkRG0NWfkAHaHa?w=205&h=205&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      205,
+      205
+    ],
+    "hash_distances": {
+      "phash": 36,
+      "dhash": 39,
+      "ahash": 30,
+      "whash": 28
+    },
+    "hash_score": 0.48046875,
+    "mse_similarity": 0.06678282356212799,
+    "orb_score": 0.18085106382978725,
+    "orb_good": 17,
+    "orb_total": 61,
+    "combined_score": 0.39280329786651075
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/yandex-browser-links.json",
+    "text": "450×250",
+    "page_url": "https://digitalcrime.news/wp-content/uploads/2023/03/a-573.jpg",
+    "image_url": "https://digitalcrime.news/wp-content/uploads/2023/03/a-573.jpg",
+    "http_status": 200,
+    "final_url": "https://digitalcrime.news/wp-content/uploads/2023/03/a-573.jpg",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      450,
+      250
+    ],
+    "hash_distances": {
+      "phash": 36,
+      "dhash": 42,
+      "ahash": 30,
+      "whash": 32
+    },
+    "hash_score": 0.453125,
+    "mse_similarity": 0.10085876709415748,
+    "orb_score": 0.18085106382978725,
+    "orb_good": 17,
+    "orb_total": 51,
+    "combined_score": 0.3879870184261196
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Pin by Anyothia on Rocket Eye art, Spirited art, Animation",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=558a2304e3c796439ccf437962bc841fc176a4e6-5031281-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=558a2304e3c796439ccf437962bc841fc176a4e6-5031281-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      320,
+      320
+    ],
+    "hash_distances": {
+      "phash": 28,
+      "dhash": 26,
+      "ahash": 30,
+      "whash": 32
+    },
+    "hash_score": 0.546875,
+    "mse_similarity": 0.10611433052271982,
+    "orb_score": 0.07446808510638298,
+    "orb_good": 7,
+    "orb_total": 45,
+    "combined_score": 0.37729640022064576
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "TENGENTSU EYE Black Clover Chapter 352 Live Reaction - YouTube",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=ffaaa5a85229963a5d2b4aa838656dedc867328b-8567399-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=ffaaa5a85229963a5d2b4aa838656dedc867328b-8567399-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      427,
+      320
+    ],
+    "hash_distances": {
+      "phash": 44,
+      "dhash": 32,
+      "ahash": 29,
+      "whash": 30
+    },
+    "hash_score": 0.47265625,
+    "mse_similarity": 0.04909164163024904,
+    "orb_score": 0.1702127659574468,
+    "orb_good": 16,
+    "orb_total": 63,
+    "combined_score": 0.37681608956354284
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "3 набора раскрасок Fantasy Summer. Цифровая загрузка, печать и раскрашивание. Ки",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=95cecb4107400d5c8100b2472b8a484786da877f-4662453-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=95cecb4107400d5c8100b2472b8a484786da877f-4662453-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      403,
+      320
+    ],
+    "hash_distances": {
+      "phash": 28,
+      "dhash": 23,
+      "ahash": 25,
+      "whash": 22
+    },
+    "hash_score": 0.6171875,
+    "mse_similarity": 0.12428020039211374,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 57,
+    "combined_score": 0.37673718511763415
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Stream brendahc music Listen to songs, albums, playlists for free on SoundCloud",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=f81d73ddd70bd790fef28b6438de5a8db5b5e0f4-6829499-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=f81d73ddd70bd790fef28b6438de5a8db5b5e0f4-6829499-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      320,
+      320
+    ],
+    "hash_distances": {
+      "phash": 28,
+      "dhash": 30,
+      "ahash": 28,
+      "whash": 26
+    },
+    "hash_score": 0.5625,
+    "mse_similarity": 0.13513885352235,
+    "orb_score": 0.031914893617021274,
+    "orb_good": 3,
+    "orb_total": 61,
+    "combined_score": 0.36906559222691776
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/yandex-browser-links.json",
+    "text": "480×360",
+    "page_url": "https://i.ytimg.com/vi/RkSSh420nk4/hqdefault.jpg",
+    "image_url": "https://i.ytimg.com/vi/RkSSh420nk4/hqdefault.jpg",
+    "http_status": 200,
+    "final_url": "https://i.ytimg.com/vi/RkSSh420nk4/hqdefault.jpg",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      480,
+      360
+    ],
+    "hash_distances": {
+      "phash": 44,
+      "dhash": 33,
+      "ahash": 29,
+      "whash": 30
+    },
+    "hash_score": 0.46875,
+    "mse_similarity": 0.04902108624790978,
+    "orb_score": 0.1595744680851064,
+    "orb_good": 15,
+    "orb_total": 59,
+    "combined_score": 0.36826350672543673
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Читать книгу Притчи@ру. Секрет счастья Елена Цымбурская : онлайн чтение - страни",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=90c6f0089a4409b39d0fc4cc47092d0cecf50d25-5510085-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=90c6f0089a4409b39d0fc4cc47092d0cecf50d25-5510085-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      233,
+      320
+    ],
+    "hash_distances": {
+      "phash": 32,
+      "dhash": 20,
+      "ahash": 27,
+      "whash": 28
+    },
+    "hash_score": 0.58203125,
+    "mse_similarity": 0.09771957440453327,
+    "orb_score": 0.02127659574468085,
+    "orb_good": 2,
+    "orb_total": 63,
+    "combined_score": 0.3621990172681685
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://th.bing.com/th/id/ODL.3775c730d6a60272551f3cad3aca0f27?w=310&h=198&c=7&rs=1&bgcl=ffff14&r=0&o=6&pid=AlgoBlockDebug",
+    "http_status": 200,
+    "final_url": "https://th.bing.com/th/id/ODL.3775c730d6a60272551f3cad3aca0f27?w=310&h=198&c=7&rs=1&bgcl=ffff14&r=0&o=6&pid=AlgoBlockDebug",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      310,
+      198
+    ],
+    "hash_distances": {
+      "phash": 28,
+      "dhash": 21,
+      "ahash": 30,
+      "whash": 30
+    },
+    "hash_score": 0.57421875,
+    "mse_similarity": 0.10714043945785681,
+    "orb_score": 0.02127659574468085,
+    "orb_good": 2,
+    "orb_total": 52,
+    "combined_score": 0.3607284017841656
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://www.bing.com/th/id/OIP.sEVElBzIq-EshOZ-mN3jkAHaCx?w=205&h=170&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "http_status": 200,
+    "final_url": "https://www.bing.com/th/id/OIP.sEVElBzIq-EshOZ-mN3jkAHaCx?w=205&h=170&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      205,
+      170
+    ],
+    "hash_distances": {
+      "phash": 28,
+      "dhash": 31,
+      "ahash": 25,
+      "whash": 24
+    },
+    "hash_score": 0.578125,
+    "mse_similarity": 0.0880218583030314,
+    "orb_score": 0.02127659574468085,
+    "orb_good": 2,
+    "orb_total": 52,
+    "combined_score": 0.357141264937718
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "22 Punpun ideas in 2025 goodnight punpun, paradise kiss, mangá icons",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=cc61fd44f717c7b28360d02123ed402d494ec9af-5159020-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=cc61fd44f717c7b28360d02123ed402d494ec9af-5159020-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      320,
+      320
+    ],
+    "hash_distances": {
+      "phash": 26,
+      "dhash": 25,
+      "ahash": 28,
+      "whash": 24
+    },
+    "hash_score": 0.59765625,
+    "mse_similarity": 0.052168832607232166,
+    "orb_score": 0.02127659574468085,
+    "orb_good": 2,
+    "orb_total": 59,
+    "combined_score": 0.3571275447289782
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-links.json",
+    "text": "User blog:Dark Priest Hargon/PE Proposal: Imajin | Villains Wiki | Fandom",
+    "page_url": "https://www.bing.com/images/search?view=detailV2&ccid=HL%2b0vFo2&id=FC84485663BDACA72500910C6313146CCB59D025&thid=OIP.HL-0vFo2Y-dUzNeINoR4EgAAAA&mediaurl=https%3a%2f%2fstatic.wikia.nocookie.net%2fvillains%2fimages%2fd%2fd2%2fImajin_Soul.jpeg%2frevision%2flatest%3fcb%3d20200826025306&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.1cbfb4bc5a3663e754ccd78836847812%3frik%3dJdBZy2wUE2MMkQ%26pid%3dImgRaw%26r%3d0&exph=443&expw=303&q=Junji+Ito&mode=overlay&FORM=VSMAINC&ck=490AC89E587614880974983E642BFA50&idpp=serp",
+    "image_url": "https://static.wikia.nocookie.net/villains/images/d/d2/Imajin_Soul.jpeg/revision/latest?cb=20200826025306",
+    "http_status": 200,
+    "final_url": "https://static.wikia.nocookie.net/villains/images/d/d2/Imajin_Soul.jpeg/revision/latest?cb=20200826025306",
+    "content_type": "image/webp",
+    "dimensions": [
+      303,
+      443
+    ],
+    "hash_distances": {
+      "phash": 36,
+      "dhash": 30,
+      "ahash": 25,
+      "whash": 30
+    },
+    "hash_score": 0.52734375,
+    "mse_similarity": 0.09585847394994483,
+    "orb_score": 0.06382978723404255,
+    "orb_good": 6,
+    "orb_total": 51,
+    "combined_score": 0.357094477025409
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Daily Mail The New Yorker",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=3b2c4ea463feab8771ac9dddf0edd26dd64ef258-4809558-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=3b2c4ea463feab8771ac9dddf0edd26dd64ef258-4809558-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      480,
+      270
+    ],
+    "hash_distances": {
+      "phash": 34,
+      "dhash": 22,
+      "ahash": 26,
+      "whash": 20
+    },
+    "hash_score": 0.6015625,
+    "mse_similarity": 0.0626430267544452,
+    "orb_score": 0.010638297872340425,
+    "orb_good": 1,
+    "orb_total": 56,
+    "combined_score": 0.3560352617497378
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Share contain when the does unlimited up recruitment, display, social, parade ba",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=4fccca1b0d23f347e36d5fb6965a62945cf0d2bf-4576013-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=4fccca1b0d23f347e36d5fb6965a62945cf0d2bf-4576013-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      480,
+      255
+    ],
+    "hash_distances": {
+      "phash": 24,
+      "dhash": 29,
+      "ahash": 30,
+      "whash": 28
+    },
+    "hash_score": 0.56640625,
+    "mse_similarity": 0.12879405560092205,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 56,
+    "combined_score": 0.3501616541802766
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Новости - Страница 150 - ХАЙФАИНФО",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=b7feda14bae0fca607903420e6aa5596c61aee7b-8497405-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=b7feda14bae0fca607903420e6aa5596c61aee7b-8497405-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      480,
+      255
+    ],
+    "hash_distances": {
+      "phash": 26,
+      "dhash": 28,
+      "ahash": 30,
+      "whash": 26
+    },
+    "hash_score": 0.5703125,
+    "mse_similarity": 0.11840679951046189,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 60,
+    "combined_score": 0.3491939148531386
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Amazon.com: DIYshop Blessing Sun God Moon Stars Pattern Magic Clear Stamp for Sc",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=bb5698f567ceea5398335c4a1fb05abb019e510c-12542766-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=bb5698f567ceea5398335c4a1fb05abb019e510c-12542766-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      287,
+      300
+    ],
+    "hash_distances": {
+      "phash": 28,
+      "dhash": 30,
+      "ahash": 31,
+      "whash": 24
+    },
+    "hash_score": 0.55859375,
+    "mse_similarity": 0.11802008854042229,
+    "orb_score": 0.010638297872340425,
+    "orb_good": 1,
+    "orb_total": 49,
+    "combined_score": 0.34901556778553094
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://www.bing.com/th/id/OIP.VpfQAxCvW3XJYe3iPB6prwAAAA?w=205&h=184&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "http_status": 200,
+    "final_url": "https://www.bing.com/th/id/OIP.VpfQAxCvW3XJYe3iPB6prwAAAA?w=205&h=184&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      205,
+      184
+    ],
+    "hash_distances": {
+      "phash": 28,
+      "dhash": 25,
+      "ahash": 27,
+      "whash": 24
+    },
+    "hash_score": 0.59375,
+    "mse_similarity": 0.07447836596210665,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 52,
+    "combined_score": 0.348906009788632
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Иллюстратор LimVi. Россия. Пейзаж, Сюр, Абстракция.",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=eae759c8f2ffa7832f3e40ec93f284862dd6a77e-12421240-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=eae759c8f2ffa7832f3e40ec93f284862dd6a77e-12421240-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      272,
+      272
+    ],
+    "hash_distances": {
+      "phash": 30,
+      "dhash": 22,
+      "ahash": 28,
+      "whash": 26
+    },
+    "hash_score": 0.5859375,
+    "mse_similarity": 0.08782802243971666,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 63,
+    "combined_score": 0.348614031731915
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "This is what love looks like in the future What is love, Best comic books, Graph",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=07f3193031234d1b94990a72987efa1c26853358-10414645-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=07f3193031234d1b94990a72987efa1c26853358-10414645-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      480,
+      270
+    ],
+    "hash_distances": {
+      "phash": 26,
+      "dhash": 30,
+      "ahash": 24,
+      "whash": 26
+    },
+    "hash_score": 0.5859375,
+    "mse_similarity": 0.0844350847566637,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 57,
+    "combined_score": 0.3475961504269991
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-links.json",
+    "text": "",
+    "page_url": "https://www.bing.com/images/search?view=detailV2&ccid=Y/lqclWY&id=5AF08897BCF32737E2B2F23DC32001A4310F28AC&thid=OIP.Y_lqclWYHGyhHart89kkDAAAAA&mediaurl=https://japandaily.jp/wp-content/uploads/2025/07/biography-of-Junji-Ito-4-683x1024.jpg&q=Junji+Ito&ck=52627D28665BED2519E4CFC20B6D996E&idpp=rc&expw=474&exph=710&form=rc2idp",
+    "image_url": "https://japandaily.jp/wp-content/uploads/2025/07/biography-of-Junji-Ito-4-683x1024.jpg",
+    "http_status": 200,
+    "final_url": "https://japandaily.jp/wp-content/uploads/2025/07/biography-of-Junji-Ito-4-683x1024.jpg",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      683,
+      1024
+    ],
+    "hash_distances": {
+      "phash": 26,
+      "dhash": 28,
+      "ahash": 26,
+      "whash": 24
+    },
+    "hash_score": 0.59375,
+    "mse_similarity": 0.06930708147135414,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 66,
+    "combined_score": 0.3473546244414063
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-links.json",
+    "text": "Steam Community :: one eyed king.",
+    "page_url": "https://www.bing.com/images/search?view=detailV2&ccid=VpfQAxCv&id=2C80927C509B308762329A5FE9ECD7696C4356C7&thid=OIP.VpfQAxCvW3XJYe3iPB6prwAAAA&mediaurl=https%3a%2f%2favatars.fastly.steamstatic.com%2fa266f6bf6127de0a82ad59feebb85b5c178fb682_full.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.5697d00310af5b75c961ede23c1ea9af%3frik%3dx1ZDbGnX7Olfmg%26pid%3dImgRaw%26r%3d0&exph=184&expw=184&q=Junji+Ito&mode=overlay&FORM=VSMAINC&ck=C76C1774CE6E78B22092F44074329EA2&idpp=serp",
+    "image_url": "https://avatars.fastly.steamstatic.com/a266f6bf6127de0a82ad59feebb85b5c178fb682_full.jpg",
+    "http_status": 200,
+    "final_url": "https://avatars.fastly.steamstatic.com/a266f6bf6127de0a82ad59feebb85b5c178fb682_full.jpg",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      184,
+      184
+    ],
+    "hash_distances": {
+      "phash": 32,
+      "dhash": 24,
+      "ahash": 26,
+      "whash": 22
+    },
+    "hash_score": 0.59375,
+    "mse_similarity": 0.06848316935827592,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 53,
+    "combined_score": 0.3471074508074828
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://www.bing.com/th/id/OIP.JfQvWZeaoqAA686WpAdtZwAAAA?w=205&h=170&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "http_status": 200,
+    "final_url": "https://www.bing.com/th/id/OIP.JfQvWZeaoqAA686WpAdtZwAAAA?w=205&h=170&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      205,
+      170
+    ],
+    "hash_distances": {
+      "phash": 28,
+      "dhash": 22,
+      "ahash": 28,
+      "whash": 26
+    },
+    "hash_score": 0.59375,
+    "mse_similarity": 0.06301303471390544,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 55,
+    "combined_score": 0.34546641041417164
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Раскраски для детей и взрослых: Развивайте Воображение вместе с Нами! - happybru",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=eb212c1d8af8f2b9855bcd616e5df92a1e8e23e1-5419253-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=eb212c1d8af8f2b9855bcd616e5df92a1e8e23e1-5419253-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      247,
+      320
+    ],
+    "hash_distances": {
+      "phash": 26,
+      "dhash": 30,
+      "ahash": 26,
+      "whash": 26
+    },
+    "hash_score": 0.578125,
+    "mse_similarity": 0.0687548536293767,
+    "orb_score": 0.010638297872340425,
+    "orb_good": 1,
+    "orb_total": 59,
+    "combined_score": 0.3449781848122173
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "Web page related images",
+    "page_url": "",
+    "image_url": "https://th.bing.com/th/id/OIP.COf8ia4dno3SOCXr4UeTEwHaD4?w=160&h=108&c=7&qlt=90&bgcl=43c96a&r=0&o=6&pid=13.1",
+    "http_status": 200,
+    "final_url": "https://th.bing.com/th/id/OIP.COf8ia4dno3SOCXr4UeTEwHaD4?w=160&h=108&c=7&qlt=90&bgcl=43c96a&r=0&o=6&pid=13.1",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      160,
+      108
+    ],
+    "hash_distances": {
+      "phash": 32,
+      "dhash": 25,
+      "ahash": 26,
+      "whash": 28
+    },
+    "hash_score": 0.56640625,
+    "mse_similarity": 0.08940609382855229,
+    "orb_score": 0.010638297872340425,
+    "orb_good": 1,
+    "orb_total": 44,
+    "combined_score": 0.34472824437196997
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://www.bing.com/th/id/OIP.HL-0vFo2Y-dUzNeINoR4EgAAAA?w=205&h=300&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "http_status": 200,
+    "final_url": "https://www.bing.com/th/id/OIP.HL-0vFo2Y-dUzNeINoR4EgAAAA?w=205&h=300&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      205,
+      300
+    ],
+    "hash_distances": {
+      "phash": 36,
+      "dhash": 30,
+      "ahash": 25,
+      "whash": 30
+    },
+    "hash_score": 0.52734375,
+    "mse_similarity": 0.09602487944610899,
+    "orb_score": 0.0425531914893617,
+    "orb_good": 4,
+    "orb_total": 40,
+    "combined_score": 0.3443784412274497
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "Web page related images",
+    "page_url": "",
+    "image_url": "https://th.bing.com/th/id/OIP.dve3ArELKkKTMQl7KOW8SQHaD4?w=162&h=108&c=7&qlt=90&bgcl=479db4&r=0&o=6&pid=13.1",
+    "http_status": 200,
+    "final_url": "https://th.bing.com/th/id/OIP.dve3ArELKkKTMQl7KOW8SQHaD4?w=162&h=108&c=7&qlt=90&bgcl=479db4&r=0&o=6&pid=13.1",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      162,
+      108
+    ],
+    "hash_distances": {
+      "phash": 28,
+      "dhash": 23,
+      "ahash": 23,
+      "whash": 26
+    },
+    "hash_score": 0.609375,
+    "mse_similarity": 0.027045989486505478,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 29,
+    "combined_score": 0.3432700468459517
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Жаклин Уилсон - Девчонки и слезы - стр 3",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=2e6465998faf7de0170cab9f215f7a42faec8f52-5330065-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=2e6465998faf7de0170cab9f215f7a42faec8f52-5330065-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      261,
+      320
+    ],
+    "hash_distances": {
+      "phash": 28,
+      "dhash": 27,
+      "ahash": 38,
+      "whash": 28
+    },
+    "hash_score": 0.52734375,
+    "mse_similarity": 0.09136333637491159,
+    "orb_score": 0.0425531914893617,
+    "orb_good": 4,
+    "orb_total": 56,
+    "combined_score": 0.3429799783060905
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/yandex-browser-images.json",
+    "text": "Чёрный клевер",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/get-entity_search/1245366/1154314114/S114x114Smart_2x",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/get-entity_search/1245366/1154314114/S114x114Smart_2x",
+    "content_type": "image/webp",
+    "dimensions": [
+      228,
+      228
+    ],
+    "hash_distances": {
+      "phash": 32,
+      "dhash": 19,
+      "ahash": 24,
+      "whash": 30
+    },
+    "hash_score": 0.58984375,
+    "mse_similarity": 0.05498562265579484,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 47,
+    "combined_score": 0.3409097492967385
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://www.bing.com/th/id/OIP.7oUBqnhlLYm2XQ6cwwXhPAHaHa?w=205&h=205&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "http_status": 200,
+    "final_url": "https://www.bing.com/th/id/OIP.7oUBqnhlLYm2XQ6cwwXhPAHaHa?w=205&h=205&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      205,
+      205
+    ],
+    "hash_distances": {
+      "phash": 32,
+      "dhash": 27,
+      "ahash": 24,
+      "whash": 32
+    },
+    "hash_score": 0.55078125,
+    "mse_similarity": 0.05557924427859443,
+    "orb_score": 0.031914893617021274,
+    "orb_good": 3,
+    "orb_total": 51,
+    "combined_score": 0.3387523969537911
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Beautiful female eyes looking up transparent illustration 29730687 PNG",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=869051a8dab160595b05ee38983b16b01d0b25f7-5253166-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=869051a8dab160595b05ee38983b16b01d0b25f7-5253166-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      480,
+      225
+    ],
+    "hash_distances": {
+      "phash": 32,
+      "dhash": 28,
+      "ahash": 29,
+      "whash": 30
+    },
+    "hash_score": 0.53515625,
+    "mse_similarity": 0.10209787197724493,
+    "orb_score": 0.02127659574468085,
+    "orb_good": 2,
+    "orb_total": 58,
+    "combined_score": 0.33773125653998204
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-links.json",
+    "text": "310 Manga x Art ideas to save today | manga, manga art, character art ...",
+    "page_url": "https://www.bing.com/images/search?view=detailV2&ccid=JfQvWZea&id=AAA125DA264AE2FC58642B70CBFA8DD18868C430&thid=OIP.JfQvWZeaoqAA686WpAdtZwAAAA&mediaurl=https%3a%2f%2fi.pinimg.com%2fcustom_covers%2f200x150%2f810718439112345876_1713602726.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.25f42f59979aa2a000ebce96a4076d67%3frik%3dMMRoiNGN%252bstwKw%26pid%3dImgRaw%26r%3d0&exph=150&expw=200&q=Junji+Ito&mode=overlay&FORM=VSMAINC&ck=9E457170F0D4E1DF144E5C8F6878420A&idpp=serp",
+    "image_url": "https://i.pinimg.com/custom_covers/200x150/810718439112345876_1713602726.jpg",
+    "http_status": 200,
+    "final_url": "https://i.pinimg.com/custom_covers/200x150/810718439112345876_1713602726.jpg",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      200,
+      150
+    ],
+    "hash_distances": {
+      "phash": 34,
+      "dhash": 24,
+      "ahash": 26,
+      "whash": 24
+    },
+    "hash_score": 0.578125,
+    "mse_similarity": 0.06477490215447397,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 52,
+    "combined_score": 0.3374012206463422
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-links.json",
+    "text": "Part 2 ending leaked this happens after Denji loses Asa and Nayuta : r ...",
+    "page_url": "https://www.bing.com/images/search?view=detailV2&ccid=tWOGKOSs&id=17D91868D613578150DA336B8B5489AE24876571&thid=OIP.tWOGKOSs3oeMoJmtGxkMCAHaHa&mediaurl=https%3a%2f%2fpreview.redd.it%2fpart-2-ending-leaked-this-happens-after-denji-loses-asa-and-v0-8kctnu5zi5va1.png%3fwidth%3d720%26format%3dpng%26auto%3dwebp%26s%3dbd3efcc100a581b2d5d3b77a777c1a9d69087da6&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.b5638628e4acde878ca099ad1b190c08%3frik%3dcWWHJK6JVItrMw%26pid%3dImgRaw%26r%3d0&exph=720&expw=720&q=Junji+Ito&mode=overlay&FORM=VSMAINC&ck=12AD865BB352C1002C85D5320367A01F&idpp=serp",
+    "image_url": "https://preview.redd.it/part-2-ending-leaked-this-happens-after-denji-loses-asa-and-v0-8kctnu5zi5va1.png?width=720&format=png&auto=webp&s=bd3efcc100a581b2d5d3b77a777c1a9d69087da6",
+    "http_status": 200,
+    "final_url": "https://preview.redd.it/part-2-ending-leaked-this-happens-after-denji-loses-asa-and-v0-8kctnu5zi5va1.png?width=720&format=png&auto=webp&s=bd3efcc100a581b2d5d3b77a777c1a9d69087da6",
+    "content_type": "image/webp",
+    "dimensions": [
+      720,
+      720
+    ],
+    "hash_distances": {
+      "phash": 30,
+      "dhash": 29,
+      "ahash": 27,
+      "whash": 30
+    },
+    "hash_score": 0.546875,
+    "mse_similarity": 0.07859713930974518,
+    "orb_score": 0.02127659574468085,
+    "orb_good": 2,
+    "orb_total": 52,
+    "combined_score": 0.33712634923973206
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Telegram: View @deadp47gaymer",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=abdfcd3f1da9d28a8d6532c93602f406730d4878-9229932-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=abdfcd3f1da9d28a8d6532c93602f406730d4878-9229932-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      480,
+      215
+    ],
+    "hash_distances": {
+      "phash": 36,
+      "dhash": 31,
+      "ahash": 28,
+      "whash": 24
+    },
+    "hash_score": 0.53515625,
+    "mse_similarity": 0.14095154405258814,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 60,
+    "combined_score": 0.33662140071577645
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "\"The Sociological Eye 2015\" by Loyola Marymount University, Sociology Department",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=8984a4ae50040f628cb7bb9913453c9e649e167c-9233745-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=8984a4ae50040f628cb7bb9913453c9e649e167c-9233745-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      247,
+      320
+    ],
+    "hash_distances": {
+      "phash": 36,
+      "dhash": 27,
+      "ahash": 28,
+      "whash": 24
+    },
+    "hash_score": 0.55078125,
+    "mse_similarity": 0.09020792927698346,
+    "orb_score": 0.010638297872340425,
+    "orb_good": 1,
+    "orb_total": 61,
+    "combined_score": 0.33637504500649934
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Genichiro One Piece: Eclipse Wiki Fandom",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=f4e6334b00eccb9b2e923ec8e1a31674e43c2717-5504462-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=f4e6334b00eccb9b2e923ec8e1a31674e43c2717-5504462-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      190,
+      111
+    ],
+    "hash_distances": {
+      "phash": 24,
+      "dhash": 26,
+      "ahash": 29,
+      "whash": 34
+    },
+    "hash_score": 0.55859375,
+    "mse_similarity": 0.09538436545923473,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 39,
+    "combined_score": 0.33584187213777045
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Funky Eyes Coloring Page - Encinitas House of Art",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=d640d226314c120a70bf36af2f459a1c74238b05-5235884-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=d640d226314c120a70bf36af2f459a1c74238b05-5235884-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      247,
+      320
+    ],
+    "hash_distances": {
+      "phash": 38,
+      "dhash": 25,
+      "ahash": 29,
+      "whash": 30
+    },
+    "hash_score": 0.5234375,
+    "mse_similarity": 0.09416818456154916,
+    "orb_score": 0.031914893617021274,
+    "orb_good": 3,
+    "orb_total": 61,
+    "combined_score": 0.3352900165386775
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Раскраски для детей и взрослых: Развивайте Воображение вместе с Нами! - happybru",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=5f83e8f8db543c4fdd79d44d1d2d0928944e430e-5234751-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=5f83e8f8db543c4fdd79d44d1d2d0928944e430e-5234751-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      247,
+      320
+    ],
+    "hash_distances": {
+      "phash": 34,
+      "dhash": 33,
+      "ahash": 24,
+      "whash": 20
+    },
+    "hash_score": 0.56640625,
+    "mse_similarity": 0.07826725470037285,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 59,
+    "combined_score": 0.33500361391011185
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "ร ป ต า ข อ ง ภ า พ ว า ด ส เ ก ต ช ภ า พ เ ว ก เ ต อ ร",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=dc951885b34437ffad4a029c70cfab559cf7cbc3-4413022-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=dc951885b34437ffad4a029c70cfab559cf7cbc3-4413022-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      320,
+      320
+    ],
+    "hash_distances": {
+      "phash": 32,
+      "dhash": 35,
+      "ahash": 26,
+      "whash": 22
+    },
+    "hash_score": 0.55078125,
+    "mse_similarity": 0.10044305785941915,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 53,
+    "combined_score": 0.3330626048578258
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-links.json",
+    "text": "Chainsaw Man Cards",
+    "page_url": "https://www.bing.com/images/search?view=detailV2&ccid=7oUBqnhl&id=7E2C6894892D42FE203314558E9831DE697772F9&thid=OIP.7oUBqnhlLYm2XQ6cwwXhPAHaHa&mediaurl=https%3a%2f%2fi.pinimg.com%2foriginals%2fc8%2f77%2f77%2fc877775bdf608ff5a41e11e49c6f8bb9.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.ee8501aa78652d89b65d0e9cc305e13c%3frik%3d%252bXJ3ad4xmI5VFA%26pid%3dImgRaw%26r%3d0&exph=750&expw=750&q=Junji+Ito&mode=overlay&FORM=VSMAINC&ck=A11F0A74A9B814100B9A0A5A129FADED&idpp=serp",
+    "image_url": "https://i.pinimg.com/originals/c8/77/77/c877775bdf608ff5a41e11e49c6f8bb9.jpg",
+    "http_status": 200,
+    "final_url": "https://i.pinimg.com/originals/c8/77/77/c877775bdf608ff5a41e11e49c6f8bb9.jpg",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      750,
+      750
+    ],
+    "hash_distances": {
+      "phash": 32,
+      "dhash": 27,
+      "ahash": 24,
+      "whash": 32
+    },
+    "hash_score": 0.55078125,
+    "mse_similarity": 0.05638734848515719,
+    "orb_score": 0.02127659574468085,
+    "orb_good": 2,
+    "orb_total": 48,
+    "combined_score": 0.3326118494923557
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://www.bing.com/th/id/OIP.Rlkue-ydqV-0Z1Dyw-7OmwAAAA?w=205&h=223&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "http_status": 200,
+    "final_url": "https://www.bing.com/th/id/OIP.Rlkue-ydqV-0Z1Dyw-7OmwAAAA?w=205&h=223&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      205,
+      223
+    ],
+    "hash_distances": {
+      "phash": 28,
+      "dhash": 24,
+      "ahash": 25,
+      "whash": 32
+    },
+    "hash_score": 0.57421875,
+    "mse_similarity": 0.05272808087498955,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 48,
+    "combined_score": 0.3316387367624969
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Pin by Showzoo Tsai on 浮 世 繪 Tadanori yokoo, Ink pen drawings, Illustration",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=090840646b2ddc3aa43214659b05079697311c18-9674922-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=090840646b2ddc3aa43214659b05079697311c18-9674922-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      480,
+      258
+    ],
+    "hash_distances": {
+      "phash": 28,
+      "dhash": 31,
+      "ahash": 28,
+      "whash": 34
+    },
+    "hash_score": 0.52734375,
+    "mse_similarity": 0.13865151248963753,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 52,
+    "combined_score": 0.3316345162468913
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "TOMİE 2 Dövme fikirleri, Desenler, Fotoğraf",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=49170c0a24009c0e3c199afb720f27683ef72eba-11230172-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=49170c0a24009c0e3c199afb720f27683ef72eba-11230172-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      480,
+      312
+    ],
+    "hash_distances": {
+      "phash": 26,
+      "dhash": 35,
+      "ahash": 28,
+      "whash": 28
+    },
+    "hash_score": 0.54296875,
+    "mse_similarity": 0.08840573466590013,
+    "orb_score": 0.010638297872340425,
+    "orb_good": 1,
+    "orb_total": 57,
+    "combined_score": 0.3315375116231743
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-links.json",
+    "text": "Steam Community :: EnzyGaGa",
+    "page_url": "https://www.bing.com/images/search?view=detailV2&ccid=ryM5U17I&id=D08EE311D4CF4F42CAC7FFCDE3558757024A06E6&thid=OIP.ryM5U17Iw0AhsX2_vSLpEwAAAA&mediaurl=https%3a%2f%2favatars.akamai.steamstatic.com%2f2367f347639e4036db552c33a582c8f2b0d76c62_full.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.af2339535ec8c34021b17dbfbd22e913%3frik%3d5gZKAleHVePN%252fw%26pid%3dImgRaw%26r%3d0&exph=184&expw=184&q=Junji+Ito&mode=overlay&FORM=VSMAINC&ck=B7E3325E08C60CB1DE90CBF4E48D5595&idpp=serp",
+    "image_url": "https://avatars.akamai.steamstatic.com/2367f347639e4036db552c33a582c8f2b0d76c62_full.jpg",
+    "http_status": 200,
+    "final_url": "https://avatars.akamai.steamstatic.com/2367f347639e4036db552c33a582c8f2b0d76c62_full.jpg",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      184,
+      184
+    ],
+    "hash_distances": {
+      "phash": 26,
+      "dhash": 31,
+      "ahash": 32,
+      "whash": 26
+    },
+    "hash_score": 0.55078125,
+    "mse_similarity": 0.09373318592325265,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 51,
+    "combined_score": 0.33104964327697584
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Pin de Danni Keating en Anime and manga Poster, Anime",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=04e8d9697f8147fd3f027dad965533f231318697-3475740-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=04e8d9697f8147fd3f027dad965533f231318697-3475740-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      320,
+      320
+    ],
+    "hash_distances": {
+      "phash": 34,
+      "dhash": 27,
+      "ahash": 26,
+      "whash": 32
+    },
+    "hash_score": 0.53515625,
+    "mse_similarity": 0.1001059226241829,
+    "orb_score": 0.010638297872340425,
+    "orb_good": 1,
+    "orb_total": 59,
+    "combined_score": 0.3307506930106592
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "In the dead of night Mha xvarious Quotev",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=feb70e131f87e786aec832bafc2141eb3725a706-13619621-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=feb70e131f87e786aec832bafc2141eb3725a706-13619621-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      480,
+      291
+    ],
+    "hash_distances": {
+      "phash": 34,
+      "dhash": 30,
+      "ahash": 30,
+      "whash": 24
+    },
+    "hash_score": 0.5390625,
+    "mse_similarity": 0.0915094347210209,
+    "orb_score": 0.010638297872340425,
+    "orb_good": 1,
+    "orb_total": 55,
+    "combined_score": 0.33032018413971054
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://www.bing.com/th/id/OIP.Ia_rmef5YW_hKT3Sll4EEwHaEK?w=205&h=170&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "http_status": 200,
+    "final_url": "https://www.bing.com/th/id/OIP.Ia_rmef5YW_hKT3Sll4EEwHaEK?w=205&h=170&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      205,
+      170
+    ],
+    "hash_distances": {
+      "phash": 32,
+      "dhash": 24,
+      "ahash": 29,
+      "whash": 28
+    },
+    "hash_score": 0.55859375,
+    "mse_similarity": 0.07587816190191578,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 54,
+    "combined_score": 0.32999001107057474
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-links.json",
+    "text": "Oyasumi Punpun (Goodnight Punpun) | Manga - MyAnimeList.net",
+    "page_url": "https://www.bing.com/images/search?view=detailV2&ccid=Rlkue%2byd&id=400C2536934DEDE9A4B60677159C6C6342703579&thid=OIP.Rlkue-ydqV-0Z1Dyw-7OmwAAAA&mediaurl=https%3a%2f%2fcdn.myanimelist.net%2fimages%2fuserimages%2f8085715.jpg%3ft%3d1736302200&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.46592e7bec9da95fb46750f2c3eece9b%3frik%3deTVwQmNsnBV3Bg%26pid%3dImgRaw%26r%3d0&exph=245&expw=225&q=Junji+Ito&mode=overlay&FORM=VSMAINC&ck=1F3E1DF07C81B0E564AA0A537E69317F&idpp=serp",
+    "image_url": "https://cdn.myanimelist.net/images/userimages/8085715.jpg?t=1736302200",
+    "http_status": 200,
+    "final_url": "https://cdn.myanimelist.net/images/userimages/8085715.jpg?t=1736302200",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      225,
+      245
+    ],
+    "hash_distances": {
+      "phash": 28,
+      "dhash": 24,
+      "ahash": 26,
+      "whash": 32
+    },
+    "hash_score": 0.5703125,
+    "mse_similarity": 0.05373644060102949,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 57,
+    "combined_score": 0.3297928071803089
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Раскраски для детей и взрослых: Развивайте Воображение вместе с Нами! - happybru",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=4203c3c8347f4a8aa6e697bce699237a24b05930-4687669-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=4203c3c8347f4a8aa6e697bce699237a24b05930-4687669-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      247,
+      320
+    ],
+    "hash_distances": {
+      "phash": 30,
+      "dhash": 31,
+      "ahash": 27,
+      "whash": 28
+    },
+    "hash_score": 0.546875,
+    "mse_similarity": 0.07314482160378022,
+    "orb_score": 0.010638297872340425,
+    "orb_good": 1,
+    "orb_total": 58,
+    "combined_score": 0.3291076752045383
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "RE GIE - illustrator, motion designer, design graphics in Jakarta, Indonesia :: ",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=973ffbe992696afea91ad02b6f7689f5ee107687-10511592-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=973ffbe992696afea91ad02b6f7689f5ee107687-10511592-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      276,
+      276
+    ],
+    "hash_distances": {
+      "phash": 28,
+      "dhash": 32,
+      "ahash": 28,
+      "whash": 30
+    },
+    "hash_score": 0.5390625,
+    "mse_similarity": 0.08627950312443021,
+    "orb_score": 0.010638297872340425,
+    "orb_good": 1,
+    "orb_total": 61,
+    "combined_score": 0.3287512046607333
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-links.json",
+    "text": "ArtStation - Bethzaira Lopez",
+    "page_url": "https://www.bing.com/images/search?view=detailV2&ccid=YIO6Ppwp&id=924FF90E55B81A46555457C056F5E873B2123398&thid=OIP.YIO6PpwpZrRhJr2V63Lt1AHaCd&mediaurl=https%3a%2f%2fcdnb.artstation.com%2fp%2fusers%2fcovers%2f001%2f758%2f167%2fsmall%2f73d9431ca992ba28a7c14acd6765d325.jpg%3f1582089177&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.6083ba3e9c2966b46126bd95eb72edd4%3frik%3dmDMSsnPo9VbAVw%26pid%3dImgRaw%26r%3d0&exph=212&expw=640&q=Junji+Ito&mode=overlay&FORM=VSMAINC&ck=42C874B14787C99B62026A4809733CC6&idpp=serp",
+    "image_url": "https://cdnb.artstation.com/p/users/covers/001/758/167/small/73d9431ca992ba28a7c14acd6765d325.jpg?1582089177",
+    "http_status": 200,
+    "final_url": "https://cdnb.artstation.com/p/users/covers/001/758/167/small/73d9431ca992ba28a7c14acd6765d325.jpg?1582089177",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      640,
+      212
+    ],
+    "hash_distances": {
+      "phash": 30,
+      "dhash": 29,
+      "ahash": 27,
+      "whash": 34
+    },
+    "hash_score": 0.53125,
+    "mse_similarity": 0.09752970774899244,
+    "orb_score": 0.010638297872340425,
+    "orb_good": 1,
+    "orb_total": 59,
+    "combined_score": 0.32782939104810205
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://www.bing.com/th/id/OIP.WFKRtstOgKLE9WKXFk3cxQAAAA?w=205&h=205&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "http_status": 200,
+    "final_url": "https://www.bing.com/th/id/OIP.WFKRtstOgKLE9WKXFk3cxQAAAA?w=205&h=205&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      205,
+      205
+    ],
+    "hash_distances": {
+      "phash": 32,
+      "dhash": 28,
+      "ahash": 30,
+      "whash": 28
+    },
+    "hash_score": 0.5390625,
+    "mse_similarity": 0.05834606234732591,
+    "orb_score": 0.02127659574468085,
+    "orb_good": 2,
+    "orb_total": 45,
+    "combined_score": 0.3267541511510063
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Kacza (katyslovak) - Profile Pinterest",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=6bbd93e4ccd13c412f87591b0c223fff7bba434f-12165746-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=6bbd93e4ccd13c412f87591b0c223fff7bba434f-12165746-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      280,
+      280
+    ],
+    "hash_distances": {
+      "phash": 26,
+      "dhash": 36,
+      "ahash": 28,
+      "whash": 24
+    },
+    "hash_score": 0.5546875,
+    "mse_similarity": 0.04807613757813077,
+    "orb_score": 0.010638297872340425,
+    "orb_good": 1,
+    "orb_total": 53,
+    "combined_score": 0.32588394499684353
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Dafy (dafyanimation) - профиль Pinterest",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=de975b3f3b3895a77c293fa48dcfda7440b866da-4055859-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=de975b3f3b3895a77c293fa48dcfda7440b866da-4055859-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      280,
+      280
+    ],
+    "hash_distances": {
+      "phash": 34,
+      "dhash": 29,
+      "ahash": 25,
+      "whash": 34
+    },
+    "hash_score": 0.5234375,
+    "mse_similarity": 0.10372679011775422,
+    "orb_score": 0.010638297872340425,
+    "orb_good": 1,
+    "orb_total": 57,
+    "combined_score": 0.32539164075873056
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Innocent Eyes Drawing",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=d2293a98713924e24c38ce349c4407c8238ecfe8-5235116-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=d2293a98713924e24c38ce349c4407c8238ecfe8-5235116-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      433,
+      320
+    ],
+    "hash_distances": {
+      "phash": 34,
+      "dhash": 37,
+      "ahash": 28,
+      "whash": 32
+    },
+    "hash_score": 0.48828125,
+    "mse_similarity": 0.1030773522045417,
+    "orb_score": 0.0425531914893617,
+    "orb_good": 4,
+    "orb_total": 53,
+    "combined_score": 0.32500980805497953
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Настенный гобелен Солнце Луна Психоделический маленький настенный гобелен с иску",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=830a9352c193eb78e0e5d1b91481e2914de6b9a3-5220608-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=830a9352c193eb78e0e5d1b91481e2914de6b9a3-5220608-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      320,
+      320
+    ],
+    "hash_distances": {
+      "phash": 32,
+      "dhash": 30,
+      "ahash": 31,
+      "whash": 28
+    },
+    "hash_score": 0.52734375,
+    "mse_similarity": 0.09503519086296036,
+    "orb_score": 0.010638297872340425,
+    "orb_good": 1,
+    "orb_total": 57,
+    "combined_score": 0.3249325984822924
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://www.bing.com/th/id/OIP.sK1zaM8psMBh783ndKQa2AHaHa?w=205&h=205&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "http_status": 200,
+    "final_url": "https://www.bing.com/th/id/OIP.sK1zaM8psMBh783ndKQa2AHaHa?w=205&h=205&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      205,
+      205
+    ],
+    "hash_distances": {
+      "phash": 30,
+      "dhash": 26,
+      "ahash": 30,
+      "whash": 24
+    },
+    "hash_score": 0.5703125,
+    "mse_similarity": 0.03717430012845463,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 50,
+    "combined_score": 0.32482416503853645
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-links.json",
+    "text": "DOMAIN... EXPANSION! by Kubasama on Newgrounds",
+    "page_url": "https://www.bing.com/images/search?view=detailV2&ccid=WFKRtstO&id=CFBF42790B205D4AD33F50E04235A0C185BA33EB&thid=OIP.WFKRtstOgKLE9WKXFk3cxQAAAA&mediaurl=https%3a%2f%2fart.ngfiles.com%2fthumbnails%2f3997000%2f3997945_full.webp%3ff1719358846&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.585291b6cb4e80a2c4f56297164ddcc5%3frik%3d6zO6hcGgNULgUA%26pid%3dImgRaw%26r%3d0&exph=270&expw=270&q=Junji+Ito&mode=overlay&FORM=VSMAINC&ck=8DA8B80ED674F8FB16B9168386876D8D&idpp=serp",
+    "image_url": "https://art.ngfiles.com/thumbnails/3997000/3997945_full.webp?f1719358846",
+    "http_status": 200,
+    "final_url": "https://art.ngfiles.com/thumbnails/3997000/3997945_full.webp?f1719358846",
+    "content_type": "image/webp",
+    "dimensions": [
+      270,
+      270
+    ],
+    "hash_distances": {
+      "phash": 32,
+      "dhash": 28,
+      "ahash": 31,
+      "whash": 28
+    },
+    "hash_score": 0.53515625,
+    "mse_similarity": 0.058972661679253455,
+    "orb_score": 0.02127659574468085,
+    "orb_good": 2,
+    "orb_total": 54,
+    "combined_score": 0.3247936934505846
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Découvrez 33 idées Reflection dans l'oeil yeux dessin, dessins d'art au crayon, ",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=cbe67b0065022488ffd1875faf6cdfb7da29df6c-5025999-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=cbe67b0065022488ffd1875faf6cdfb7da29df6c-5025999-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      469,
+      320
+    ],
+    "hash_distances": {
+      "phash": 30,
+      "dhash": 38,
+      "ahash": 26,
+      "whash": 22
+    },
+    "hash_score": 0.546875,
+    "mse_similarity": 0.08003021765952723,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 56,
+    "combined_score": 0.3247903152978582
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://www.bing.com/th/id/OIP.t3tU57CvIOLMiVhsBeKf5AAAAA?w=205&h=170&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "http_status": 200,
+    "final_url": "https://www.bing.com/th/id/OIP.t3tU57CvIOLMiVhsBeKf5AAAAA?w=205&h=170&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      205,
+      170
+    ],
+    "hash_distances": {
+      "phash": 34,
+      "dhash": 32,
+      "ahash": 27,
+      "whash": 26
+    },
+    "hash_score": 0.53515625,
+    "mse_similarity": 0.10125999472736043,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 38,
+    "combined_score": 0.3247139359182082
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Reflections on Shintaro Kago’s panel experiments - blautoothdmand",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=a261df1b33cf2012e6672b5a7a91924a221ec962-5869166-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=a261df1b33cf2012e6672b5a7a91924a221ec962-5869166-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      480,
+      295
+    ],
+    "hash_distances": {
+      "phash": 30,
+      "dhash": 37,
+      "ahash": 25,
+      "whash": 30
+    },
+    "hash_score": 0.5234375,
+    "mse_similarity": 0.07971110329741637,
+    "orb_score": 0.02127659574468085,
+    "orb_good": 2,
+    "orb_total": 49,
+    "combined_score": 0.3245699134360335
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://www.bing.com/th/id/OIP.YIO6PpwpZrRhJr2V63Lt1AHaCd?w=205&h=170&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "http_status": 200,
+    "final_url": "https://www.bing.com/th/id/OIP.YIO6PpwpZrRhJr2V63Lt1AHaCd?w=205&h=170&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      205,
+      170
+    ],
+    "hash_distances": {
+      "phash": 28,
+      "dhash": 36,
+      "ahash": 29,
+      "whash": 30
+    },
+    "hash_score": 0.51953125,
+    "mse_similarity": 0.08661479196251948,
+    "orb_score": 0.02127659574468085,
+    "orb_good": 2,
+    "orb_total": 50,
+    "combined_score": 0.3244925825355644
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Раскраски Анастасии Колдаревой и прочее Творчество Элли - Мастер-класс по Ханне ",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=a69f130d741cbfde71147fafc7957b672573b1fc-5222323-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=a69f130d741cbfde71147fafc7957b672573b1fc-5222323-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      480,
+      264
+    ],
+    "hash_distances": {
+      "phash": 36,
+      "dhash": 26,
+      "ahash": 30,
+      "whash": 30
+    },
+    "hash_score": 0.5234375,
+    "mse_similarity": 0.11991791478204361,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 56,
+    "combined_score": 0.3238659994346131
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-links.json",
+    "text": "Oda's Symbolism behind Luffy vs Kaido Fight - One Piece",
+    "page_url": "https://www.bing.com/images/search?view=detailV2&ccid=7Y1CC3hZ&id=BFCE8B48D78723728B04E1B88D7E8EDC9F96EC0F&thid=OIP.7Y1CC3hZPDDNqlanLp0yMAHaJb&mediaurl=https%3a%2f%2fwww.opfanpage.com%2fwp-content%2fuploads%2f2021%2f06%2fsrvn9vk1ni671.png&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.ed8d420b78593c30cdaa56a72e9d3230%3frik%3dD%252byWn9yOfo244Q%26pid%3dImgRaw%26r%3d0&exph=606&expw=476&q=Junji+Ito&mode=overlay&FORM=VSMAINC&ck=3CEC2F349C7433AC7386207E687A014E&idpp=serp",
+    "image_url": "https://www.opfanpage.com/wp-content/uploads/2021/06/srvn9vk1ni671.png",
+    "http_status": 200,
+    "final_url": "https://www.opfanpage.com/wp-content/uploads/2021/06/srvn9vk1ni671.png",
+    "content_type": "image/png",
+    "dimensions": [
+      476,
+      606
+    ],
+    "hash_distances": {
+      "phash": 30,
+      "dhash": 27,
+      "ahash": 25,
+      "whash": 34
+    },
+    "hash_score": 0.546875,
+    "mse_similarity": 0.054764178707922634,
+    "orb_score": 0.010638297872340425,
+    "orb_good": 1,
+    "orb_total": 53,
+    "combined_score": 0.32359348233578106
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "Web page related images",
+    "page_url": "",
+    "image_url": "https://th.bing.com/th/id/OIP.9zg__H4xyEl7Z1hRf_X-HgHaD4?w=160&h=108&c=7&qlt=90&bgcl=db3d1e&r=0&o=6&pid=13.1",
+    "http_status": 200,
+    "final_url": "https://th.bing.com/th/id/OIP.9zg__H4xyEl7Z1hRf_X-HgHaD4?w=160&h=108&c=7&qlt=90&bgcl=db3d1e&r=0&o=6&pid=13.1",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      160,
+      108
+    ],
+    "hash_distances": {
+      "phash": 30,
+      "dhash": 29,
+      "ahash": 27,
+      "whash": 28
+    },
+    "hash_score": 0.5546875,
+    "mse_similarity": 0.06052255910420938,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 44,
+    "combined_score": 0.3232348927312628
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-links.json",
+    "text": "Stream NX NAM3 music | Listen to songs, albums, playlists for free on ...",
+    "page_url": "https://www.bing.com/images/search?view=detailV2&ccid=sK1zaM8p&id=6C3B6632F359A22052EFE9C0C0735B0E4A2981D1&thid=OIP.sK1zaM8psMBh783ndKQa2AHaHa&mediaurl=https%3a%2f%2fi1.sndcdn.com%2favatars-000607068711-d87s3p-t500x500.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.b0ad7368cf29b0c061efcde774a41ad8%3frik%3d0YEpSg5bc8DA6Q%26pid%3dImgRaw%26r%3d0&exph=500&expw=500&q=Junji+Ito&mode=overlay&FORM=VSMAINC&ck=F7EC7584F7DF4D70EFBD5117309D934A&idpp=serp",
+    "image_url": "https://i1.sndcdn.com/avatars-000607068711-d87s3p-t500x500.jpg",
+    "http_status": 200,
+    "final_url": "https://i1.sndcdn.com/avatars-000607068711-d87s3p-t500x500.jpg",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      500,
+      500
+    ],
+    "hash_distances": {
+      "phash": 30,
+      "dhash": 27,
+      "ahash": 30,
+      "whash": 24
+    },
+    "hash_score": 0.56640625,
+    "mse_similarity": 0.03715283595506335,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 51,
+    "combined_score": 0.32266928828651903
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "dinda gayathri (halodinda) - Profil Pinterest",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=d10f0b9552f5b1788eaddeb0dd151454b9f0137f-5232166-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=d10f0b9552f5b1788eaddeb0dd151454b9f0137f-5232166-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      280,
+      280
+    ],
+    "hash_distances": {
+      "phash": 30,
+      "dhash": 36,
+      "ahash": 28,
+      "whash": 32
+    },
+    "hash_score": 0.5078125,
+    "mse_similarity": 0.10051507102754181,
+    "orb_score": 0.02127659574468085,
+    "orb_good": 2,
+    "orb_total": 58,
+    "combined_score": 0.3222173537550711
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Марина Ясинская: Лестница героев читать онлайн бесплатно",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=4827f7edf5b951c73b537886e3ad479b3cb2a7e8-4356535-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=4827f7edf5b951c73b537886e3ad479b3cb2a7e8-4356535-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      350,
+      232
+    ],
+    "hash_distances": {
+      "phash": 32,
+      "dhash": 27,
+      "ahash": 32,
+      "whash": 28
+    },
+    "hash_score": 0.53515625,
+    "mse_similarity": 0.07150355639417061,
+    "orb_score": 0.010638297872340425,
+    "orb_good": 1,
+    "orb_total": 54,
+    "combined_score": 0.32216998314165546
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://www.bing.com/th/id/OIP.ryM5U17Iw0AhsX2_vSLpEwAAAA?w=205&h=184&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "http_status": 200,
+    "final_url": "https://www.bing.com/th/id/OIP.ryM5U17Iw0AhsX2_vSLpEwAAAA?w=205&h=184&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      205,
+      184
+    ],
+    "hash_distances": {
+      "phash": 32,
+      "dhash": 29,
+      "ahash": 32,
+      "whash": 26
+    },
+    "hash_score": 0.53515625,
+    "mse_similarity": 0.092684772842203,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 53,
+    "combined_score": 0.3221413693526609
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "L'Alternativa 2024 - Parallel - La mujer ilustrada",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=275197ff5a916019e9b824936ce321ab5b79add1-6281821-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=275197ff5a916019e9b824936ce321ab5b79add1-6281821-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      480,
+      270
+    ],
+    "hash_distances": {
+      "phash": 26,
+      "dhash": 23,
+      "ahash": 32,
+      "whash": 32
+    },
+    "hash_score": 0.55859375,
+    "mse_similarity": 0.046001090189899146,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 57,
+    "combined_score": 0.3210268895569698
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "𝖇 𝖗 𝖎 𝖓 𝖆 𝖇 𝖊 𝖓 𝖘 (brinaben) - Perfil Pinterest",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=4a7bb917b1b506c68b60257650380431448f9a7a-5233588-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=4a7bb917b1b506c68b60257650380431448f9a7a-5233588-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      280,
+      280
+    ],
+    "hash_distances": {
+      "phash": 34,
+      "dhash": 36,
+      "ahash": 26,
+      "whash": 24
+    },
+    "hash_score": 0.53125,
+    "mse_similarity": 0.09583348034351437,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 61,
+    "combined_score": 0.32093754410305436
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Global feed - itch.io",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=72cf10eefe89e889972554a73c7bca37be617084-3788438-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=72cf10eefe89e889972554a73c7bca37be617084-3788438-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      270,
+      143
+    ],
+    "hash_distances": {
+      "phash": 32,
+      "dhash": 25,
+      "ahash": 32,
+      "whash": 30
+    },
+    "hash_score": 0.53515625,
+    "mse_similarity": 0.0877626623352136,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 46,
+    "combined_score": 0.3206647362005641
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Pin by Vilena on Art in 2019 Art",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=8468242404ae2b0507636bb8767f579b7348e027-5413570-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=8468242404ae2b0507636bb8767f579b7348e027-5413570-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      181,
+      320
+    ],
+    "hash_distances": {
+      "phash": 32,
+      "dhash": 42,
+      "ahash": 28,
+      "whash": 28
+    },
+    "hash_score": 0.4921875,
+    "mse_similarity": 0.10232411643525162,
+    "orb_score": 0.031914893617021274,
+    "orb_good": 3,
+    "orb_total": 51,
+    "combined_score": 0.32054929610078825
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "You Shine - YouTube",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=97dc98904b70d0b3a4617a236908fa5fce3c39c4-9182438-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=97dc98904b70d0b3a4617a236908fa5fce3c39c4-9182438-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      427,
+      320
+    ],
+    "hash_distances": {
+      "phash": 34,
+      "dhash": 30,
+      "ahash": 24,
+      "whash": 26
+    },
+    "hash_score": 0.5546875,
+    "mse_similarity": 0.049460489425067214,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 55,
+    "combined_score": 0.3199162718275202
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://www.bing.com/th/id/OIP.SfUyIRyWIixL9DOnYzm_vQHaHa?w=205&h=205&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "http_status": 200,
+    "final_url": "https://www.bing.com/th/id/OIP.SfUyIRyWIixL9DOnYzm_vQHaHa?w=205&h=205&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      205,
+      205
+    ],
+    "hash_distances": {
+      "phash": 28,
+      "dhash": 26,
+      "ahash": 31,
+      "whash": 34
+    },
+    "hash_score": 0.53515625,
+    "mse_similarity": 0.0629833154491061,
+    "orb_score": 0.010638297872340425,
+    "orb_good": 1,
+    "orb_total": 46,
+    "combined_score": 0.3196139108581361
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Boruto: Two Blue Vortex Chapter 18 Review: The Shinju Plan Failure - ViralX",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=de72794f762dfef83366b7e366a2ec75a8de9d6f-5886522-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=de72794f762dfef83366b7e366a2ec75a8de9d6f-5886522-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      480,
+      240
+    ],
+    "hash_distances": {
+      "phash": 30,
+      "dhash": 26,
+      "ahash": 32,
+      "whash": 28
+    },
+    "hash_score": 0.546875,
+    "mse_similarity": 0.06269863496989425,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 59,
+    "combined_score": 0.31959084049096825
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-links.json",
+    "text": "",
+    "page_url": "https://www.bing.com/images/search?view=detailV2&ccid=L+74NZM7&id=37D3EDBAEA4ED2AB56BA82D39798F5B532A399EE&thid=OIP.L-74NZM7_Zr2IcxTHaja1gHaE8&mediaurl=https://cms.animecollective.com/wp-content/uploads/2024/11/short-story-collection-spines.jpg&q=Junji+Ito&ck=5A6DD7A744D6FFDF937E94405EF3F086&idpp=rc&expw=1200&exph=801&form=rc2idp",
+    "image_url": "https://cms.animecollective.com/wp-content/uploads/2024/11/short-story-collection-spines.jpg",
+    "http_status": 200,
+    "final_url": "https://cms.animecollective.com/wp-content/uploads/2024/11/short-story-collection-spines.jpg",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      1200,
+      801
+    ],
+    "hash_distances": {
+      "phash": 26,
+      "dhash": 29,
+      "ahash": 33,
+      "whash": 28
+    },
+    "hash_score": 0.546875,
+    "mse_similarity": 0.061874132425265994,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 57,
+    "combined_score": 0.3193434897275798
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://www.bing.com/th/id/OIP.7Y1CC3hZPDDNqlanLp0yMAHaJb?w=205&h=261&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "http_status": 200,
+    "final_url": "https://www.bing.com/th/id/OIP.7Y1CC3hZPDDNqlanLp0yMAHaJb?w=205&h=261&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      205,
+      261
+    ],
+    "hash_distances": {
+      "phash": 32,
+      "dhash": 27,
+      "ahash": 25,
+      "whash": 34
+    },
+    "hash_score": 0.5390625,
+    "mse_similarity": 0.05443349667280568,
+    "orb_score": 0.010638297872340425,
+    "orb_good": 1,
+    "orb_total": 54,
+    "combined_score": 0.319197402725246
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-links.json",
+    "text": "Lock icon | Blue anime, Manga pages, Kaiser x ness",
+    "page_url": "https://www.bing.com/images/search?view=detailV2&ccid=gbkMvIHZ&id=857B5AE381C80472DB71605A205E6412C3C3F3BF&thid=OIP.gbkMvIHZoYsmB2y4G_KVJAAAAA&mediaurl=https%3a%2f%2fi.pinimg.com%2foriginals%2f71%2fe7%2f38%2f71e738b8c43cfa466c5dadfbfd709610.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.81b90cbc81d9a18b26076cb81bf29524%3frik%3dv%252fPDwxJkXiBaYA%26pid%3dImgRaw%26r%3d0&exph=259&expw=194&q=Junji+Ito&mode=overlay&FORM=VSMAINC&ck=2D910A6DBC9259BD88798DE315D897F0&idpp=serp",
+    "image_url": "https://i.pinimg.com/originals/71/e7/38/71e738b8c43cfa466c5dadfbfd709610.jpg",
+    "http_status": 200,
+    "final_url": "https://i.pinimg.com/originals/71/e7/38/71e738b8c43cfa466c5dadfbfd709610.jpg",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      194,
+      259
+    ],
+    "hash_distances": {
+      "phash": 30,
+      "dhash": 26,
+      "ahash": 30,
+      "whash": 32
+    },
+    "hash_score": 0.5390625,
+    "mse_similarity": 0.07461192327679246,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 56,
+    "combined_score": 0.31886795198303775
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Orfeo - GREEN FILM",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=08afc7fbdaf6c3e4eced450ca182fa131659ee3d-10844270-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=08afc7fbdaf6c3e4eced450ca182fa131659ee3d-10844270-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      213,
+      320
+    ],
+    "hash_distances": {
+      "phash": 28,
+      "dhash": 32,
+      "ahash": 35,
+      "whash": 36
+    },
+    "hash_score": 0.48828125,
+    "mse_similarity": 0.1033317527477013,
+    "orb_score": 0.031914893617021274,
+    "orb_good": 3,
+    "orb_total": 63,
+    "combined_score": 0.3187031494945231
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-links.json",
+    "text": "26 Junji ito ideas | junji ito, japanese horror, ito",
+    "page_url": "https://www.bing.com/images/search?view=detailV2&ccid=t3tU57Cv&id=F60B66462890555FD255EF30C57BBCCFFFC2E0EC&thid=OIP.t3tU57CvIOLMiVhsBeKf5AAAAA&mediaurl=https%3a%2f%2fi.pinimg.com%2f200x150%2f3f%2f45%2f37%2f3f4537759f47ef269ceb4a7909350f57.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.b77b54e7b0af20e2cc89586c05e29fe4%3frik%3d7ODC%252f8%252b8e8Uw7w%26pid%3dImgRaw%26r%3d0&exph=150&expw=200&q=Junji+Ito&mode=overlay&FORM=VSMAINC&ck=4F6B8932790217D8E2603ABBA3533C5C&idpp=serp",
+    "image_url": "https://i.pinimg.com/200x150/3f/45/37/3f4537759f47ef269ceb4a7909350f57.jpg",
+    "http_status": 200,
+    "final_url": "https://i.pinimg.com/200x150/3f/45/37/3f4537759f47ef269ceb4a7909350f57.jpg",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      200,
+      150
+    ],
+    "hash_distances": {
+      "phash": 32,
+      "dhash": 34,
+      "ahash": 28,
+      "whash": 28
+    },
+    "hash_score": 0.5234375,
+    "mse_similarity": 0.10165264971926397,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 45,
+    "combined_score": 0.3183864199157792
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://th.bing.com/th/id/OIP.M2e8Ix8bcMTlSRPXopq1nQAAAA?w=89&h=108&c=1&bgcl=97f149&r=0&o=7&pid=ImgRC&rm=3",
+    "http_status": 200,
+    "final_url": "https://th.bing.com/th/id/OIP.M2e8Ix8bcMTlSRPXopq1nQAAAA?w=89&h=108&c=1&bgcl=97f149&r=0&o=7&pid=ImgRC&rm=3",
+    "content_type": "image/webp",
+    "dimensions": [
+      89,
+      108
+    ],
+    "hash_distances": {
+      "phash": 26,
+      "dhash": 27,
+      "ahash": 33,
+      "whash": 32
+    },
+    "hash_score": 0.5390625,
+    "mse_similarity": 0.07267769910353762,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 25,
+    "combined_score": 0.3182876847310613
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Eyes Looking Up Clipart at Charles Godfrey blog",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=7464f580ea7af8f3c0af9918625a89df088b27d1-5672852-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=7464f580ea7af8f3c0af9918625a89df088b27d1-5672852-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      480,
+      160
+    ],
+    "hash_distances": {
+      "phash": 28,
+      "dhash": 29,
+      "ahash": 31,
+      "whash": 30
+    },
+    "hash_score": 0.5390625,
+    "mse_similarity": 0.0718349782187086,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 49,
+    "combined_score": 0.3180348684656126
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Раскраски для детей и взрослых: Развивайте Воображение вместе с Нами! - happybru",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=9cceb76f526195e615f58ae0a6fd27fb4bd691f0-8263615-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=9cceb76f526195e615f58ae0a6fd27fb4bd691f0-8263615-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      247,
+      320
+    ],
+    "hash_distances": {
+      "phash": 32,
+      "dhash": 33,
+      "ahash": 27,
+      "whash": 26
+    },
+    "hash_score": 0.5390625,
+    "mse_similarity": 0.07124567142539977,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 58,
+    "combined_score": 0.31785807642761993
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://www.bing.com/th/id/OIP.tWOGKOSs3oeMoJmtGxkMCAHaHa?w=205&h=205&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "http_status": 200,
+    "final_url": "https://www.bing.com/th/id/OIP.tWOGKOSs3oeMoJmtGxkMCAHaHa?w=205&h=205&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      205,
+      205
+    ],
+    "hash_distances": {
+      "phash": 30,
+      "dhash": 30,
+      "ahash": 27,
+      "whash": 32
+    },
+    "hash_score": 0.53515625,
+    "mse_similarity": 0.07836239131714094,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 49,
+    "combined_score": 0.3178446548951423
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://www.bing.com/th/id/OIP.gbkMvIHZoYsmB2y4G_KVJAAAAA?w=205&h=259&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "http_status": 200,
+    "final_url": "https://www.bing.com/th/id/OIP.gbkMvIHZoYsmB2y4G_KVJAAAAA?w=205&h=259&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      205,
+      259
+    ],
+    "hash_distances": {
+      "phash": 32,
+      "dhash": 27,
+      "ahash": 31,
+      "whash": 32
+    },
+    "hash_score": 0.5234375,
+    "mse_similarity": 0.07439841002460451,
+    "orb_score": 0.010638297872340425,
+    "orb_good": 1,
+    "orb_total": 48,
+    "combined_score": 0.3165931267307856
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-links.json",
+    "text": "Ringowurm by nvrnvrnvr on Newgrounds",
+    "page_url": "https://www.bing.com/images/search?view=detailV2&ccid=r%2bgeGf7M&id=8DD400FB9C0DBFA66BDE71D4A069C625CC792485&thid=OIP.r-geGf7MuwxxOCk457jkQwAAAA&mediaurl=https%3a%2f%2fart.ngfiles.com%2fthumbnails%2f3383000%2f3383274_full.webp%3ff1691411803&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.afe81e19feccbb0c71382938e7b8e443%3frik%3dhSR5zCXGaaDUcQ%26pid%3dImgRaw%26r%3d0&exph=270&expw=270&q=Junji+Ito&mode=overlay&FORM=VSMAINC&ck=20C5E1F04C6DCB5668DF2F67D5032EED&idpp=serp",
+    "image_url": "https://art.ngfiles.com/thumbnails/3383000/3383274_full.webp?f1691411803",
+    "http_status": 200,
+    "final_url": "https://art.ngfiles.com/thumbnails/3383000/3383274_full.webp?f1691411803",
+    "content_type": "image/webp",
+    "dimensions": [
+      270,
+      270
+    ],
+    "hash_distances": {
+      "phash": 32,
+      "dhash": 26,
+      "ahash": 28,
+      "whash": 34
+    },
+    "hash_score": 0.53125,
+    "mse_similarity": 0.0596912852996861,
+    "orb_score": 0.010638297872340425,
+    "orb_good": 1,
+    "orb_total": 50,
+    "combined_score": 0.31647786431331015
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "eye practice - ibisPaint",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=35c61ff9d0852d9f173364d754f78e1e1d13d2bc-5544858-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=35c61ff9d0852d9f173364d754f78e1e1d13d2bc-5544858-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      397,
+      320
+    ],
+    "hash_distances": {
+      "phash": 28,
+      "dhash": 29,
+      "ahash": 35,
+      "whash": 38
+    },
+    "hash_score": 0.4921875,
+    "mse_similarity": 0.08757442115360142,
+    "orb_score": 0.031914893617021274,
+    "orb_good": 3,
+    "orb_total": 58,
+    "combined_score": 0.31612438751629324
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://th.bing.com/th/id/OIP.Y_lqclWYHGyhHart89kkDAAAAA?w=89&h=53&c=1&bgcl=12b23b&r=0&o=7&pid=ImgRC&rm=3",
+    "http_status": 200,
+    "final_url": "https://th.bing.com/th/id/OIP.Y_lqclWYHGyhHart89kkDAAAAA?w=89&h=53&c=1&bgcl=12b23b&r=0&o=7&pid=ImgRC&rm=3",
+    "content_type": "image/webp",
+    "dimensions": [
+      89,
+      53
+    ],
+    "hash_distances": {
+      "phash": 24,
+      "dhash": 28,
+      "ahash": 34,
+      "whash": 30
+    },
+    "hash_score": 0.546875,
+    "mse_similarity": 0.04833457190673844,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 0,
+    "combined_score": 0.31528162157202155
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://www.bing.com/th/id/OIP.NZ1rCZlEBAqwNenNjXE02QAAAA?w=205&h=196&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "http_status": 200,
+    "final_url": "https://www.bing.com/th/id/OIP.NZ1rCZlEBAqwNenNjXE02QAAAA?w=205&h=196&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      205,
+      196
+    ],
+    "hash_distances": {
+      "phash": 34,
+      "dhash": 25,
+      "ahash": 27,
+      "whash": 34
+    },
+    "hash_score": 0.53125,
+    "mse_similarity": 0.07685971038750729,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 52,
+    "combined_score": 0.3152454131162522
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Joey Wong, at the set of Sword and Butterfly, 1993",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=7b1b1660b8adff8fdaa5d3da1aa871ce347925d3eb2f63e7-9182238-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=7b1b1660b8adff8fdaa5d3da1aa871ce347925d3eb2f63e7-9182238-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      140,
+      140
+    ],
+    "hash_distances": {
+      "phash": 30,
+      "dhash": 28,
+      "ahash": 29,
+      "whash": 34
+    },
+    "hash_score": 0.52734375,
+    "mse_similarity": 0.08401838952500729,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 50,
+    "combined_score": 0.31524457935750216
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Pin by Sam on Quick Saves Animation art character design, Anime character design",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=b789c5faa837d52a5e9cbc9210b9db9cf15e6e24-5877003-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=b789c5faa837d52a5e9cbc9210b9db9cf15e6e24-5877003-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      314,
+      320
+    ],
+    "hash_distances": {
+      "phash": 32,
+      "dhash": 26,
+      "ahash": 30,
+      "whash": 32
+    },
+    "hash_score": 0.53125,
+    "mse_similarity": 0.05446307334484646,
+    "orb_score": 0.010638297872340425,
+    "orb_good": 1,
+    "orb_total": 56,
+    "combined_score": 0.31490940072685825
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-links.json",
+    "text": "Twitch",
+    "page_url": "https://www.bing.com/images/search?view=detailV2&ccid=Y%2blbl6JO&id=DB861B81B5802D3AAB225D9DBB76A126AC508352&thid=OIP.Y-lbl6JOSkp1ufbUkzdPVgAAAA&mediaurl=https%3a%2f%2fstatic-cdn.jtvnw.net%2fjtv_user_pictures%2fsoukenbcha-profile_image-0a27df881a505467-300x300.jpeg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.63e95b97a24e4a4a75b9f6d493374f56%3frik%3dUoNQrCahdrudXQ%26pid%3dImgRaw%26r%3d0&exph=300&expw=300&q=Junji+Ito&mode=overlay&FORM=VSMAINC&ck=902E7CBE2C20921883C02A2638DA4C97&idpp=serp",
+    "image_url": "https://static-cdn.jtvnw.net/jtv_user_pictures/soukenbcha-profile_image-0a27df881a505467-300x300.jpeg",
+    "http_status": 200,
+    "final_url": "https://static-cdn.jtvnw.net/jtv_user_pictures/soukenbcha-profile_image-0a27df881a505467-300x300.jpeg",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      300,
+      300
+    ],
+    "hash_distances": {
+      "phash": 34,
+      "dhash": 31,
+      "ahash": 27,
+      "whash": 32
+    },
+    "hash_score": 0.515625,
+    "mse_similarity": 0.058417069695956836,
+    "orb_score": 0.02127659574468085,
+    "orb_good": 2,
+    "orb_total": 53,
+    "combined_score": 0.3138848283555956
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://www.bing.com/th/id/OIP.molLXYhoQ_GKsrbOar2LiAAAAA?w=205&h=184&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "http_status": 200,
+    "final_url": "https://www.bing.com/th/id/OIP.molLXYhoQ_GKsrbOar2LiAAAAA?w=205&h=184&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      205,
+      184
+    ],
+    "hash_distances": {
+      "phash": 28,
+      "dhash": 33,
+      "ahash": 30,
+      "whash": 30
+    },
+    "hash_score": 0.52734375,
+    "mse_similarity": 0.05778884092966895,
+    "orb_score": 0.010638297872340425,
+    "orb_good": 1,
+    "orb_total": 49,
+    "combined_score": 0.31375869350230495
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://www.bing.com/th/id/OIP.gpbBfwRQY1AOvT7XFdW39QAAAA?w=205&h=205&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "http_status": 200,
+    "final_url": "https://www.bing.com/th/id/OIP.gpbBfwRQY1AOvT7XFdW39QAAAA?w=205&h=205&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      205,
+      205
+    ],
+    "hash_distances": {
+      "phash": 32,
+      "dhash": 31,
+      "ahash": 30,
+      "whash": 26
+    },
+    "hash_score": 0.53515625,
+    "mse_similarity": 0.06394322241494693,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 57,
+    "combined_score": 0.31351890422448414
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-links.json",
+    "text": "[Operator] Deimos | Remaster by Jordan-AV on Newgrounds",
+    "page_url": "https://www.bing.com/images/search?view=detailV2&ccid=gpbBfwRQ&id=95CCDF5A2007365B26EECE6859DE7BB81D86A3A5&thid=OIP.gpbBfwRQY1AOvT7XFdW39QAAAA&mediaurl=https%3a%2f%2fart.ngfiles.com%2fthumbnails%2f4974000%2f4974063_full.webp%3ff1762928383&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.8296c17f045063500ebd3ed715d5b7f5%3frik%3dpaOGHbh73llozg%26pid%3dImgRaw%26r%3d0&exph=270&expw=270&q=Junji+Ito&mode=overlay&FORM=VSMAINC&ck=A0512C705C03432C6EF29A5F1A76F86B&idpp=serp",
+    "image_url": "https://art.ngfiles.com/thumbnails/4974000/4974063_full.webp?f1762928383",
+    "http_status": 200,
+    "final_url": "https://art.ngfiles.com/thumbnails/4974000/4974063_full.webp?f1762928383",
+    "content_type": "image/webp",
+    "dimensions": [
+      270,
+      270
+    ],
+    "hash_distances": {
+      "phash": 32,
+      "dhash": 31,
+      "ahash": 30,
+      "whash": 26
+    },
+    "hash_score": 0.53515625,
+    "mse_similarity": 0.0639059025526102,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 57,
+    "combined_score": 0.3135077082657831
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-links.json",
+    "text": "",
+    "page_url": "https://www.bing.com/images/search?view=detailV2&q=imgurl:https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Junji_Ito_-_Lucca_Comics_%26_Games_2018_02.jpg/250px-Junji_Ito_-_Lucca_Comics_%26_Games_2018_02.jpg&iss=sbi&mode=overlay&idpbck=1&idpp=WikiGoBig&FORM=IDPWGB&thid=ODL.3775c730d6a60272551f3cad3aca0f27&mediaurl=https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Junji_Ito_-_Lucca_Comics_%26_Games_2018_02.jpg/250px-Junji_Ito_-_Lucca_Comics_%26_Games_2018_02.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Junji_Ito_-_Lucca_Comics_&_Games_2018_02.jpg/250px-Junji_Ito_-_Lucca_Comics_&_Games_2018_02.jpg",
+    "http_status": 200,
+    "final_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Junji_Ito_-_Lucca_Comics_&_Games_2018_02.jpg/250px-Junji_Ito_-_Lucca_Comics_&_Games_2018_02.jpg",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      250,
+      350
+    ],
+    "hash_distances": {
+      "phash": 28,
+      "dhash": 29,
+      "ahash": 31,
+      "whash": 36
+    },
+    "hash_score": 0.515625,
+    "mse_similarity": 0.07694650422037298,
+    "orb_score": 0.010638297872340425,
+    "orb_good": 1,
+    "orb_total": 53,
+    "combined_score": 0.3130606799895162
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-links.json",
+    "text": "",
+    "page_url": "https://www.bing.com/images/search?view=detailV2&ccid=CaRPhRTm&id=B74F88149EA1D2E568478DBC686930C00F221B7A&thid=OIP.CaRPhRTmgLU129sQqiYUmAHaEg&mediaurl=https://static.wikia.nocookie.net/junji-ito/images/8/86/SLIDER_strange.jpg/revision/latest/scale-to-width-down/670?cb=20260617212959&q=Junji+Ito&ck=97DF62A85C7B3F148FF62802DD2D3137&idpp=rc&expw=670&exph=408&form=rc2idp",
+    "image_url": "https://static.wikia.nocookie.net/junji-ito/images/8/86/SLIDER_strange.jpg/revision/latest/scale-to-width-down/670?cb=20260617212959",
+    "http_status": 200,
+    "final_url": "https://static.wikia.nocookie.net/junji-ito/images/8/86/SLIDER_strange.jpg/revision/latest/scale-to-width-down/670?cb=20260617212959",
+    "content_type": "image/webp",
+    "dimensions": [
+      670,
+      408
+    ],
+    "hash_distances": {
+      "phash": 28,
+      "dhash": 30,
+      "ahash": 32,
+      "whash": 38
+    },
+    "hash_score": 0.5,
+    "mse_similarity": 0.06194039664355636,
+    "orb_score": 0.031914893617021274,
+    "orb_good": 3,
+    "orb_total": 52,
+    "combined_score": 0.31273105516327965
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://www.bing.com/th/id/OIP.r-geGf7MuwxxOCk457jkQwAAAA?w=205&h=205&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "http_status": 200,
+    "final_url": "https://www.bing.com/th/id/OIP.r-geGf7MuwxxOCk457jkQwAAAA?w=205&h=205&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      205,
+      205
+    ],
+    "hash_distances": {
+      "phash": 34,
+      "dhash": 26,
+      "ahash": 28,
+      "whash": 34
+    },
+    "hash_score": 0.5234375,
+    "mse_similarity": 0.059999735157419035,
+    "orb_score": 0.010638297872340425,
+    "orb_good": 1,
+    "orb_total": 52,
+    "combined_score": 0.31227352427063
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Раскраски для детей и взрослых: Развивайте Воображение вместе с Нами! - happybru",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=34f9689529fbcac23577bce8d7271d07ea4add64-3744351-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=34f9689529fbcac23577bce8d7271d07ea4add64-3744351-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      247,
+      320
+    ],
+    "hash_distances": {
+      "phash": 30,
+      "dhash": 33,
+      "ahash": 31,
+      "whash": 28
+    },
+    "hash_score": 0.5234375,
+    "mse_similarity": 0.08063313388706668,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 57,
+    "combined_score": 0.31208056516612004
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-links.json",
+    "text": "Steam Community :: R a t x",
+    "page_url": "https://www.bing.com/images/search?view=detailV2&ccid=GXG3oyqg&id=F7068184014CFBA616F03138B0018FA88582F94B&thid=OIP.GXG3oyqgE3VOsOy7bFB7EwAAAA&mediaurl=https%3a%2f%2favatars.fastly.steamstatic.com%2f210bad5c9e45858f23a4edc9fadb39c42e307353_full.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.1971b7a32aa013754eb0ecbb6c507b13%3frik%3dS%252fmChaiPAbA4MQ%26pid%3dImgRaw%26r%3d0&exph=184&expw=184&q=Junji+Ito&mode=overlay&FORM=VSMAINC&ck=4A0BA19EF6B16FDE25D1B1A9E3B2EEF3&idpp=serp",
+    "image_url": "https://avatars.fastly.steamstatic.com/210bad5c9e45858f23a4edc9fadb39c42e307353_full.jpg",
+    "http_status": 200,
+    "final_url": "https://avatars.fastly.steamstatic.com/210bad5c9e45858f23a4edc9fadb39c42e307353_full.jpg",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      184,
+      184
+    ],
+    "hash_distances": {
+      "phash": 28,
+      "dhash": 36,
+      "ahash": 28,
+      "whash": 28
+    },
+    "hash_score": 0.53125,
+    "mse_similarity": 0.0637891767707726,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 58,
+    "combined_score": 0.31132425303123185
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "17 Photoshop Eye Brushes Brushes Photoshop Free Download 123Freebrushes",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=252218dcd85fc196e4e39637a2fc6794f2240deb-10701951-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=252218dcd85fc196e4e39637a2fc6794f2240deb-10701951-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      350,
+      218
+    ],
+    "hash_distances": {
+      "phash": 36,
+      "dhash": 32,
+      "ahash": 35,
+      "whash": 34
+    },
+    "hash_score": 0.46484375,
+    "mse_similarity": 0.12152540732521688,
+    "orb_score": 0.031914893617021274,
+    "orb_good": 3,
+    "orb_total": 59,
+    "combined_score": 0.3112706208677778
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-links.json",
+    "text": "Stream Eba Punk music | Listen to songs, albums, playlists for free on ...",
+    "page_url": "https://www.bing.com/images/search?view=detailV2&ccid=SfUyIRyW&id=F52E6DCD9CECCE1F8CBC851D798333A04F335880&thid=OIP.SfUyIRyWIixL9DOnYzm_vQHaHa&mediaurl=https%3a%2f%2fi1.sndcdn.com%2favatars-000034994517-3x3mv9-t500x500.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.49f532211c96222c4bf433a76339bfbd%3frik%3dgFgzT6Azg3kdhQ%26pid%3dImgRaw%26r%3d0&exph=500&expw=500&q=Junji+Ito&mode=overlay&FORM=VSMAINC&ck=418FE15B101D5D3EEF3EBB38F9826335&idpp=serp",
+    "image_url": "https://i1.sndcdn.com/avatars-000034994517-3x3mv9-t500x500.jpg",
+    "http_status": 200,
+    "final_url": "https://i1.sndcdn.com/avatars-000034994517-3x3mv9-t500x500.jpg",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      500,
+      500
+    ],
+    "hash_distances": {
+      "phash": 28,
+      "dhash": 27,
+      "ahash": 31,
+      "whash": 34
+    },
+    "hash_score": 0.53125,
+    "mse_similarity": 0.06360990035919095,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 61,
+    "combined_score": 0.3112704701077573
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-links.json",
+    "text": "",
+    "page_url": "https://www.bing.com/images/search?view=detailV2&ccid=COf8ia4d&id=3350EA35DC199A410A729C53FCF292C93825BB18&thid=OIP.COf8ia4dno3SOCXr4UeTEwHaD4&mediaurl=https://de7i3bh7bgh0d.cloudfront.net/2025/10/27/22/44/44/74b69d47-8a92-4957-b44c-306010f0d73e/MJI_GN01_Social_Blog_1200x630.jpg&exph=630&expw=1200&q=Junji%20Ito&ck=EAE4FB46324CF054D78A928475F94C93&idpp=rc&form=rc2idp",
+    "image_url": "https://de7i3bh7bgh0d.cloudfront.net/2025/10/27/22/44/44/74b69d47-8a92-4957-b44c-306010f0d73e/MJI_GN01_Social_Blog_1200x630.jpg",
+    "http_status": 200,
+    "final_url": "https://de7i3bh7bgh0d.cloudfront.net/2025/10/27/22/44/44/74b69d47-8a92-4957-b44c-306010f0d73e/MJI_GN01_Social_Blog_1200x630.jpg",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      1200,
+      630
+    ],
+    "hash_distances": {
+      "phash": 38,
+      "dhash": 31,
+      "ahash": 25,
+      "whash": 30
+    },
+    "hash_score": 0.515625,
+    "mse_similarity": 0.09136406187488334,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 57,
+    "combined_score": 0.311002968562465
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-links.json",
+    "text": "",
+    "page_url": "https://www.bing.com/images/search?view=detailV2&ccid=M2e8Ix8b&id=5AF08897BCF32737E2B2B4C8496372256A605F7B&thid=OIP.M2e8Ix8bcMTlSRPXopq1nQAAAA&mediaurl=https://japandaily.jp/wp-content/uploads/2025/07/Bbb.jpg&q=Junji+Ito&ck=5014F6D1778C5ACBA14D5A3536003A68&idpp=rc&expw=474&exph=237&form=rc2idp",
+    "image_url": "https://japandaily.jp/wp-content/uploads/2025/07/Bbb.jpg",
+    "http_status": 200,
+    "final_url": "https://japandaily.jp/wp-content/uploads/2025/07/Bbb.jpg",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      1023,
+      513
+    ],
+    "hash_distances": {
+      "phash": 30,
+      "dhash": 34,
+      "ahash": 33,
+      "whash": 26
+    },
+    "hash_score": 0.51953125,
+    "mse_similarity": 0.06119967133864001,
+    "orb_score": 0.010638297872340425,
+    "orb_good": 1,
+    "orb_total": 54,
+    "combined_score": 0.3104850676249963
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Раскраски для детей и взрослых: Развивайте Воображение вместе с Нами! - happybru",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=586325464699143a302d538a039220439439015a-10915333-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=586325464699143a302d538a039220439439015a-10915333-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      247,
+      320
+    ],
+    "hash_distances": {
+      "phash": 36,
+      "dhash": 28,
+      "ahash": 31,
+      "whash": 28
+    },
+    "hash_score": 0.51953125,
+    "mse_similarity": 0.08188594854715615,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 61,
+    "combined_score": 0.31030797206414684
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Discover 640 Jjba and wamuu jojo anime ideas in 2026 wamuu jojo, jojo pillar men",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=137c7bebbb12425fabc7428812fea2fdc04957f9-13079322-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=137c7bebbb12425fabc7428812fea2fdc04957f9-13079322-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      256,
+      320
+    ],
+    "hash_distances": {
+      "phash": 32,
+      "dhash": 40,
+      "ahash": 28,
+      "whash": 30
+    },
+    "hash_score": 0.4921875,
+    "mse_similarity": 0.06562129298170659,
+    "orb_score": 0.031914893617021274,
+    "orb_good": 3,
+    "orb_total": 47,
+    "combined_score": 0.3095384490647248
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "370 Ideas Habilidades en 2025 personajes de fantasía, personajes de arte concept",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=71933856f32702acabda559ef7735b782e1b9599-4012465-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=71933856f32702acabda559ef7735b782e1b9599-4012465-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      480,
+      274
+    ],
+    "hash_distances": {
+      "phash": 32,
+      "dhash": 30,
+      "ahash": 30,
+      "whash": 34
+    },
+    "hash_score": 0.5078125,
+    "mse_similarity": 0.05599402963659,
+    "orb_score": 0.02127659574468085,
+    "orb_good": 2,
+    "orb_total": 52,
+    "combined_score": 0.3088610413377855
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-links.json",
+    "text": "Birdman | Anime-Planet",
+    "page_url": "https://www.bing.com/images/search?view=detailV2&ccid=NZ1rCZlE&id=DBC30908F5BE990244D6920B6E582E55ACED1B4C&thid=OIP.NZ1rCZlEBAqwNenNjXE02QAAAA&mediaurl=https%3a%2f%2fcdn.anime-planet.com%2fcharacters%2fprimary%2fbirdman-1-130x196.jpg%3ft%3d1625975263&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.359d6b099944040ab035e9cd8d7134d9%3frik%3dTBvtrFUuWG4Lkg%26pid%3dImgRaw%26r%3d0&exph=196&expw=130&q=Junji+Ito&mode=overlay&FORM=VSMAINC&ck=BEC95DACDE259E94B879AF52207297DB&idpp=serp",
+    "image_url": "https://cdn.anime-planet.com/characters/primary/birdman-1-130x196.jpg?t=1625975263",
+    "http_status": 200,
+    "final_url": "https://cdn.anime-planet.com/characters/primary/birdman-1-130x196.jpg?t=1625975263",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      130,
+      196
+    ],
+    "hash_distances": {
+      "phash": 36,
+      "dhash": 30,
+      "ahash": 27,
+      "whash": 30
+    },
+    "hash_score": 0.51953125,
+    "mse_similarity": 0.07700219621693624,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 56,
+    "combined_score": 0.3088428463650809
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Fish Eyes Art Images High Quality Resolution",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=e4fdbed0112eb95798216f515b2cdc7afa67b36c-5233022-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=e4fdbed0112eb95798216f515b2cdc7afa67b36c-5233022-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      320,
+      320
+    ],
+    "hash_distances": {
+      "phash": 30,
+      "dhash": 29,
+      "ahash": 36,
+      "whash": 34
+    },
+    "hash_score": 0.49609375,
+    "mse_similarity": 0.07599405079385954,
+    "orb_score": 0.02127659574468085,
+    "orb_good": 2,
+    "orb_total": 56,
+    "combined_score": 0.3084157351849664
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Pin by kaiqxd on 𝐃 𝐞 𝐦 𝐨 𝐧 𝐒 𝐥 𝐚 𝐲 𝐞 𝐫 in 2024 Character design, Slayer, Charact",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=4adc9d8a58b966ba6549e2718d075554eff072d0-12527828-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=4adc9d8a58b966ba6549e2718d075554eff072d0-12527828-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      320,
+      320
+    ],
+    "hash_distances": {
+      "phash": 32,
+      "dhash": 28,
+      "ahash": 36,
+      "whash": 36
+    },
+    "hash_score": 0.484375,
+    "mse_similarity": 0.09426805138823975,
+    "orb_score": 0.02127659574468085,
+    "orb_good": 2,
+    "orb_total": 58,
+    "combined_score": 0.30745262286328046
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://www.bing.com/th/id/OIP.Y-lbl6JOSkp1ufbUkzdPVgAAAA?w=205&h=205&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "http_status": 200,
+    "final_url": "https://www.bing.com/th/id/OIP.Y-lbl6JOSkp1ufbUkzdPVgAAAA?w=205&h=205&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      205,
+      205
+    ],
+    "hash_distances": {
+      "phash": 34,
+      "dhash": 31,
+      "ahash": 27,
+      "whash": 32
+    },
+    "hash_score": 0.515625,
+    "mse_similarity": 0.05802368057465202,
+    "orb_score": 0.010638297872340425,
+    "orb_good": 1,
+    "orb_total": 48,
+    "combined_score": 0.3073838328957999
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Раскраски Анастасии Колдаревой и прочее Творчество Элли - Мастер-класс по Ханне ",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=9a92106ebfdb1823f9903d1ea60b056bf8914f23-5876445-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=9a92106ebfdb1823f9903d1ea60b056bf8914f23-5876445-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      480,
+      299
+    ],
+    "hash_distances": {
+      "phash": 34,
+      "dhash": 38,
+      "ahash": 32,
+      "whash": 30
+    },
+    "hash_score": 0.4765625,
+    "mse_similarity": 0.10780085518502638,
+    "orb_score": 0.02127659574468085,
+    "orb_good": 2,
+    "orb_total": 53,
+    "combined_score": 0.3072155890023165
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Giorno Manga Jojo's bizarre adventure anime, Jojo bizzare adventure, Jojo's biza",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=2c43135c050ffef16469df85eaec04f489b3a350-5233798-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=2c43135c050ffef16469df85eaec04f489b3a350-5233798-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      271,
+      320
+    ],
+    "hash_distances": {
+      "phash": 32,
+      "dhash": 35,
+      "ahash": 29,
+      "whash": 30
+    },
+    "hash_score": 0.5078125,
+    "mse_similarity": 0.07030357688671045,
+    "orb_score": 0.010638297872340425,
+    "orb_good": 1,
+    "orb_total": 55,
+    "combined_score": 0.3067709267894174
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://www.bing.com/th/id/OIP.K9G-7gBUvNNZAk9SBMbM5QHaHa?w=205&h=205&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "http_status": 200,
+    "final_url": "https://www.bing.com/th/id/OIP.K9G-7gBUvNNZAk9SBMbM5QHaHa?w=205&h=205&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      205,
+      205
+    ],
+    "hash_distances": {
+      "phash": 30,
+      "dhash": 42,
+      "ahash": 26,
+      "whash": 28
+    },
+    "hash_score": 0.5078125,
+    "mse_similarity": 0.0636522201819807,
+    "orb_score": 0.010638297872340425,
+    "orb_good": 1,
+    "orb_total": 46,
+    "combined_score": 0.3047755197779985
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-links.json",
+    "text": "HUEDBHDRYUHIRJWI : r/JanitorAI_Official",
+    "page_url": "https://www.bing.com/images/search?view=detailV2&ccid=VHTzNOfn&id=3109D9A3CAC8F75976AAB178A616475616FC8B01&thid=OIP.VHTzNOfn-1XKdugXbd_avgAAAA&mediaurl=https%3a%2f%2fpreview.redd.it%2fhuedbhdryuhirjwi-v0-wb91zygrfr8c1.jpeg%3fwidth%3d296%26format%3dpjpg%26auto%3dwebp%26s%3dbdc3955a13ae952b4a7724eba9ccdeaeda1c5726&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.5474f334e7e7fb55ca76e8176ddfdabe%3frik%3dAYv8FlZHFqZ4sQ%26pid%3dImgRaw%26r%3d0&exph=404&expw=296&q=Junji+Ito&mode=overlay&FORM=VSMAINC&ck=A47533D565689ECE8597BC15A48B5376&idpp=serp",
+    "image_url": "https://preview.redd.it/huedbhdryuhirjwi-v0-wb91zygrfr8c1.jpeg?width=296&format=pjpg&auto=webp&s=bdc3955a13ae952b4a7724eba9ccdeaeda1c5726",
+    "http_status": 200,
+    "final_url": "https://preview.redd.it/huedbhdryuhirjwi-v0-wb91zygrfr8c1.jpeg?width=296&format=pjpg&auto=webp&s=bdc3955a13ae952b4a7724eba9ccdeaeda1c5726",
+    "content_type": "image/webp",
+    "dimensions": [
+      296,
+      404
+    ],
+    "hash_distances": {
+      "phash": 26,
+      "dhash": 39,
+      "ahash": 33,
+      "whash": 38
+    },
+    "hash_score": 0.46875,
+    "mse_similarity": 0.07026470925471993,
+    "orb_score": 0.0425531914893617,
+    "orb_good": 4,
+    "orb_total": 53,
+    "combined_score": 0.304423827670033
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-links.json",
+    "text": "aWannabe – Sunday mornins Lyrics | Genius Lyrics",
+    "page_url": "https://www.bing.com/images/search?view=detailV2&ccid=1KbeJ0GM&id=877ED617CD46B76B4883E7BE5AB8E67D93BEB79A&thid=OIP.1KbeJ0GMiDPqwpMFfGeeLgHaHa&mediaurl=https%3a%2f%2fimages.genius.com%2f4df0c2eb235e5b90a56a64da409a176f.500x500x1.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.d4a6de27418c8833eac293057c679e2e%3frik%3dmre%252bk33muFq%252b5w%26pid%3dImgRaw%26r%3d0&exph=500&expw=500&q=Junji+Ito&mode=overlay&FORM=VSMAINC&ck=3A79431AD8EF201511B332207E654208&idpp=serp",
+    "image_url": "https://images.genius.com/4df0c2eb235e5b90a56a64da409a176f.500x500x1.jpg",
+    "http_status": 200,
+    "final_url": "https://images.genius.com/4df0c2eb235e5b90a56a64da409a176f.500x500x1.jpg",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      500,
+      500
+    ],
+    "hash_distances": {
+      "phash": 32,
+      "dhash": 35,
+      "ahash": 25,
+      "whash": 28
+    },
+    "hash_score": 0.53125,
+    "mse_similarity": 0.03945432510718361,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 53,
+    "combined_score": 0.30402379753215514
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://www.bing.com/th/id/OIP.1KbeJ0GMiDPqwpMFfGeeLgHaHa?w=205&h=205&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "http_status": 200,
+    "final_url": "https://www.bing.com/th/id/OIP.1KbeJ0GMiDPqwpMFfGeeLgHaHa?w=205&h=205&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      205,
+      205
+    ],
+    "hash_distances": {
+      "phash": 32,
+      "dhash": 35,
+      "ahash": 25,
+      "whash": 28
+    },
+    "hash_score": 0.53125,
+    "mse_similarity": 0.03934382189420677,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 42,
+    "combined_score": 0.3039906465682621
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "File:Phabricatorball.png - Wikimedia Commons",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=fd03e3f4f0a8a29e831f6b1607eb2e9a17de0e11-9065974-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=fd03e3f4f0a8a29e831f6b1607eb2e9a17de0e11-9065974-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      302,
+      320
+    ],
+    "hash_distances": {
+      "phash": 24,
+      "dhash": 28,
+      "ahash": 35,
+      "whash": 38
+    },
+    "hash_score": 0.51171875,
+    "mse_similarity": 0.07286709681973548,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 48,
+    "combined_score": 0.3033054415459207
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Stream terrorflip music Listen to songs, albums, playlists for free on SoundClou",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=8c5f6408dd592c570e0a42cf344acd0546e4923e-8497233-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=8c5f6408dd592c570e0a42cf344acd0546e4923e-8497233-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      320,
+      320
+    ],
+    "hash_distances": {
+      "phash": 34,
+      "dhash": 35,
+      "ahash": 25,
+      "whash": 32
+    },
+    "hash_score": 0.5078125,
+    "mse_similarity": 0.05771519086368529,
+    "orb_score": 0.010638297872340425,
+    "orb_good": 1,
+    "orb_total": 56,
+    "combined_score": 0.30299441098250984
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-links.json",
+    "text": "Stream smttn. music | Listen to songs, albums, playlists for free on ...",
+    "page_url": "https://www.bing.com/images/search?view=detailV2&ccid=K9G%2b7gBU&id=9640767983654713D542DD723BD75F731416953F&thid=OIP.K9G-7gBUvNNZAk9SBMbM5QHaHa&mediaurl=https%3a%2f%2fi1.sndcdn.com%2favatars-000508518795-bl8dzh-t500x500.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.2bd1beee0054bcd359024f5204c6cce5%3frik%3dP5UWFHNf1zty3Q%26pid%3dImgRaw%26r%3d0&exph=500&expw=500&q=Junji+Ito&mode=overlay&FORM=VSMAINC&ck=927E5F2EECA0B3C613EF9972446E5275&idpp=serp",
+    "image_url": "https://i1.sndcdn.com/avatars-000508518795-bl8dzh-t500x500.jpg",
+    "http_status": 200,
+    "final_url": "https://i1.sndcdn.com/avatars-000508518795-bl8dzh-t500x500.jpg",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      500,
+      500
+    ],
+    "hash_distances": {
+      "phash": 30,
+      "dhash": 43,
+      "ahash": 26,
+      "whash": 28
+    },
+    "hash_score": 0.50390625,
+    "mse_similarity": 0.06355233733580658,
+    "orb_score": 0.010638297872340425,
+    "orb_good": 1,
+    "orb_total": 53,
+    "combined_score": 0.30259711742414624
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-links.json",
+    "text": "",
+    "page_url": "https://www.bing.com/images/search?view=detailV2&ccid=9zg//H4x&id=3350EA35DC199A410A72A3540B884AFAEA0BFD25&thid=OIP.9zg__H4xyEl7Z1hRf_X-HgHaD4&mediaurl=https://de7i3bh7bgh0d.cloudfront.net/2025/03/25/17/52/32/36b7fb78-f9a9-40ad-a512-bc082298f481/TheLiminalZone_v2_Blog_1200x360.jpg&exph=630&expw=1200&q=Junji%20Ito&ck=F6561BE4741E32F70136B3E185FF01B5&idpp=rc&form=rc2idp",
+    "image_url": "https://de7i3bh7bgh0d.cloudfront.net/2025/03/25/17/52/32/36b7fb78-f9a9-40ad-a512-bc082298f481/TheLiminalZone_v2_Blog_1200x360.jpg",
+    "http_status": 200,
+    "final_url": "https://de7i3bh7bgh0d.cloudfront.net/2025/03/25/17/52/32/36b7fb78-f9a9-40ad-a512-bc082298f481/TheLiminalZone_v2_Blog_1200x360.jpg",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      1200,
+      630
+    ],
+    "hash_distances": {
+      "phash": 28,
+      "dhash": 32,
+      "ahash": 36,
+      "whash": 34
+    },
+    "hash_score": 0.4921875,
+    "mse_similarity": 0.06127395615716794,
+    "orb_score": 0.02127659574468085,
+    "orb_good": 2,
+    "orb_total": 45,
+    "combined_score": 0.30185126929395895
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://www.bing.com/th/id/OIP.ZcaX0qTGZ3D8enpnxZvX-AAAAA?w=205&h=276&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "http_status": 200,
+    "final_url": "https://www.bing.com/th/id/OIP.ZcaX0qTGZ3D8enpnxZvX-AAAAA?w=205&h=276&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      205,
+      276
+    ],
+    "hash_distances": {
+      "phash": 36,
+      "dhash": 34,
+      "ahash": 37,
+      "whash": 36
+    },
+    "hash_score": 0.44140625,
+    "mse_similarity": 0.06612083828567004,
+    "orb_score": 0.06382978723404255,
+    "orb_good": 6,
+    "orb_total": 45,
+    "combined_score": 0.30090756132612656
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://th.bing.com/th/id/OIP.eIBzr5a30VYnGlpJSl4vYgHaE8?w=89&h=53&c=1&bgcl=8e16d6&r=0&o=7&pid=ImgRC&rm=3",
+    "http_status": 200,
+    "final_url": "https://th.bing.com/th/id/OIP.eIBzr5a30VYnGlpJSl4vYgHaE8?w=89&h=53&c=1&bgcl=8e16d6&r=0&o=7&pid=ImgRC&rm=3",
+    "content_type": "image/webp",
+    "dimensions": [
+      89,
+      53
+    ],
+    "hash_distances": {
+      "phash": 32,
+      "dhash": 21,
+      "ahash": 36,
+      "whash": 34
+    },
+    "hash_score": 0.51953125,
+    "mse_similarity": 0.04882389716161511,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 0,
+    "combined_score": 0.30038935664848454
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://th.bing.com/th/id/OIP.CaRPhRTmgLU129sQqiYUmAHaEg?w=108&h=108&c=1&bgcl=17c6d4&r=0&o=7&pid=ImgRC&rm=3",
+    "http_status": 200,
+    "final_url": "https://th.bing.com/th/id/OIP.CaRPhRTmgLU129sQqiYUmAHaEg?w=108&h=108&c=1&bgcl=17c6d4&r=0&o=7&pid=ImgRC&rm=3",
+    "content_type": "image/webp",
+    "dimensions": [
+      108,
+      108
+    ],
+    "hash_distances": {
+      "phash": 26,
+      "dhash": 30,
+      "ahash": 31,
+      "whash": 38
+    },
+    "hash_score": 0.51171875,
+    "mse_similarity": 0.0626457132254216,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 34,
+    "combined_score": 0.3002390264676265
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-links.json",
+    "text": "Pin von Arxy auf ._. | Pins",
+    "page_url": "https://www.bing.com/images/search?view=detailV2&ccid=7TZVLVnz&id=4099B36F3DA4C8ADA631FB140D8D6CB2C4925294&thid=OIP.7TZVLVnzj0AiPkRG0NWfkAHaHa&mediaurl=https%3a%2f%2fi.pinimg.com%2f736x%2f9e%2f36%2f52%2f9e3652f2be8d4050d0e491e59fba08c8.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.ed36552d59f38f40223e4446d0d59f90%3frik%3dlFKSxLJsjQ0U%252bw%26pid%3dImgRaw%26r%3d0&exph=736&expw=736&q=Junji+Ito&mode=overlay&FORM=VSMAINC&ck=107C216806EF54EB4407C2655DCFDEDF&idpp=serp",
+    "image_url": "https://i.pinimg.com/736x/9e/36/52/9e3652f2be8d4050d0e491e59fba08c8.jpg",
+    "http_status": 200,
+    "final_url": "https://i.pinimg.com/736x/9e/36/52/9e3652f2be8d4050d0e491e59fba08c8.jpg",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      736,
+      736
+    ],
+    "hash_distances": {
+      "phash": 38,
+      "dhash": 39,
+      "ahash": 30,
+      "whash": 28
+    },
+    "hash_score": 0.47265625,
+    "mse_similarity": 0.0659864010018076,
+    "orb_score": 0.031914893617021274,
+    "orb_good": 3,
+    "orb_total": 57,
+    "combined_score": 0.29890579397075506
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-links.json",
+    "text": "Steam Community :: s_tr0ng",
+    "page_url": "https://www.bing.com/images/search?view=detailV2&ccid=molLXYho&id=C07F00158EFD28FC030D84B407BED14313BC57BE&thid=OIP.molLXYhoQ_GKsrbOar2LiAAAAA&mediaurl=https%3a%2f%2favatars.akamai.steamstatic.com%2f7820025d7eba4a0847341c3e29002195676b38d2_full.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.9a894b5d886843f18ab2b6ce6abd8b88%3frik%3dvle8E0PRvge0hA%26pid%3dImgRaw%26r%3d0&exph=184&expw=184&q=Junji+Ito&mode=overlay&FORM=VSMAINC&ck=7E3563A96F3CEA0FE0F2CEABE8986504&idpp=serp",
+    "image_url": "https://avatars.akamai.steamstatic.com/7820025d7eba4a0847341c3e29002195676b38d2_full.jpg",
+    "http_status": 200,
+    "final_url": "https://avatars.akamai.steamstatic.com/7820025d7eba4a0847341c3e29002195676b38d2_full.jpg",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      184,
+      184
+    ],
+    "hash_distances": {
+      "phash": 28,
+      "dhash": 34,
+      "ahash": 32,
+      "whash": 32
+    },
+    "hash_score": 0.5078125,
+    "mse_similarity": 0.05916178269010591,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 50,
+    "combined_score": 0.29704540980703176
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-links.json",
+    "text": "",
+    "page_url": "https://www.bing.com/images/search?view=detailV2&ccid=eIBzr5a3&id=37D3EDBAEA4ED2AB56BA78E3C3D5613A9C790240&thid=OIP.eIBzr5a30VYnGlpJSl4vYgHaE8&mediaurl=https://cms.animecollective.com/wp-content/uploads/2024/11/long-form-manga.jpg&q=Junji+Ito&ck=65C7C58E54573377BD9443F03DCF2892&idpp=rc&expw=1200&exph=801&form=rc2idp",
+    "image_url": "https://cms.animecollective.com/wp-content/uploads/2024/11/long-form-manga.jpg",
+    "http_status": 200,
+    "final_url": "https://cms.animecollective.com/wp-content/uploads/2024/11/long-form-manga.jpg",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      1200,
+      801
+    ],
+    "hash_distances": {
+      "phash": 32,
+      "dhash": 24,
+      "ahash": 35,
+      "whash": 34
+    },
+    "hash_score": 0.51171875,
+    "mse_similarity": 0.050945775485748565,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 52,
+    "combined_score": 0.2967290451457246
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://www.bing.com/th/id/OIP.N7xUZtlFyY5Uo2LpM_kxeQHaHa?w=205&h=205&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "http_status": 200,
+    "final_url": "https://www.bing.com/th/id/OIP.N7xUZtlFyY5Uo2LpM_kxeQHaHa?w=205&h=205&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      205,
+      205
+    ],
+    "hash_distances": {
+      "phash": 32,
+      "dhash": 34,
+      "ahash": 32,
+      "whash": 30
+    },
+    "hash_score": 0.5,
+    "mse_similarity": 0.07077138389501784,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 58,
+    "combined_score": 0.2962314151685054
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "feer - YouTube",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=b946b211a3b406a197c193dc18d8f3b0929ea352-13083186-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=b946b211a3b406a197c193dc18d8f3b0929ea352-13083186-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      320,
+      320
+    ],
+    "hash_distances": {
+      "phash": 34,
+      "dhash": 37,
+      "ahash": 26,
+      "whash": 30
+    },
+    "hash_score": 0.50390625,
+    "mse_similarity": 0.06208124337090239,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 60,
+    "combined_score": 0.29577281051127075
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Alguns problemas comuns dos olhos - Hesperian Health Guides",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=9513cd939d1378ce770d8c0009c79093b02ac5f6-8259609-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=9513cd939d1378ce770d8c0009c79093b02ac5f6-8259609-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      300,
+      169
+    ],
+    "hash_distances": {
+      "phash": 38,
+      "dhash": 34,
+      "ahash": 33,
+      "whash": 24
+    },
+    "hash_score": 0.49609375,
+    "mse_similarity": 0.07388122611666711,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 53,
+    "combined_score": 0.2950159303350002
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "krytotusim Риса за Творчество",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=abaefc05aaf0601eaec717d2a8d86d0307b550ed-5338563-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=abaefc05aaf0601eaec717d2a8d86d0307b550ed-5338563-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      320,
+      320
+    ],
+    "hash_distances": {
+      "phash": 32,
+      "dhash": 37,
+      "ahash": 28,
+      "whash": 36
+    },
+    "hash_score": 0.48046875,
+    "mse_similarity": 0.10211169783234017,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 61,
+    "combined_score": 0.29489132184970207
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://www.bing.com/th/id/OIP.GXG3oyqgE3VOsOy7bFB7EwAAAA?w=205&h=184&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "http_status": 200,
+    "final_url": "https://www.bing.com/th/id/OIP.GXG3oyqgE3VOsOy7bFB7EwAAAA?w=205&h=184&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      205,
+      184
+    ],
+    "hash_distances": {
+      "phash": 32,
+      "dhash": 38,
+      "ahash": 30,
+      "whash": 28
+    },
+    "hash_score": 0.5,
+    "mse_similarity": 0.06283603703178024,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 52,
+    "combined_score": 0.2938508111095341
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://th.bing.com/th/id/OIP.L-74NZM7_Zr2IcxTHaja1gHaE8?w=89&h=53&c=1&bgcl=6a5d6f&r=0&o=7&pid=ImgRC&rm=3",
+    "http_status": 200,
+    "final_url": "https://th.bing.com/th/id/OIP.L-74NZM7_Zr2IcxTHaja1gHaE8?w=89&h=53&c=1&bgcl=6a5d6f&r=0&o=7&pid=ImgRC&rm=3",
+    "content_type": "image/webp",
+    "dimensions": [
+      89,
+      53
+    ],
+    "hash_distances": {
+      "phash": 30,
+      "dhash": 27,
+      "ahash": 35,
+      "whash": 36
+    },
+    "hash_score": 0.5,
+    "mse_similarity": 0.06095487719973295,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 0,
+    "combined_score": 0.2932864631599199
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Beyman - слушать онлайн на Яндекс.Музыке",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=8390d6b5f5b22628f4e38004e7650b85-5858730-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=8390d6b5f5b22628f4e38004e7650b85-5858730-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      320,
+      320
+    ],
+    "hash_distances": {
+      "phash": 34,
+      "dhash": 32,
+      "ahash": 33,
+      "whash": 36
+    },
+    "hash_score": 0.47265625,
+    "mse_similarity": 0.08873108312230818,
+    "orb_score": 0.010638297872340425,
+    "orb_good": 1,
+    "orb_total": 54,
+    "combined_score": 0.29296324116009675
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-links.json",
+    "text": "Tengetsu ability- Black Clover by Lbozo1234567890 on DeviantArt",
+    "page_url": "https://www.bing.com/images/search?view=detailV2&ccid=ZcaX0qTG&id=EAE95CCA0EBE91BED965D32DD160E7A11630A174&thid=OIP.ZcaX0qTGZ3D8enpnxZvX-AAAAA&mediaurl=https%3a%2f%2fimages-wixmp-ed30a86b8c4ca887773594c2.wixmp.com%2ff%2fde4fa3ab-bb70-477b-8059-122576c11683%2fdfsc6q3-9419b4a8-459e-4a40-a13f-a3f581e746eb.png%3ftoken%3deyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RlNGZhM2FiLWJiNzAtNDc3Yi04MDU5LTEyMjU3NmMxMTY4M1wvZGZzYzZxMy05NDE5YjRhOC00NTllLTRhNDAtYTEzZi1hM2Y1ODFlNzQ2ZWIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.clQZmfAgDTsulC_BuEeGTLDJ3JfMkVVqm7wUkVkGDyA&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.65c697d2a4c66770fc7a7a67c59bd7f8%3frik%3ddKEwFqHnYNEt0w%26pid%3dImgRaw%26r%3d0&exph=508&expw=378&q=Junji+Ito&mode=overlay&FORM=VSMAINC&ck=67A05B39544BD44AB28672DC6A8E2821&idpp=serp",
+    "image_url": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/de4fa3ab-bb70-477b-8059-122576c11683/dfsc6q3-9419b4a8-459e-4a40-a13f-a3f581e746eb.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RlNGZhM2FiLWJiNzAtNDc3Yi04MDU5LTEyMjU3NmMxMTY4M1wvZGZzYzZxMy05NDE5YjRhOC00NTllLTRhNDAtYTEzZi1hM2Y1ODFlNzQ2ZWIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.clQZmfAgDTsulC_BuEeGTLDJ3JfMkVVqm7wUkVkGDyA",
+    "http_status": 200,
+    "final_url": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/de4fa3ab-bb70-477b-8059-122576c11683/dfsc6q3-9419b4a8-459e-4a40-a13f-a3f581e746eb.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RlNGZhM2FiLWJiNzAtNDc3Yi04MDU5LTEyMjU3NmMxMTY4M1wvZGZzYzZxMy05NDE5YjRhOC00NTllLTRhNDAtYTEzZi1hM2Y1ODFlNzQ2ZWIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.clQZmfAgDTsulC_BuEeGTLDJ3JfMkVVqm7wUkVkGDyA",
+    "content_type": "image/png",
+    "dimensions": [
+      378,
+      508
+    ],
+    "hash_distances": {
+      "phash": 34,
+      "dhash": 35,
+      "ahash": 36,
+      "whash": 36
+    },
+    "hash_score": 0.44921875,
+    "mse_similarity": 0.06615657620594749,
+    "orb_score": 0.0425531914893617,
+    "orb_good": 4,
+    "orb_total": 50,
+    "combined_score": 0.2924492002554013
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "clock-eyed-boy-CROP - Weird Historian",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=61ee608ce5e9d35d76e81aa0415b19a9c1c0bf56-8244520-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=61ee608ce5e9d35d76e81aa0415b19a9c1c0bf56-8244520-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      480,
+      220
+    ],
+    "hash_distances": {
+      "phash": 32,
+      "dhash": 39,
+      "ahash": 33,
+      "whash": 30
+    },
+    "hash_score": 0.4765625,
+    "mse_similarity": 0.09446206024520838,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 52,
+    "combined_score": 0.29044799307356256
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Novani - YouTube",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=f204027d2e5725483a97042ecdc3565d-4229373-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=f204027d2e5725483a97042ecdc3565d-4229373-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      320,
+      320
+    ],
+    "hash_distances": {
+      "phash": 28,
+      "dhash": 32,
+      "ahash": 32,
+      "whash": 36
+    },
+    "hash_score": 0.5,
+    "mse_similarity": 0.05128666934252193,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 61,
+    "combined_score": 0.2903860008027566
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "Web page related images",
+    "page_url": "",
+    "image_url": "https://th.bing.com/th/id/OIP._9LvH0kD63FCDzxi57sB3AHaD4?w=160&h=108&c=7&qlt=90&bgcl=ec57a6&r=0&o=6&pid=13.1",
+    "http_status": 200,
+    "final_url": "https://th.bing.com/th/id/OIP._9LvH0kD63FCDzxi57sB3AHaD4?w=160&h=108&c=7&qlt=90&bgcl=ec57a6&r=0&o=6&pid=13.1",
+    "content_type": "image/jpeg",
+    "dimensions": [
+      160,
+      108
+    ],
+    "hash_distances": {
+      "phash": 38,
+      "dhash": 36,
+      "ahash": 31,
+      "whash": 32
+    },
+    "hash_score": 0.46484375,
+    "mse_similarity": 0.11239252738964185,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 34,
+    "combined_score": 0.28938182071689256
+  },
+  {
+    "origin_file": "reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json",
+    "text": "Leaked Spoilers for Black Clover Chapter 352 Online - DC News",
+    "page_url": "",
+    "image_url": "https://avatars.mds.yandex.net/i?id=7d7e9405bf5c3de91345120fafcd60311a200f49-4594612-images-thumbs&n=13",
+    "http_status": 200,
+    "final_url": "https://avatars.mds.yandex.net/i?id=7d7e9405bf5c3de91345120fafcd60311a200f49-4594612-images-thumbs&n=13",
+    "content_type": "image/webp",
+    "dimensions": [
+      480,
+      270
+    ],
+    "hash_distances": {
+      "phash": 38,
+      "dhash": 34,
+      "ahash": 34,
+      "whash": 32
+    },
+    "hash_score": 0.4609375,
+    "mse_similarity": 0.05349327823525675,
+    "orb_score": 0.031914893617021274,
+    "orb_good": 3,
+    "orb_total": 51,
+    "combined_score": 0.28871254464078977
+  },
+  {
+    "origin_file": "reverse-image-temp/results-url-engines/bing-browser-images.json",
+    "text": "",
+    "page_url": "",
+    "image_url": "https://www.bing.com/th?id=OBFB.1E928B2B86E3D4E8ED1D46B83E667303&pid=Fb&qlt=99&r=0",
+    "http_status": 200,
+    "final_url": "https://www.bing.com/th?id=OBFB.1E928B2B86E3D4E8ED1D46B83E667303&pid=Fb&qlt=99&r=0",
+    "content_type": "image/png",
+    "dimensions": [
+      198,
+      198
+    ],
+    "hash_distances": {
+      "phash": 30,
+      "dhash": 31,
+      "ahash": 31,
+      "whash": 36
+    },
+    "hash_score": 0.5,
+    "mse_similarity": 0.04515529939330504,
+    "orb_score": 0.0,
+    "orb_good": 0,
+    "orb_total": 37,
+    "combined_score": 0.28854658981799153
+  }
+]
