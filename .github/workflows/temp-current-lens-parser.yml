@@ -1,0 +1,145 @@
+name: Temporary current Google Lens parser
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/temp-current-lens-parser.yml
+
+permissions:
+  contents: write
+
+jobs:
+  lens-results:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: temp-reverse-image-search
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Extract current Google Lens visual matches
+        continue-on-error: true
+        run: |
+          python -m pip install --quiet requests
+          python <<'PY'
+          import json
+          import traceback
+          from pathlib import Path
+          from urllib.parse import quote
+
+          import requests
+
+          out = Path('reverse-image-temp/results-current-lens-parser')
+          out.mkdir(parents=True, exist_ok=True)
+          image_url = 'https://raw.githubusercontent.com/nop8/Bloom/temp-reverse-image-search/reverse-image-temp/source.png'
+          request_url = 'https://lens.google.com/uploadbyurl?url=' + quote(image_url, safe='') + '&hl=en'
+          report = {'image_url': image_url, 'request_url': request_url}
+
+          try:
+              session = requests.Session()
+              session.headers.update({
+                  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36',
+                  'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+                  'Accept-Language': 'en-US,en;q=0.9',
+                  'Cache-Control': 'max-age=0',
+                  'Sec-Ch-Ua': '"Not A(Brand";v="99", "Google Chrome";v="135", "Chromium";v="135"',
+                  'Sec-Ch-Ua-Mobile': '?0',
+                  'Sec-Ch-Ua-Platform': '"Windows"',
+                  'Sec-Fetch-Dest': 'document',
+                  'Sec-Fetch-Mode': 'navigate',
+                  'Sec-Fetch-Site': 'none',
+                  'Sec-Fetch-User': '?1',
+                  'Upgrade-Insecure-Requests': '1',
+              })
+              response = session.get(request_url, timeout=120, allow_redirects=True)
+              page = response.content
+              (out / 'lens-page.html').write_bytes(page)
+              report.update({
+                  'status': response.status_code,
+                  'final_url': response.url,
+                  'content_length': len(page),
+                  'content_type': response.headers.get('content-type'),
+              })
+
+              start_marker = b'(function(){var m='
+              end_marker = b';var a=m;'
+              start = page.find(start_marker)
+              report['data_pack_start'] = start
+              if start < 0:
+                  raise RuntimeError('Current Lens data-pack start marker not found')
+              start += len(start_marker)
+              end_rel = page[start:].find(end_marker)
+              report['data_pack_end_relative'] = end_rel
+              if end_rel < 0:
+                  raise RuntimeError('Current Lens data-pack end marker not found')
+              raw = page[start:start + end_rel]
+              (out / 'lens-data-pack.json').write_bytes(raw)
+              data = json.loads(raw)
+              report['top_level_type'] = type(data).__name__
+              report['top_level_count'] = len(data) if hasattr(data, '__len__') else None
+
+              results = []
+              if isinstance(data, dict):
+                  for key, value in data.items():
+                      try:
+                          if not isinstance(value, list) or len(value) != 8 or value[0] != 1:
+                              continue
+                          item = value[1]
+                          if not isinstance(item, list) or not item:
+                              continue
+                          last = item[-1]
+                          if not isinstance(last, dict) or '2003' not in last:
+                              continue
+                          props = last['2003']
+                          result = {
+                              'key': key,
+                              'title': props[3] if len(props) > 3 else None,
+                              'page_url': props[2] if len(props) > 2 else None,
+                              'thumbnail_url': item[3][0] if len(item) > 3 and isinstance(item[3], list) and item[3] else None,
+                              'source_name': props[12] if len(props) > 12 else None,
+                              'source_domain': props[17] if len(props) > 17 else None,
+                              'raw_props': props,
+                          }
+                          if result['thumbnail_url'] and str(result['thumbnail_url']).startswith('http'):
+                              results.append(result)
+                      except Exception as exc:
+                          continue
+              report['result_count'] = len(results)
+              report['results'] = results
+              (out / 'visual-matches.json').write_text(json.dumps(results, indent=2, ensure_ascii=False), encoding='utf-8')
+
+              # Generic recursive extraction as backup if Google's field shape changed.
+              strings = []
+              def walk(obj, path=''):
+                  if isinstance(obj, str):
+                      if obj.startswith(('http://', 'https://')) or any(t in obj.lower() for t in ('pinterest','manga','junji','tomoe','black clover','instagram','tumblr','reddit','pixiv','deviantart')):
+                          strings.append({'path': path, 'value': obj})
+                  elif isinstance(obj, list):
+                      for i, child in enumerate(obj): walk(child, f'{path}[{i}]')
+                  elif isinstance(obj, dict):
+                      for k, child in obj.items(): walk(child, f'{path}.{k}' if path else str(k))
+              walk(data)
+              (out / 'interesting-strings.json').write_text(json.dumps(strings, indent=2, ensure_ascii=False), encoding='utf-8')
+              report['interesting_string_count'] = len(strings)
+          except Exception as exc:
+              report['error'] = repr(exc)
+              report['traceback'] = traceback.format_exc()
+
+          (out / 'report.json').write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding='utf-8')
+          print(json.dumps(report, indent=2, ensure_ascii=False))
+          PY
+
+      - name: Commit current Lens results to temporary branch
+        if: always()
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add reverse-image-temp/results-current-lens-parser || true
+          git commit -m "Store current Google Lens visual matches" || exit 0
+          git push origin HEAD:temp-reverse-image-search
