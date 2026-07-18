@@ -1,0 +1,196 @@
+name: Temporary visual candidate verifier
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/temp-visual-verifier.yml
+
+permissions:
+  contents: write
+
+jobs:
+  verify-candidates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: temp-reverse-image-search
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Compare returned images with uploaded source
+        continue-on-error: true
+        run: |
+          python -m pip install --quiet requests pillow ImageHash numpy opencv-python-headless
+          python <<'PY'
+          import io
+          import json
+          import re
+          import traceback
+          from pathlib import Path
+          from urllib.parse import parse_qs, unquote, urlparse
+
+          import cv2
+          import imagehash
+          import numpy as np
+          import requests
+          from PIL import Image, ImageOps
+
+          out = Path('reverse-image-temp/results-visual-verifier')
+          out.mkdir(parents=True, exist_ok=True)
+          source_path = Path('reverse-image-temp/source.png')
+          source_pil = Image.open(source_path).convert('RGB')
+          source_gray = np.array(ImageOps.grayscale(source_pil))
+          source_hashes = {
+              'phash': imagehash.phash(source_pil),
+              'dhash': imagehash.dhash(source_pil),
+              'ahash': imagehash.average_hash(source_pil),
+              'whash': imagehash.whash(source_pil),
+          }
+
+          candidate_files = [
+              Path('reverse-image-temp/results-url-engines/bing-browser-links.json'),
+              Path('reverse-image-temp/results-url-engines/bing-browser-images.json'),
+              Path('reverse-image-temp/results-url-engines/yandex-browser-links.json'),
+              Path('reverse-image-temp/results-url-engines/yandex-browser-images.json'),
+              Path('reverse-image-temp/results-source-tabs-main-runner/yandex-sites-links.json'),
+              Path('reverse-image-temp/results-source-tabs-main-runner/yandex-similar-links.json'),
+              Path('reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json'),
+              Path('reverse-image-temp/results-source-tabs-main-runner/yandex-overview-links.json'),
+              Path('reverse-image-temp/results-source-tabs-main-runner/yandex-overview-images.json'),
+          ]
+
+          records = []
+          for file in candidate_files:
+              if not file.exists():
+                  continue
+              try:
+                  data = json.loads(file.read_text(encoding='utf-8'))
+              except Exception:
+                  continue
+              if not isinstance(data, list):
+                  continue
+              for item in data:
+                  if not isinstance(item, dict):
+                      continue
+                  base = {
+                      'origin_file': str(file),
+                      'text': item.get('text') or item.get('alt') or item.get('aria') or '',
+                      'page_url': item.get('url') or '',
+                  }
+                  values = [item.get(key) for key in ('src', 'url') if item.get(key)]
+                  for value in list(values):
+                      try:
+                          query = parse_qs(urlparse(value).query)
+                          for key in ('mediaurl', 'imgurl', 'cdnurl', 'url', 'rurl', 'purl', 'thumbnailurl'):
+                              values.extend(unquote(x) for x in query.get(key, []))
+                      except Exception:
+                          pass
+                  for value in values:
+                      if isinstance(value, str) and value.startswith(('http://', 'https://')):
+                          rec = dict(base)
+                          rec['image_url'] = value
+                          records.append(rec)
+
+          by_url = {}
+          for rec in records:
+              by_url.setdefault(rec['image_url'], rec)
+          records = list(by_url.values())
+
+          def priority(url):
+              u = url.lower()
+              score = 0
+              if re.search(r'\.(?:jpg|jpeg|png|webp|gif)(?:$|[?&#])', u): score += 10
+              if any(d in u for d in ['pinimg.com', 'pbs.twimg.com', 'ytimg.com', 'deviantart', 'artstation', 'tumblr', 'zerochan', 'danbooru', 'yande.re', 'th.bing.com', 'yandex.net']): score += 5
+              if any(x in u for x in ['favicon', 'logo', 'sprite', 'icon']): score -= 10
+              return -score
+          records.sort(key=lambda r: priority(r['image_url']))
+          records = records[:700]
+
+          session = requests.Session()
+          session.headers.update({
+              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36',
+              'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+          })
+          orb = cv2.ORB_create(nfeatures=1000, fastThreshold=5)
+          source_kp, source_des = orb.detectAndCompute(source_gray, None)
+          matcher = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+
+          def mse_similarity(candidate):
+              sims = []
+              for fitted in [
+                  candidate.resize(source_pil.size, Image.Resampling.LANCZOS),
+                  ImageOps.fit(candidate, source_pil.size, method=Image.Resampling.LANCZOS),
+              ]:
+                  arr = np.array(ImageOps.grayscale(fitted), dtype=np.float32)
+                  mse = float(np.mean((source_gray.astype(np.float32) - arr) ** 2))
+                  sims.append(1.0 / (1.0 + mse / 1000.0))
+              return max(sims)
+
+          def orb_score(candidate):
+              try:
+                  gray = np.array(ImageOps.grayscale(candidate))
+                  kp, des = orb.detectAndCompute(gray, None)
+                  if source_des is None or des is None or not source_kp or not kp:
+                      return 0.0, 0, 0
+                  matches = sorted(matcher.match(source_des, des), key=lambda m: m.distance)
+                  good = [m for m in matches if m.distance <= 45]
+                  return len(good) / max(1, min(len(source_kp), len(kp))), len(good), len(matches)
+              except Exception:
+                  return 0.0, 0, 0
+
+          results = []
+          errors = []
+          for rec in records:
+              item = dict(rec)
+              try:
+                  response = session.get(rec['image_url'], timeout=25, allow_redirects=True)
+                  item['http_status'] = response.status_code
+                  item['final_url'] = response.url
+                  item['content_type'] = response.headers.get('content-type', '')
+                  if response.status_code != 200 or len(response.content) > 15_000_000:
+                      continue
+                  image = Image.open(io.BytesIO(response.content)).convert('RGB')
+                  item['dimensions'] = list(image.size)
+                  if image.width < 40 or image.height < 40:
+                      continue
+                  hashes = {
+                      'phash': imagehash.phash(image),
+                      'dhash': imagehash.dhash(image),
+                      'ahash': imagehash.average_hash(image),
+                      'whash': imagehash.whash(image),
+                  }
+                  distances = {key: int(source_hashes[key] - hashes[key]) for key in hashes}
+                  item['hash_distances'] = distances
+                  item['hash_score'] = 1.0 - sum(distances.values()) / 256.0
+                  item['mse_similarity'] = mse_similarity(image)
+                  orb_norm, orb_good, orb_total = orb_score(image)
+                  item['orb_score'] = orb_norm
+                  item['orb_good'] = orb_good
+                  item['orb_total'] = orb_total
+                  item['combined_score'] = item['hash_score'] * 0.55 + item['mse_similarity'] * 0.30 + min(1.0, item['orb_score'] * 4.0) * 0.15
+                  results.append(item)
+              except Exception as exc:
+                  errors.append({'url': rec['image_url'], 'error': repr(exc)})
+
+          results.sort(key=lambda x: x.get('combined_score', 0), reverse=True)
+          (out / 'top-results.json').write_text(json.dumps(results[:150], indent=2, ensure_ascii=False), encoding='utf-8')
+          (out / 'errors.json').write_text(json.dumps(errors[:500], indent=2, ensure_ascii=False), encoding='utf-8')
+          summary = {'source_size': list(source_pil.size), 'candidate_url_count': len(records), 'downloaded_image_count': len(results), 'top': results[:30]}
+          (out / 'report.json').write_text(json.dumps(summary, indent=2, ensure_ascii=False), encoding='utf-8')
+          print(json.dumps(summary, indent=2, ensure_ascii=False))
+          PY
+
+      - name: Commit verification results to temporary branch
+        if: always()
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add reverse-image-temp/results-visual-verifier || true
+          git commit -m "Store pixel-comparison verification results" || exit 0
+          git push origin HEAD:temp-reverse-image-search
