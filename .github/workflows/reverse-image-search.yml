@@ -18,113 +18,142 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: temp-reverse-image-search
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
-      - name: Search URL-based reverse-image engines
+      - name: Publish full-resolution source on temporary branch
+        run: |
+          base64 -d reverse-image-temp/source-original.jpg.b64 > reverse-image-temp/source-original.jpg
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add reverse-image-temp/source-original.jpg
+          git commit -m "Publish full-resolution temporary source" || true
+          git push origin HEAD:temp-reverse-image-search
+
+      - name: Run full-resolution visual searches
         continue-on-error: true
         run: |
           python -m pip install --quiet requests beautifulsoup4 lxml playwright
           python -m playwright install --with-deps chromium
           python <<'PY'
           import json
+          import re
           import traceback
           from pathlib import Path
-          from urllib.parse import quote, urljoin
+          from urllib.parse import quote, urljoin, urlparse, parse_qs, urlencode, urlunparse
 
           import requests
           from bs4 import BeautifulSoup
           from playwright.sync_api import sync_playwright
 
-          image_url = 'https://iqdb.org/thu/thu_c9acf468.jpg'
-          out = Path('reverse-image-temp/results-url-engines')
+          image_url = 'https://raw.githubusercontent.com/nop8/Bloom/temp-reverse-image-search/reverse-image-temp/source-original.jpg'
+          out = Path('reverse-image-temp/results-full-resolution')
           out.mkdir(parents=True, exist_ok=True)
-
-          engines = {
-              'saucenao': 'https://saucenao.com/search.php?db=999&dbmaski=32768&url=' + quote(image_url, safe=''),
-              'ascii2d': 'https://ascii2d.net/search/url/' + image_url,
-              'tineye': 'https://tineye.com/search?url=' + quote(image_url, safe=''),
-              'yandex': 'https://yandex.com/images/search?rpt=imageview&url=' + quote(image_url, safe=''),
-              'bing': 'https://www.bing.com/images/searchbyimage?cbir=sbi&imgurl=' + quote(image_url, safe=''),
-              'google_lens': 'https://lens.google.com/uploadbyurl?url=' + quote(image_url, safe='') + '&safe=off',
-          }
-
           ua = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36'
           headers = {'User-Agent': ua, 'Accept-Language': 'en-US,en;q=0.9'}
-          report = {'image_url': image_url, 'engines': {}}
+          report = {'image_url': image_url, 'runs': {}}
 
-          # First pass: ordinary HTTP, useful when results are server-rendered.
-          for name, url in engines.items():
+          def save_http(name, url):
               item = {'requested_url': url}
               try:
                   r = requests.get(url, headers=headers, timeout=120, allow_redirects=True)
+                  soup = BeautifulSoup(r.text, 'lxml')
                   item.update({
-                      'http_status': r.status_code,
-                      'http_final_url': r.url,
-                      'http_title': BeautifulSoup(r.text, 'lxml').title.get_text(' ', strip=True) if BeautifulSoup(r.text, 'lxml').title else '',
-                      'http_length': len(r.content),
+                      'status': r.status_code,
+                      'final_url': r.url,
+                      'title': soup.title.get_text(' ', strip=True) if soup.title else '',
+                      'length': len(r.content),
                   })
                   (out / f'{name}-http.html').write_text(r.text, encoding='utf-8', errors='replace')
-                  soup = BeautifulSoup(r.text, 'lxml')
-                  links = [
-                      {'text': a.get_text(' ', strip=True), 'url': urljoin(r.url, a.get('href'))}
-                      for a in soup.find_all('a', href=True)
-                  ]
+                  links = [{'text': a.get_text(' ', strip=True), 'url': urljoin(r.url, a.get('href'))} for a in soup.find_all('a', href=True)]
                   (out / f'{name}-http-links.json').write_text(json.dumps(links, indent=2, ensure_ascii=False), encoding='utf-8')
               except Exception as exc:
-                  item['http_error'] = repr(exc)
-                  item['http_traceback'] = traceback.format_exc()
-              report['engines'][name] = item
+                  item['error'] = repr(exc)
+                  item['traceback'] = traceback.format_exc()
+              report['runs'][name] = item
+              return item
 
-          # Second pass: real Chromium for JavaScript-rendered engines.
+          endpoints = {
+              'bing': 'https://www.bing.com/images/searchbyimage?cbir=sbi&imgurl=' + quote(image_url, safe=''),
+              'yandex': 'https://yandex.com/images/search?rpt=imageview&url=' + quote(image_url, safe=''),
+              'google_lens': 'https://lens.google.com/uploadbyurl?url=' + quote(image_url, safe='') + '&safe=off',
+              'tineye': 'https://tineye.com/search?url=' + quote(image_url, safe=''),
+              'saucenao': 'https://saucenao.com/search.php?db=999&dbmaski=32768&url=' + quote(image_url, safe=''),
+              'ascii2d': 'https://ascii2d.net/search/url/' + image_url,
+          }
+          for name, url in endpoints.items():
+              save_http(name, url)
+
+          def save_page(page, name):
+              body = page.locator('body').inner_text(timeout=30000)
+              links = page.locator('a').evaluate_all("els => els.map(a => ({text: (a.innerText || a.getAttribute('aria-label') || '').trim(), url: a.href, aria: a.getAttribute('aria-label')}))")
+              images = page.locator('img').evaluate_all("els => els.map(i => ({alt: i.alt || '', src: i.src || '', width: i.naturalWidth || 0, height: i.naturalHeight || 0}))")
+              (out / f'{name}-body.txt').write_text(body, encoding='utf-8')
+              (out / f'{name}-page.html').write_text(page.content(), encoding='utf-8')
+              (out / f'{name}-links.json').write_text(json.dumps(links, indent=2, ensure_ascii=False), encoding='utf-8')
+              (out / f'{name}-images.json').write_text(json.dumps(images, indent=2, ensure_ascii=False), encoding='utf-8')
+              page.screenshot(path=str(out / f'{name}.png'), full_page=True)
+              return {'url': page.url, 'title': page.title(), 'body_prefix': body[:5000]}
+
           with sync_playwright() as p:
               browser = p.chromium.launch(headless=True, args=['--no-sandbox', '--disable-blink-features=AutomationControlled'])
-              context = browser.new_context(
-                  user_agent=ua,
-                  locale='en-US',
-                  viewport={'width': 1440, 'height': 1200},
-              )
-              for name, url in engines.items():
-                  item = report['engines'][name]
-                  page = context.new_page()
-                  try:
-                      response = page.goto(url, wait_until='domcontentloaded', timeout=120000)
-                      page.wait_for_timeout(12000)
-                      item.update({
-                          'browser_status': response.status if response else None,
-                          'browser_final_url': page.url,
-                          'browser_title': page.title(),
-                      })
-                      body = page.locator('body').inner_text(timeout=30000)
-                      links = page.locator('a').evaluate_all(
-                          "els => els.map(a => ({text: (a.innerText || a.getAttribute('aria-label') || '').trim(), url: a.href, aria: a.getAttribute('aria-label')}))"
-                      )
-                      images = page.locator('img').evaluate_all(
-                          "els => els.map(i => ({alt: i.alt || '', src: i.src || '', width: i.naturalWidth || 0, height: i.naturalHeight || 0}))"
-                      )
-                      (out / f'{name}-browser-body.txt').write_text(body, encoding='utf-8')
-                      (out / f'{name}-browser.html').write_text(page.content(), encoding='utf-8')
-                      (out / f'{name}-browser-links.json').write_text(json.dumps(links, indent=2, ensure_ascii=False), encoding='utf-8')
-                      (out / f'{name}-browser-images.json').write_text(json.dumps(images, indent=2, ensure_ascii=False), encoding='utf-8')
-                      page.screenshot(path=str(out / f'{name}-browser.png'), full_page=True)
-                  except Exception as exc:
-                      item['browser_error'] = repr(exc)
-                      item['browser_traceback'] = traceback.format_exc()
-                  finally:
-                      page.close()
+              context = browser.new_context(user_agent=ua, locale='en-US', viewport={'width': 1440, 'height': 1200})
+
+              # Bing: open the image search, then explicitly collect Overview, Visual Matches, and Pages with this image.
+              page = context.new_page()
+              try:
+                  response = page.goto(endpoints['bing'], wait_until='domcontentloaded', timeout=120000)
+                  page.wait_for_timeout(12000)
+                  bing_base = page.url
+                  report['runs']['bing_browser_overview'] = {'status': response.status if response else None, **save_page(page, 'bing-overview')}
+                  for vsa, label in [('2', 'visual'), ('3', 'pages')]:
+                      parsed = urlparse(bing_base)
+                      qs = parse_qs(parsed.query)
+                      qs['vsa'] = [vsa]
+                      target = urlunparse(parsed._replace(query=urlencode(qs, doseq=True)))
+                      response = page.goto(target, wait_until='domcontentloaded', timeout=120000)
+                      page.wait_for_timeout(10000)
+                      report['runs'][f'bing_browser_{label}'] = {'status': response.status if response else None, **save_page(page, f'bing-{label}')}
+              except Exception as exc:
+                  report['runs']['bing_browser_error'] = {'error': repr(exc), 'traceback': traceback.format_exc()}
+              finally:
+                  page.close()
+
+              # Yandex: collect initial result, similar-image page, and sites/exact-source page.
+              page = context.new_page()
+              try:
+                  response = page.goto(endpoints['yandex'], wait_until='domcontentloaded', timeout=120000)
+                  page.wait_for_timeout(12000)
+                  final = page.url
+                  report['runs']['yandex_browser_overview'] = {'status': response.status if response else None, **save_page(page, 'yandex-overview')}
+                  for label in ['similar', 'sites']:
+                      parsed = urlparse(final)
+                      qs = parse_qs(parsed.query)
+                      qs['cbir_page'] = [label]
+                      target = urlunparse(parsed._replace(query=urlencode(qs, doseq=True)))
+                      response = page.goto(target, wait_until='domcontentloaded', timeout=120000)
+                      page.wait_for_timeout(10000)
+                      report['runs'][f'yandex_browser_{label}'] = {'status': response.status if response else None, **save_page(page, f'yandex-{label}')}
+              except Exception as exc:
+                  report['runs']['yandex_browser_error'] = {'error': repr(exc), 'traceback': traceback.format_exc()}
+              finally:
+                  page.close()
+
               browser.close()
 
           (out / 'report.json').write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding='utf-8')
           print(json.dumps(report, indent=2, ensure_ascii=False))
           PY
 
-      - name: Commit URL-engine results
+      - name: Commit full-resolution results
         if: always()
         run: |
+          git pull --rebase origin temp-reverse-image-search || true
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add reverse-image-temp/results-url-engines || true
-          git commit -m "Store URL reverse image results" || exit 0
+          git add reverse-image-temp/results-full-resolution || true
+          git commit -m "Store full-resolution reverse image results" || exit 0
           git push origin HEAD:temp-reverse-image-search
