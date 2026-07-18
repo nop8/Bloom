@@ -1,0 +1,92 @@
+name: Temporary Yandex geometric verifier
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/temp-yandex-geometric.yml
+
+permissions:
+  contents: write
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: temp-reverse-image-search
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify Yandex similar candidates
+        continue-on-error: true
+        run: |
+          python -m pip install --quiet requests pillow numpy opencv-python-headless
+          python <<'PY'
+          import io,json,traceback
+          from pathlib import Path
+          from urllib.parse import urlparse,parse_qs,unquote
+          import cv2,numpy as np,requests
+          from PIL import Image
+
+          out=Path('reverse-image-temp/results-yandex-geometric'); out.mkdir(parents=True,exist_ok=True)
+          src=cv2.cvtColor(np.array(Image.open('reverse-image-temp/source.png').convert('RGB')),cv2.COLOR_RGB2GRAY)
+          sift=cv2.SIFT_create(nfeatures=2000); kp1,des1=sift.detectAndCompute(src,None); bf=cv2.BFMatcher(cv2.NORM_L2)
+          data=json.loads(Path('reverse-image-temp/results-source-tabs-main-runner/yandex-similar-links.json').read_text(encoding='utf-8'))
+          records=[]
+          for item in data:
+              u=item.get('url','')
+              try:
+                  for image_url in parse_qs(urlparse(u).query).get('img_url',[]):
+                      records.append({'position':parse_qs(urlparse(u).query).get('pos',['?'])[0],'image_url':unquote(image_url)})
+              except Exception: pass
+          sess=requests.Session(); sess.headers.update({'User-Agent':'Mozilla/5.0 Chrome/150','Accept':'image/*,*/*;q=0.8'})
+          results=[]; errors=[]
+          for rec in records:
+              try:
+                  r=sess.get(rec['image_url'],timeout=40,allow_redirects=True)
+                  if r.status_code!=200 or len(r.content)>25_000_000: continue
+                  pil=Image.open(io.BytesIO(r.content)).convert('RGB'); gray=cv2.cvtColor(np.array(pil),cv2.COLOR_RGB2GRAY)
+                  kp2,des2=sift.detectAndCompute(gray,None)
+                  good=[]; inliers=0; ratio=0.0; median=999.0
+                  H=None
+                  if des1 is not None and des2 is not None and len(kp2)>=4:
+                      pairs=bf.knnMatch(des1,des2,k=2); good=[m for m,n in pairs if m.distance<0.75*n.distance]
+                      if good: median=float(np.median([m.distance for m in good]))
+                      if len(good)>=4:
+                          p1=np.float32([kp1[m.queryIdx].pt for m in good]).reshape(-1,1,2); p2=np.float32([kp2[m.trainIdx].pt for m in good]).reshape(-1,1,2)
+                          H,mask=cv2.findHomography(p1,p2,cv2.RANSAC,5.0)
+                          if mask is not None: inliers=int(mask.sum()); ratio=float(mask.mean())
+                  # Multiscale edge template matching.
+                  eq=cv2.equalizeHist(gray); edge=cv2.Canny(eq,50,150); src_edge=cv2.Canny(cv2.equalizeHist(src),50,150)
+                  best=-1.0; best_scale=None; best_loc=None
+                  maxdim=max(gray.shape)
+                  if maxdim>2200:
+                      f=2200/maxdim; gray=cv2.resize(gray,None,fx=f,fy=f,interpolation=cv2.INTER_AREA); edge=cv2.Canny(cv2.equalizeHist(gray),50,150)
+                  for scale in np.geomspace(0.35,10.0,34):
+                      w=max(12,int(src.shape[1]*scale)); h=max(12,int(src.shape[0]*scale))
+                      if w>edge.shape[1] or h>edge.shape[0]: continue
+                      t=cv2.resize(src_edge,(w,h),interpolation=cv2.INTER_NEAREST)
+                      try:
+                          _,mx,_,loc=cv2.minMaxLoc(cv2.matchTemplate(edge,t,cv2.TM_CCOEFF_NORMED))
+                          if mx>best: best=float(mx); best_scale=float(scale); best_loc=list(loc)
+                      except Exception: pass
+                  score=min(1,inliers/15)*0.65+ratio*0.2+max(0,best)*0.15
+                  results.append({**rec,'final_url':r.url,'dimensions':[pil.width,pil.height],'good_matches':len(good),'inliers':inliers,'inlier_ratio':ratio,'median_distance':median,'edge_template':best,'scale':best_scale,'location':best_loc,'score':score})
+              except Exception as e: errors.append({**rec,'error':repr(e)})
+          results.sort(key=lambda x:x['score'],reverse=True)
+          (out/'report.json').write_text(json.dumps({'count':len(results),'top':results},indent=2,ensure_ascii=False),encoding='utf-8')
+          (out/'errors.json').write_text(json.dumps(errors,indent=2,ensure_ascii=False),encoding='utf-8')
+          print(json.dumps(results[:20],indent=2,ensure_ascii=False))
+          PY
+      - name: Commit results
+        if: always()
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add reverse-image-temp/results-yandex-geometric || true
+          git commit -m "Store targeted Yandex geometric results" || exit 0
+          git push origin HEAD:temp-reverse-image-search
