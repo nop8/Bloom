@@ -1,0 +1,85 @@
+name: Temporary Bing exact image pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/temp-bing-exact-pages.yml
+
+permissions:
+  contents: write
+
+jobs:
+  bing-pages:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: temp-reverse-image-search
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Preserve Bing visual-search session and fetch exact pages
+        continue-on-error: true
+        run: |
+          python -m pip install --quiet requests beautifulsoup4 lxml
+          python <<'PY'
+          import json,re,traceback
+          from pathlib import Path
+          from urllib.parse import quote,urljoin,urlparse,parse_qs,urlencode,urlunparse
+          import requests
+          from bs4 import BeautifulSoup
+
+          out=Path('reverse-image-temp/results-bing-exact-pages'); out.mkdir(parents=True,exist_ok=True)
+          image_url='https://raw.githubusercontent.com/nop8/Bloom/temp-reverse-image-search/reverse-image-temp/source.png'
+          start_url='https://www.bing.com/images/searchbyimage?cbir=sbi&imgurl='+quote(image_url,safe='')
+          ua='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36'
+          session=requests.Session(); session.headers.update({
+            'User-Agent':ua,'Accept-Language':'en-US,en;q=0.9','Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8','Upgrade-Insecure-Requests':'1','Sec-Fetch-Dest':'document','Sec-Fetch-Mode':'navigate','Sec-Fetch-Site':'none','Sec-Fetch-User':'?1'
+          })
+          report={'start_url':start_url,'attempts':[]}
+          try:
+            overview=session.get(start_url,timeout=120,allow_redirects=True)
+            report['overview_status']=overview.status_code; report['overview_url']=overview.url; report['cookies']=session.cookies.get_dict()
+            (out/'overview.html').write_text(overview.text,encoding='utf-8',errors='replace')
+            soup=BeautifulSoup(overview.text,'lxml')
+            links=[{'text':a.get_text(' ',strip=True),'url':urljoin(overview.url,a.get('href'))} for a in soup.find_all('a',href=True)]
+            (out/'overview-links.json').write_text(json.dumps(links,indent=2,ensure_ascii=False),encoding='utf-8')
+            pages_link=next((x['url'] for x in links if 'Pages with this image' in x['text']),None)
+            report['pages_link']=pages_link
+            if not pages_link:
+              parsed=urlparse(overview.url); q=parse_qs(parsed.query); q['vsa']=['3']; pages_link=urlunparse(parsed._replace(query=urlencode(q,doseq=True)))
+            variants=[pages_link,pages_link+'&setlang=en-us&cc=us',pages_link.replace('FORM=SBIESR','FORM=VSMAINC'),pages_link+'&first=1']
+            for i,target in enumerate(variants):
+              item={'target':target}
+              try:
+                headers={'Referer':overview.url,'Sec-Fetch-Site':'same-origin'}
+                r=session.get(target,headers=headers,timeout=120,allow_redirects=True)
+                item.update({'status':r.status_code,'final_url':r.url,'length':len(r.content),'title':BeautifulSoup(r.text,'lxml').title.get_text(' ',strip=True) if BeautifulSoup(r.text,'lxml').title else ''})
+                (out/f'pages-{i}.html').write_text(r.text,encoding='utf-8',errors='replace')
+                s=BeautifulSoup(r.text,'lxml')
+                page_links=[{'text':a.get_text(' ',strip=True),'url':urljoin(r.url,a.get('href')),'aria':a.get('aria-label')} for a in s.find_all('a',href=True)]
+                images=[{'alt':img.get('alt',''),'src':urljoin(r.url,img.get('src')) if img.get('src') else '','data_src':img.get('data-src','')} for img in s.find_all('img')]
+                (out/f'pages-{i}-links.json').write_text(json.dumps(page_links,indent=2,ensure_ascii=False),encoding='utf-8')
+                (out/f'pages-{i}-images.json').write_text(json.dumps(images,indent=2,ensure_ascii=False),encoding='utf-8')
+                body=s.get_text('\n',strip=True); (out/f'pages-{i}-body.txt').write_text(body,encoding='utf-8')
+                item['body_prefix']=body[:3000]
+                item['captcha']=any(x in body.lower() for x in ['captcha','verify you are human','unusual traffic','challenge'])
+              except Exception as e:
+                item['error']=repr(e); item['traceback']=traceback.format_exc()
+              report['attempts'].append(item)
+          except Exception as e:
+            report['error']=repr(e); report['traceback']=traceback.format_exc()
+          (out/'report.json').write_text(json.dumps(report,indent=2,ensure_ascii=False),encoding='utf-8')
+          print(json.dumps(report,indent=2,ensure_ascii=False))
+          PY
+      - name: Commit exact-page results
+        if: always()
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add reverse-image-temp/results-bing-exact-pages || true
+          git commit -m "Store Bing pages-with-image results" || exit 0
+          git push origin HEAD:temp-reverse-image-search
