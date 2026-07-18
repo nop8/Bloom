@@ -59,7 +59,10 @@ jobs:
 
               report['upload_status'] = upload.status_code
               report['location'] = upload.headers.get('Location')
-              report['request_cookies'] = [c.get_dict() for c in session.cookies]
+              report['request_cookies'] = [
+                  {'name': c.name, 'value': c.value, 'domain': c.domain, 'path': c.path}
+                  for c in session.cookies
+              ]
 
               with sync_playwright() as p:
                   browser = p.chromium.launch(headless=True, args=['--no-sandbox', '--disable-blink-features=AutomationControlled'])
@@ -71,11 +74,10 @@ jobs:
 
                   cookies = []
                   for cookie in session.cookies:
-                      domain = cookie.domain or '.google.com'
                       cookies.append({
                           'name': cookie.name,
                           'value': cookie.value,
-                          'domain': domain,
+                          'domain': cookie.domain or '.google.com',
                           'path': cookie.path or '/',
                           'secure': True,
                       })
@@ -84,7 +86,7 @@ jobs:
 
                   page = context.new_page()
                   page.goto(report['location'], wait_until='domcontentloaded', timeout=120000)
-                  page.wait_for_timeout(12000)
+                  page.wait_for_timeout(15000)
 
                   report['final_url'] = page.url
                   report['title'] = page.title()
