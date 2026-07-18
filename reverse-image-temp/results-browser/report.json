@@ -1,6 +1,14 @@
 {
   "upload_status": 302,
-  "location": "https://www.google.com/search?vsrid=COWU7dv4zeft7QEQAhgBIiQwNGFkYzc3Ny0xZTUyLTRmYWItOTNhYy1kZjIxMzk1ZDgwZDYygQEiAmR6KBVCcwoubGZlLWR1bW15OjI3YTQ4OWEwLTQ5OTktNGViZi04OTBhLTRhMmMwYWI0ODdiNxJBCj8vYm5zL2R6L2JvcmcvZHovYm5zL2xlbnMtZnJvbnRlbmQtYXBpL3Byb2QubGVucy1mcm9udGVuZC1hcGkvODVaBAoCZHo45dTrt87blQM&vsint=CAIqDAoCCAcSAggKGAEgATohChYNAAAAPxUAAAA_HQAAgD8lAACAPzABEGAYZiUAAIA_&udm=26&lns_mode=un&source=lns.web.ukn&vsdim=96,102&gsessionid=paQlDhwywoCmAVBrG1l1eaQF7H2ijhRdN9eZYKxnALFAV8FrrFjRRw&lsessionid=SAbPZ3sjEP2vrqishNumvlibQCDqFTAH3ZIpxPWav8RsQRmPM0cUIg&lns_surface=26&lns_vfs=e&hl=en",
-  "error": "AttributeError(\"'Cookie' object has no attribute 'get_dict'\")",
-  "traceback": "Traceback (most recent call last):\n  File \"<stdin>\", line 31, in <module>\nAttributeError: 'Cookie' object has no attribute 'get_dict'\n"
+  "location": "https://www.google.com/search?vsrid=CMiUrd2Gu8Pr0wEQAhgBIiQyYjQ2ZjY4OC1hNzM1LTQ2YTktODEyYy1iMmJhNTU0ZDZkYmIygAEiAmJpKAhCcgoubGZlLWR1bW15OjU1M2JiYzExLTBiNDMtNDAyNi04OGE5LWEzODE2MGFmMmFiYxJACj4vYm5zL2JpL2JvcmcvYmkvYm5zL2xlbnMtZnJvbnRlbmQtYXBpL3Byb2QubGVucy1mcm9udGVuZC1hcGkvNVoECgJiaTirw_LXztuVAw&vsint=CAIqDAoCCAcSAggKGAEgATohChYNAAAAPxUAAAA_HQAAgD8lAACAPzABEGAYZiUAAIA_&udm=26&lns_mode=un&source=lns.web.ukn&vsdim=96,102&gsessionid=mTrIpUEJcxrLLqKQDIPPcg0K60SG09gDY3NYg_hw_WBPFtF0ay-JVw&lsessionid=bzml_9womxhpOY7N8ZgjjmkchSMF9OdXwxt5Zy7kCCejXG4-a0S9nw&lns_surface=26&lns_vfs=e&hl=en",
+  "request_cookies": [
+    {
+      "name": "NID",
+      "value": "533=PbRuOyz6PBcHciQfxpO8BIA8RrslBQYnbAH11FHnR1SB9Z_pycgk5uD69uiTWIEsegJ1r-lcDJ5wSruhS2Lb5FQW5XwKNeQGeD6opte05UkN-Y-GJYNstsdxg3slc4AGyEhPfuVXe89b-fjViCUbHmGE6fa7OIgE-6V0Ax7pdo5KS-hZyb-96kXSceVWgLSFifyzldg5",
+      "domain": ".google.com",
+      "path": "/"
+    }
+  ],
+  "final_url": "https://www.google.com/search?vsrid=CMiUrd2Gu8Pr0wEQAhgBIiQyYjQ2ZjY4OC1hNzM1LTQ2YTktODEyYy1iMmJhNTU0ZDZkYmIygAEiAmJpKAhCcgoubGZlLWR1bW15OjU1M2JiYzExLTBiNDMtNDAyNi04OGE5LWEzODE2MGFmMmFiYxJACj4vYm5zL2JpL2JvcmcvYmkvYm5zL2xlbnMtZnJvbnRlbmQtYXBpL3Byb2QubGVucy1mcm9udGVuZC1hcGkvNVoECgJiaTirw_LXztuVAw&vsint=CAIqDAoCCAcSAggKGAEgATohChYNAAAAPxUAAAA_HQAAgD8lAACAPzABEGAYZiUAAIA_&udm=26&lns_mode=un&source=lns.web.ukn&vsdim=96,102&gsessionid=mTrIpUEJcxrLLqKQDIPPcg0K60SG09gDY3NYg_hw_WBPFtF0ay-JVw&lsessionid=bzml_9womxhpOY7N8ZgjjmkchSMF9OdXwxt5Zy7kCCejXG4-a0S9nw&lns_surface=26&lns_vfs=e&hl=en",
+  "title": "Error 403 (Forbidden)!!1"
 }
