@@ -1,0 +1,6 @@
+{
+  "upload_status": 302,
+  "location": "https://www.google.com/search?vsrid=COWU7dv4zeft7QEQAhgBIiQwNGFkYzc3Ny0xZTUyLTRmYWItOTNhYy1kZjIxMzk1ZDgwZDYygQEiAmR6KBVCcwoubGZlLWR1bW15OjI3YTQ4OWEwLTQ5OTktNGViZi04OTBhLTRhMmMwYWI0ODdiNxJBCj8vYm5zL2R6L2JvcmcvZHovYm5zL2xlbnMtZnJvbnRlbmQtYXBpL3Byb2QubGVucy1mcm9udGVuZC1hcGkvODVaBAoCZHo45dTrt87blQM&vsint=CAIqDAoCCAcSAggKGAEgATohChYNAAAAPxUAAAA_HQAAgD8lAACAPzABEGAYZiUAAIA_&udm=26&lns_mode=un&source=lns.web.ukn&vsdim=96,102&gsessionid=paQlDhwywoCmAVBrG1l1eaQF7H2ijhRdN9eZYKxnALFAV8FrrFjRRw&lsessionid=SAbPZ3sjEP2vrqishNumvlibQCDqFTAH3ZIpxPWav8RsQRmPM0cUIg&lns_surface=26&lns_vfs=e&hl=en",
+  "error": "AttributeError(\"'Cookie' object has no attribute 'get_dict'\")",
+  "traceback": "Traceback (most recent call last):\n  File \"<stdin>\", line 31, in <module>\nAttributeError: 'Cookie' object has no attribute 'get_dict'\n"
+}
