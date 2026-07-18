@@ -1,0 +1,20 @@
+{
+  "html_links": [
+    {
+      "text": "here",
+      "url": "/httpservice/retry/enablejs?sei=Xx5bapWSLuKh5NoP2ryauAU"
+    },
+    {
+      "text": "click here",
+      "url": "/search?sca_esv=e441c5567561f5e6&udm=26&lns_surface=26&hl=en&emsg=SG_REL&sei=Xx5bapWSLuKh5NoP2ryauAU"
+    },
+    {
+      "text": "feedback",
+      "url": "https://support.google.com/websearch"
+    }
+  ],
+  "raw_urls": [
+    "https://www.google.com/js/bg/",
+    "https://support.google.com/websearch"
+  ]
+}
