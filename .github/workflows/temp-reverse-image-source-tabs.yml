@@ -1,4 +1,4 @@
-name: Temporary reverse image source tabs
+name: Temporary Google Lens parser
 
 on:
   push:
@@ -11,7 +11,7 @@ permissions:
   contents: write
 
 jobs:
-  source-pages:
+  lens-parser:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -23,83 +23,182 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Extract exact-source tabs
+      - name: Parse Google Lens result data
         continue-on-error: true
         run: |
-          python -m pip install --quiet playwright
-          python -m playwright install --with-deps chromium
+          python -m pip install --quiet requests beautifulsoup4 lxml pillow
           python <<'PY'
+          import ast
+          import base64
+          import html
           import json
+          import re
           import traceback
           from pathlib import Path
-          from urllib.parse import urlparse, parse_qs, urlencode, urlunparse
-          from playwright.sync_api import sync_playwright
+          from urllib.parse import unquote
 
-          out = Path('reverse-image-temp/results-source-tabs-main-runner')
+          import requests
+          from bs4 import BeautifulSoup
+          from PIL import Image
+
+          out = Path('reverse-image-temp/results-google-lens-parser')
           out.mkdir(parents=True, exist_ok=True)
-          ua = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36'
-          report = {}
+          report = {'attempts': []}
 
-          bing_base = 'https://www.bing.com/search?q=Junji+Ito&bcid=TqFvRUjZXyAKHZ2QLEluZSIhyIe2SC5kGso&FORM=SBIESR&hq=1'
-          yandex_base = 'https://yandex.com/images/search?rpt=imageview&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309'
+          # Decode the full-resolution JPEG assembled earlier. Fall back to the smaller PNG.
+          candidates = []
+          try:
+              encoded_path = Path('reverse-image-temp/source-original.jpg.b64')
+              decoded_path = out / 'source-original-decoded.jpg'
+              decoded_path.write_bytes(base64.b64decode(encoded_path.read_text(encoding='utf-8').strip(), validate=False))
+              with Image.open(decoded_path) as im:
+                  report['decoded_size'] = list(im.size)
+                  report['decoded_format'] = im.format
+                  im.verify()
+              candidates.append(decoded_path)
+          except Exception as exc:
+              report['decode_error'] = repr(exc)
+              report['decode_traceback'] = traceback.format_exc()
 
-          def altered(url, **changes):
-              parsed = urlparse(url)
-              qs = parse_qs(parsed.query)
-              for key, value in changes.items():
-                  qs[key] = [str(value)]
-              return urlunparse(parsed._replace(query=urlencode(qs, doseq=True)))
+          fallback = Path('reverse-image-temp/source.png')
+          if fallback.exists():
+              try:
+                  with Image.open(fallback) as im:
+                      report['fallback_size'] = list(im.size)
+                      report['fallback_format'] = im.format
+              except Exception as exc:
+                  report['fallback_image_error'] = repr(exc)
+              candidates.append(fallback)
 
-          targets = {
-              'bing-overview': bing_base,
-              'bing-visual': altered(bing_base, vsa=2),
-              'bing-pages': altered(bing_base, vsa=3),
-              'yandex-overview': yandex_base,
-              'yandex-similar': altered(yandex_base, cbir_page='similar'),
-              'yandex-sites': altered(yandex_base, cbir_page='sites'),
-          }
+          def decode_js_string(value):
+              return html.unescape(value.replace('\\u003d', '=').replace('\\u0026', '&').replace('\\/', '/'))
 
-          def collect(page, name):
-              body = page.locator('body').inner_text(timeout=30000)
-              links = page.locator('a').evaluate_all("els => els.map(a => ({text: (a.innerText || a.getAttribute('aria-label') || '').trim(), url: a.href, aria: a.getAttribute('aria-label')}))")
-              images = page.locator('img').evaluate_all("els => els.map(i => ({alt: i.alt || '', src: i.src || '', width: i.naturalWidth || 0, height: i.naturalHeight || 0}))")
-              (out / f'{name}-body.txt').write_text(body, encoding='utf-8')
-              (out / f'{name}-links.json').write_text(json.dumps(links, indent=2, ensure_ascii=False), encoding='utf-8')
-              (out / f'{name}-images.json').write_text(json.dumps(images, indent=2, ensure_ascii=False), encoding='utf-8')
-              (out / f'{name}-page.html').write_text(page.content(), encoding='utf-8')
-              page.screenshot(path=str(out / f'{name}.png'), full_page=True)
-              return body
+          def generic_extract(page_text):
+              urls = []
+              patterns = [
+                  r'https?://[^\s"\'<>\\]+',
+                  r'"(https?:\\/\\/[^"\\]+)"',
+              ]
+              for pattern in patterns:
+                  for match in re.findall(pattern, page_text):
+                      value = decode_js_string(match)
+                      try:
+                          value = unquote(value)
+                      except Exception:
+                          pass
+                      if value.startswith('http'):
+                          urls.append(value)
+              # Stable de-duplication.
+              seen = set()
+              unique = []
+              for url in urls:
+                  if url not in seen:
+                      seen.add(url)
+                      unique.append(url)
+              return unique
 
-          with sync_playwright() as p:
-              browser = p.chromium.launch(headless=True, args=['--no-sandbox', '--disable-blink-features=AutomationControlled'])
-              context = browser.new_context(user_agent=ua, locale='en-US', viewport={'width': 1440, 'height': 1200})
-              for name, target in targets.items():
-                  page = context.new_page()
-                  item = {'target': target}
+          def old_parser(page_text):
+              soup = BeautifulSoup(page_text, 'html.parser')
+              scripts = [s.get_text() for s in soup.find_all('script') if 'AF_initDataCallback(' in s.get_text()]
+              parsed = {'script_count': len(scripts), 'scripts': []}
+              for idx, script in enumerate(scripts):
+                  item = {'index': idx, 'prefix': script[:500]}
                   try:
-                      response = page.goto(target, wait_until='domcontentloaded', timeout=120000)
-                      page.wait_for_timeout(12000)
-                      item['status'] = response.status if response else None
-                      item['final_url'] = page.url
-                      item['title'] = page.title()
-                      body = collect(page, name)
-                      item['body_prefix'] = body[:2000]
+                      key_match = re.search(r"key:\s*'ds:(\d+)'", script)
+                      hash_match = re.search(r"hash:\s*'(\d+)'", script)
+                      item['key'] = key_match.group(1) if key_match else None
+                      item['hash'] = hash_match.group(1) if hash_match else None
+                      cleaned = script.replace('AF_initDataCallback(', '', 1)
+                      if cleaned.rstrip().endswith(');'):
+                          cleaned = cleaned.rstrip()[:-2]
+                      if key_match and hash_match:
+                          cleaned = cleaned.replace(
+                              f"key: 'ds:{key_match.group(1)}', hash: '{hash_match.group(1)}', data:",
+                              f'"key": "ds:{key_match.group(1)}", "hash": "{hash_match.group(1)}", "data":',
+                              1,
+                          ).replace('sideChannel:', '"sideChannel":')
+                      try:
+                          obj = json.loads(cleaned)
+                          item['json_parsed'] = True
+                          item['data'] = obj
+                      except Exception as exc:
+                          item['json_error'] = repr(exc)
+                          # Save the full script separately for later inspection.
+                          (out / f'af-script-{idx}.js').write_text(script, encoding='utf-8')
                   except Exception as exc:
                       item['error'] = repr(exc)
-                      item['traceback'] = traceback.format_exc()
-                  report[name] = item
-                  page.close()
-              browser.close()
+                  parsed['scripts'].append(item)
+              return parsed
+
+          uas = [
+              'Mozilla/5.0 (X11; Linux x86_64; rv:103.0) Gecko/20100101 Firefox/103.0',
+              'Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36',
+              'Googlebot-Image/1.0',
+          ]
+
+          for image_path in candidates:
+              for ua_index, ua in enumerate(uas):
+                  attempt = {'image': str(image_path), 'ua_index': ua_index, 'ua': ua}
+                  try:
+                      session = requests.Session()
+                      session.headers.update({
+                          'User-Agent': ua,
+                          'Accept-Language': 'en-US,en;q=0.9',
+                          'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+                      })
+                      with image_path.open('rb') as f:
+                          upload = session.post(
+                              'https://lens.google.com/upload',
+                              params={'hl': 'en', 'gl': 'us'},
+                              files={
+                                  'encoded_image': (image_path.name, f, 'image/jpeg' if image_path.suffix.lower() in {'.jpg', '.jpeg'} else 'image/png'),
+                                  'image_content': (None, ''),
+                              },
+                              allow_redirects=False,
+                              timeout=120,
+                          )
+                      attempt['upload_status'] = upload.status_code
+                      attempt['location'] = upload.headers.get('Location')
+                      attempt['upload_headers'] = dict(upload.headers)
+
+                      if attempt['location']:
+                          result = session.get(attempt['location'], allow_redirects=True, timeout=120)
+                          attempt['result_status'] = result.status_code
+                          attempt['result_url'] = result.url
+                          attempt['result_title'] = BeautifulSoup(result.text, 'html.parser').title.get_text(' ', strip=True) if BeautifulSoup(result.text, 'html.parser').title else ''
+                          stem = f"{image_path.stem}-ua{ua_index}"
+                          (out / f'{stem}.html').write_text(result.text, encoding='utf-8', errors='replace')
+                          parsed = old_parser(result.text)
+                          attempt['af_script_count'] = parsed['script_count']
+                          (out / f'{stem}-af.json').write_text(json.dumps(parsed, indent=2, ensure_ascii=False), encoding='utf-8')
+                          urls = generic_extract(result.text)
+                          attempt['url_count'] = len(urls)
+                          (out / f'{stem}-urls.json').write_text(json.dumps(urls, indent=2, ensure_ascii=False), encoding='utf-8')
+
+                          # Also inspect every script's visible strings for candidate page titles/domains.
+                          soup = BeautifulSoup(result.text, 'html.parser')
+                          script_text = '\n'.join(s.get_text() for s in soup.find_all('script'))
+                          strings = re.findall(r'"([^"\\]{4,240})"', script_text)
+                          filtered = []
+                          for value in strings:
+                              value = decode_js_string(value)
+                              if any(token in value.lower() for token in ['http', 'pinterest', 'manga', 'junji', 'black clover', 'tomoe', 'instagram', 'tumblr', 'reddit', 'deviantart', 'pixiv']):
+                                  filtered.append(value)
+                          (out / f'{stem}-candidate-strings.json').write_text(json.dumps(filtered[:5000], indent=2, ensure_ascii=False), encoding='utf-8')
+                  except Exception as exc:
+                      attempt['error'] = repr(exc)
+                      attempt['traceback'] = traceback.format_exc()
+                  report['attempts'].append(attempt)
 
           (out / 'report.json').write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding='utf-8')
           print(json.dumps(report, indent=2, ensure_ascii=False))
           PY
 
-      - name: Commit source-tab results to temporary branch
+      - name: Commit Lens parser results to temporary branch
         if: always()
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add reverse-image-temp/results-source-tabs-main-runner || true
-          git commit -m "Store exact-source tab results from main runner" || exit 0
+          git add reverse-image-temp/results-google-lens-parser || true
+          git commit -m "Store parsed Google Lens result data" || exit 0
           git push origin HEAD:temp-reverse-image-search
