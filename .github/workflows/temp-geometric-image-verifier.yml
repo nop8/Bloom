@@ -1,0 +1,174 @@
+name: Temporary geometric image verifier
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/temp-geometric-image-verifier.yml
+
+permissions:
+  contents: write
+
+jobs:
+  geometric-verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: temp-reverse-image-search
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Find uploaded crop inside candidate images
+        continue-on-error: true
+        run: |
+          python -m pip install --quiet requests pillow numpy opencv-python-headless
+          python <<'PY'
+          import io
+          import json
+          import math
+          import re
+          import traceback
+          from pathlib import Path
+          from urllib.parse import parse_qs, unquote, urlparse
+
+          import cv2
+          import numpy as np
+          import requests
+          from PIL import Image
+
+          out = Path('reverse-image-temp/results-geometric-verifier')
+          out.mkdir(parents=True, exist_ok=True)
+          src_pil = Image.open('reverse-image-temp/source.png').convert('RGB')
+          src = cv2.cvtColor(np.array(src_pil), cv2.COLOR_RGB2GRAY)
+          src = cv2.equalizeHist(src)
+          src_edge = cv2.Canny(src, 50, 150)
+
+          files = [
+              'reverse-image-temp/results-url-engines/bing-browser-links.json',
+              'reverse-image-temp/results-url-engines/bing-browser-images.json',
+              'reverse-image-temp/results-url-engines/yandex-browser-links.json',
+              'reverse-image-temp/results-url-engines/yandex-browser-images.json',
+              'reverse-image-temp/results-source-tabs-main-runner/yandex-similar-links.json',
+              'reverse-image-temp/results-source-tabs-main-runner/yandex-similar-images.json',
+              'reverse-image-temp/results-source-tabs-main-runner/yandex-sites-links.json',
+              'reverse-image-temp/results-source-tabs-main-runner/yandex-overview-links.json',
+              'reverse-image-temp/results-source-tabs-main-runner/yandex-overview-images.json',
+          ]
+          records = []
+          for filename in files:
+              path = Path(filename)
+              if not path.exists():
+                  continue
+              try:
+                  data = json.loads(path.read_text(encoding='utf-8'))
+              except Exception:
+                  continue
+              if not isinstance(data, list):
+                  continue
+              for item in data:
+                  if not isinstance(item, dict):
+                      continue
+                  base = {'origin_file': filename, 'text': item.get('text') or item.get('alt') or item.get('aria') or '', 'page_url': item.get('url') or ''}
+                  vals = [item.get(k) for k in ('src','url') if item.get(k)]
+                  for val in list(vals):
+                      try:
+                          q = parse_qs(urlparse(val).query)
+                          for k in ('mediaurl','imgurl','cdnurl','url','rurl','purl','thumbnailurl'):
+                              vals.extend(unquote(x) for x in q.get(k, []))
+                      except Exception:
+                          pass
+                  for val in vals:
+                      if isinstance(val, str) and val.startswith(('http://','https://')):
+                          rec = dict(base); rec['image_url'] = val; records.append(rec)
+          dedup = {}
+          for rec in records:
+              dedup.setdefault(rec['image_url'], rec)
+          records = list(dedup.values())
+
+          def priority(url):
+              u=url.lower(); s=0
+              if re.search(r'\.(jpg|jpeg|png|webp|gif)(?:$|[?&#])',u): s+=10
+              if any(x in u for x in ('mangarussia','pinimg','pbs.twimg','ytimg','static.wikia','yandex.net','bing.com/th','th.bing.com')): s+=5
+              if any(x in u for x in ('logo','icon','favicon','sprite')): s-=10
+              return -s
+          records.sort(key=lambda r: priority(r['image_url']))
+          records = records[:800]
+
+          sess=requests.Session(); sess.headers.update({'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150 Safari/537.36','Accept':'image/*,*/*;q=0.8'})
+          sift = cv2.SIFT_create(nfeatures=1500)
+          kp1, des1 = sift.detectAndCompute(src, None)
+          bf = cv2.BFMatcher(cv2.NORM_L2)
+
+          def geometric(gray):
+              kp2, des2 = sift.detectAndCompute(gray, None)
+              if des1 is None or des2 is None or len(kp2)<4: return {'good':0,'inliers':0,'inlier_ratio':0.0,'median_distance':999.0}
+              pairs=bf.knnMatch(des1,des2,k=2)
+              good=[m for m,n in pairs if m.distance < 0.75*n.distance]
+              result={'good':len(good),'inliers':0,'inlier_ratio':0.0,'median_distance':float(np.median([m.distance for m in good])) if good else 999.0}
+              if len(good)>=4:
+                  pts1=np.float32([kp1[m.queryIdx].pt for m in good]).reshape(-1,1,2)
+                  pts2=np.float32([kp2[m.trainIdx].pt for m in good]).reshape(-1,1,2)
+                  H,mask=cv2.findHomography(pts1,pts2,cv2.RANSAC,5.0)
+                  if mask is not None:
+                      result['inliers']=int(mask.sum()); result['inlier_ratio']=float(mask.mean())
+                      if H is not None:
+                          result['homography']=H.tolist()
+              return result
+
+          def template_scores(gray):
+              # Limit huge images for runtime while retaining scale relationships.
+              max_dim=max(gray.shape)
+              if max_dim>1800:
+                  factor=1800/max_dim; gray=cv2.resize(gray,None,fx=factor,fy=factor,interpolation=cv2.INTER_AREA)
+              edge=cv2.Canny(cv2.equalizeHist(gray),50,150)
+              best={'gray_score':-1.0,'edge_score':-1.0,'scale':None,'location':None,'template_size':None}
+              for scale in np.geomspace(0.45,8.0,28):
+                  w=max(12,int(src.shape[1]*scale)); h=max(12,int(src.shape[0]*scale))
+                  if w>gray.shape[1] or h>gray.shape[0]: continue
+                  tmpl=cv2.resize(src,(w,h),interpolation=cv2.INTER_CUBIC if scale>1 else cv2.INTER_AREA)
+                  tmpl_e=cv2.resize(src_edge,(w,h),interpolation=cv2.INTER_NEAREST)
+                  for name,hay,needle in [('gray',cv2.equalizeHist(gray),tmpl),('edge',edge,tmpl_e)]:
+                      try:
+                          res=cv2.matchTemplate(hay,needle,cv2.TM_CCOEFF_NORMED)
+                          _,mx,_,loc=cv2.minMaxLoc(res)
+                          key=name+'_score'
+                          if mx>best[key]:
+                              best[key]=float(mx)
+                              if name=='edge' or best['location'] is None:
+                                  best['scale']=float(scale); best['location']=list(loc); best['template_size']=[w,h]
+                      except Exception: pass
+              return best
+
+          results=[]; errors=[]
+          for idx,rec in enumerate(records):
+              try:
+                  r=sess.get(rec['image_url'],timeout=25,allow_redirects=True)
+                  if r.status_code!=200 or len(r.content)>20_000_000: continue
+                  pil=Image.open(io.BytesIO(r.content)).convert('RGB')
+                  if pil.width<40 or pil.height<40: continue
+                  gray=cv2.cvtColor(np.array(pil),cv2.COLOR_RGB2GRAY)
+                  g=geometric(gray); t=template_scores(gray)
+                  item=dict(rec); item.update({'final_url':r.url,'dimensions':[pil.width,pil.height],'geometric':g,'template':t})
+                  item['score']=min(1.0,g['inliers']/20.0)*0.55 + g['inlier_ratio']*0.20 + max(0,t['gray_score'])*0.10 + max(0,t['edge_score'])*0.15
+                  results.append(item)
+              except Exception as exc:
+                  errors.append({'url':rec['image_url'],'error':repr(exc)})
+          results.sort(key=lambda x:x['score'],reverse=True)
+          (out/'report.json').write_text(json.dumps({'source_size':[src.shape[1],src.shape[0]],'candidate_count':len(records),'checked':len(results),'top':results[:80]},indent=2,ensure_ascii=False),encoding='utf-8')
+          (out/'errors.json').write_text(json.dumps(errors[:500],indent=2,ensure_ascii=False),encoding='utf-8')
+          print(json.dumps(results[:25],indent=2,ensure_ascii=False))
+          PY
+
+      - name: Commit geometric results to temporary branch
+        if: always()
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add reverse-image-temp/results-geometric-verifier || true
+          git commit -m "Store geometric crop-match results" || exit 0
+          git push origin HEAD:temp-reverse-image-search
