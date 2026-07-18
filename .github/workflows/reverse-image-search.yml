@@ -13,7 +13,7 @@ permissions:
 jobs:
   lens-search:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:
@@ -23,77 +23,85 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Submit image to Google Lens
+      - name: Render Google Lens results in Chromium
         continue-on-error: true
         run: |
-          python -m pip install --quiet requests beautifulsoup4 lxml
+          python -m pip install --quiet requests playwright
+          python -m playwright install --with-deps chromium
           python <<'PY'
-          import html
           import json
-          import re
           import traceback
           from pathlib import Path
-          from urllib.parse import unquote
 
           import requests
-          from bs4 import BeautifulSoup
+          from playwright.sync_api import sync_playwright
 
-          out = Path('reverse-image-temp/results')
+          out = Path('reverse-image-temp/results-browser')
           out.mkdir(parents=True, exist_ok=True)
           report = {}
 
           try:
+              ua = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36'
               session = requests.Session()
-              session.headers.update({
-                  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36',
-                  'Accept-Language': 'en-US,en;q=0.9',
-              })
+              session.headers.update({'User-Agent': ua, 'Accept-Language': 'en-US,en;q=0.9'})
 
-              image_path = Path('reverse-image-temp/source.png')
-              with image_path.open('rb') as f:
-                  response = session.post(
+              with open('reverse-image-temp/source.png', 'rb') as image:
+                  upload = session.post(
                       'https://lens.google.com/upload',
                       params={'hl': 'en', 'gl': 'us'},
                       files={
-                          'encoded_image': ('source.png', f, 'image/png'),
+                          'encoded_image': ('source.png', image, 'image/png'),
                           'image_content': (None, ''),
                       },
                       allow_redirects=False,
                       timeout=60,
                   )
 
-              report['upload_status'] = response.status_code
-              report['upload_headers'] = dict(response.headers)
-              report['upload_body_prefix'] = response.text[:2000]
-              location = response.headers.get('Location')
-              report['location'] = location
+              report['upload_status'] = upload.status_code
+              report['location'] = upload.headers.get('Location')
+              report['request_cookies'] = [c.get_dict() for c in session.cookies]
 
-              if location:
-                  result = session.get(location, allow_redirects=True, timeout=60)
-                  report['result_status'] = result.status_code
-                  report['result_url'] = result.url
-                  report['result_headers'] = dict(result.headers)
-                  (out / 'lens.html').write_text(result.text, encoding='utf-8')
-
-                  soup = BeautifulSoup(result.text, 'lxml')
-                  links = []
-                  for tag in soup.find_all(href=True):
-                      links.append({'text': tag.get_text(' ', strip=True), 'url': tag.get('href')})
-
-                  raw_urls = re.findall(r'https?://[^\s"\'<>\\]+', result.text)
-                  decoded_urls = []
-                  for value in raw_urls:
-                      value = html.unescape(value).replace('\\u003d', '=').replace('\\u0026', '&').replace('\\/', '/')
-                      try:
-                          value = unquote(value)
-                      except Exception:
-                          pass
-                      decoded_urls.append(value)
-
-                  (out / 'links.json').write_text(
-                      json.dumps({'html_links': links, 'raw_urls': decoded_urls}, indent=2, ensure_ascii=False),
-                      encoding='utf-8',
+              with sync_playwright() as p:
+                  browser = p.chromium.launch(headless=True, args=['--no-sandbox', '--disable-blink-features=AutomationControlled'])
+                  context = browser.new_context(
+                      user_agent=ua,
+                      locale='en-US',
+                      viewport={'width': 1440, 'height': 1200},
                   )
+
+                  cookies = []
+                  for cookie in session.cookies:
+                      domain = cookie.domain or '.google.com'
+                      cookies.append({
+                          'name': cookie.name,
+                          'value': cookie.value,
+                          'domain': domain,
+                          'path': cookie.path or '/',
+                          'secure': True,
+                      })
+                  if cookies:
+                      context.add_cookies(cookies)
+
+                  page = context.new_page()
+                  page.goto(report['location'], wait_until='domcontentloaded', timeout=120000)
+                  page.wait_for_timeout(12000)
+
+                  report['final_url'] = page.url
+                  report['title'] = page.title()
+                  body_text = page.locator('body').inner_text(timeout=30000)
+                  links = page.locator('a').evaluate_all(
+                      "els => els.map(a => ({text: (a.innerText || a.getAttribute('aria-label') || '').trim(), url: a.href, aria: a.getAttribute('aria-label')}))"
+                  )
+                  images = page.locator('img').evaluate_all(
+                      "els => els.map(i => ({alt: i.alt, src: i.src, width: i.naturalWidth, height: i.naturalHeight}))"
+                  )
+
+                  (out / 'body.txt').write_text(body_text, encoding='utf-8')
+                  (out / 'page.html').write_text(page.content(), encoding='utf-8')
+                  (out / 'links.json').write_text(json.dumps(links, indent=2, ensure_ascii=False), encoding='utf-8')
+                  (out / 'images.json').write_text(json.dumps(images, indent=2, ensure_ascii=False), encoding='utf-8')
+                  page.screenshot(path=str(out / 'page.png'), full_page=True)
+                  browser.close()
           except Exception as exc:
               report['error'] = repr(exc)
               report['traceback'] = traceback.format_exc()
@@ -102,11 +110,11 @@ jobs:
           print(json.dumps(report, indent=2, ensure_ascii=False))
           PY
 
-      - name: Commit Lens results
+      - name: Commit rendered Lens results
         if: always()
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add reverse-image-temp/results || true
-          git commit -m "Store temporary Lens results" || exit 0
+          git add reverse-image-temp/results-browser || true
+          git commit -m "Store rendered Lens results" || exit 0
           git push origin HEAD:temp-reverse-image-search
