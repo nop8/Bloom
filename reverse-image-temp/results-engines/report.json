@@ -1,0 +1,8 @@
+{
+  "saucenao_status": 403,
+  "saucenao_content_type": "application/json",
+  "iqdb_status": 200,
+  "iqdb_url": "https://iqdb.org/",
+  "ascii2d_status": 403,
+  "ascii2d_url": "https://ascii2d.net/search/file"
+}

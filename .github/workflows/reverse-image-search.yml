@@ -1,0 +1,100 @@
+name: Temporary reverse image source pages
+
+on:
+  push:
+    branches:
+      - temp-reverse-image-search
+    paths:
+      - .github/workflows/reverse-image-search.yml
+
+permissions:
+  contents: write
+
+jobs:
+  source-pages:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: temp-reverse-image-search
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Extract exact-source tabs
+        continue-on-error: true
+        run: |
+          python -m pip install --quiet playwright
+          python -m playwright install --with-deps chromium
+          python <<'PY'
+          import json
+          import traceback
+          from pathlib import Path
+          from urllib.parse import urlparse, parse_qs, urlencode, urlunparse
+          from playwright.sync_api import sync_playwright
+
+          out = Path('reverse-image-temp/results-source-tabs')
+          out.mkdir(parents=True, exist_ok=True)
+          ua = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36'
+          report = {}
+
+          bing_base = 'https://www.bing.com/search?q=Junji+Ito&bcid=TqFvRUjZXyAKHZ2QLEluZSIhyIe2SC5kGso&FORM=SBIESR&hq=1'
+          yandex_base = 'https://yandex.com/images/search?rpt=imageview&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309'
+
+          def altered(url, **changes):
+              parsed = urlparse(url)
+              qs = parse_qs(parsed.query)
+              for key, value in changes.items():
+                  qs[key] = [str(value)]
+              return urlunparse(parsed._replace(query=urlencode(qs, doseq=True)))
+
+          targets = {
+              'bing-overview': bing_base,
+              'bing-visual': altered(bing_base, vsa=2),
+              'bing-pages': altered(bing_base, vsa=3),
+              'yandex-overview': yandex_base,
+              'yandex-similar': altered(yandex_base, cbir_page='similar'),
+              'yandex-sites': altered(yandex_base, cbir_page='sites'),
+          }
+
+          with sync_playwright() as p:
+              browser = p.chromium.launch(headless=True, args=['--no-sandbox', '--disable-blink-features=AutomationControlled'])
+              context = browser.new_context(user_agent=ua, locale='en-US', viewport={'width': 1440, 'height': 1200})
+              for name, target in targets.items():
+                  page = context.new_page()
+                  item = {'target': target}
+                  try:
+                      response = page.goto(target, wait_until='domcontentloaded', timeout=120000)
+                      page.wait_for_timeout(12000)
+                      item['status'] = response.status if response else None
+                      item['final_url'] = page.url
+                      item['title'] = page.title()
+                      body = page.locator('body').inner_text(timeout=30000)
+                      links = page.locator('a').evaluate_all("els => els.map(a => ({text: (a.innerText || a.getAttribute('aria-label') || '').trim(), url: a.href, aria: a.getAttribute('aria-label')}))")
+                      images = page.locator('img').evaluate_all("els => els.map(i => ({alt: i.alt || '', src: i.src || '', width: i.naturalWidth || 0, height: i.naturalHeight || 0}))")
+                      (out / f'{name}-body.txt').write_text(body, encoding='utf-8')
+                      (out / f'{name}-links.json').write_text(json.dumps(links, indent=2, ensure_ascii=False), encoding='utf-8')
+                      (out / f'{name}-images.json').write_text(json.dumps(images, indent=2, ensure_ascii=False), encoding='utf-8')
+                      (out / f'{name}-page.html').write_text(page.content(), encoding='utf-8')
+                      page.screenshot(path=str(out / f'{name}.png'), full_page=True)
+                  except Exception as exc:
+                      item['error'] = repr(exc)
+                      item['traceback'] = traceback.format_exc()
+                  report[name] = item
+                  page.close()
+              browser.close()
+
+          (out / 'report.json').write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding='utf-8')
+          print(json.dumps(report, indent=2, ensure_ascii=False))
+          PY
+
+      - name: Commit source-tab results
+        if: always()
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add reverse-image-temp/results-source-tabs || true
+          git commit -m "Store exact-source tab results" || exit 0
+          git push origin HEAD:temp-reverse-image-search

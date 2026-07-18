@@ -1,0 +1,527 @@
+[
+  {
+    "text": "Yandex",
+    "url": "https://yandex.com/",
+    "aria": "Yandex"
+  },
+  {
+    "text": "Log in",
+    "url": "https://passport.yandex.com/auth?origin=images_head_auth&login%5B%5D=&retpath=https%3A%2F%2Fyandex.com%2Fimages%2Fsearch%3Frpt%3Dimageview%26url%3Dhttps%253A%252F%252Favatars.mds.yandex.net%252Fget-images-cbir%252F4548676%252F4xWM81kj7Vy0cT7fFlDDvg7309%252Forig%26cbir_id%3D4548676%252F4xWM81kj7Vy0cT7fFlDDvg7309%26cbir_page%3Dsimilar%26ncrnd%3D6909",
+    "aria": null
+  },
+  {
+    "text": "web",
+    "url": "https://yandex.com/?source=tabbar",
+    "aria": null
+  },
+  {
+    "text": "yandex ai",
+    "url": "https://yandex.com/?source=tabbar&promo=force_neuro",
+    "aria": null
+  },
+  {
+    "text": "images\nimages",
+    "url": "https://yandex.com/images?parent-reqid=1784358189469006-17923461774820595003-balancer-l7leveler-kubr-yp-sas-195-BAL",
+    "aria": null
+  },
+  {
+    "text": "video",
+    "url": "https://yandex.com/video?parent-reqid=1784358189469006-17923461774820595003-balancer-l7leveler-kubr-yp-sas-195-BAL&from=tabbar",
+    "aria": null
+  },
+  {
+    "text": "maps",
+    "url": "https://yandex.com/maps/?source=serp_navig",
+    "aria": null
+  },
+  {
+    "text": "translate",
+    "url": "https://translate.yandex.com/?from=tabbar",
+    "aria": null
+  },
+  {
+    "text": "Search",
+    "url": "https://yandex.com/images/search?rpt=imageview&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309",
+    "aria": null
+  },
+  {
+    "text": "Similar images",
+    "url": "",
+    "aria": null
+  },
+  {
+    "text": "Sites",
+    "url": "https://yandex.com/images/search?rpt=imageview&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&cbir_page=sites",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=0&rpt=imageview&img_url=https%3A%2F%2Fi.ytimg.com%2Fvi%2FRkSSh420nk4%2Fhqdefault.jpg&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=1&rpt=imageview&img_url=https%3A%2F%2Fi3.wp.com%2Fstaticg.sportskeeda.com%2Feditor%2F2023%2F02%2Fed478-16774226223613-1920.jpg&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=2&rpt=imageview&img_url=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FFplmANmagAAuI31.jpg&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=3&rpt=imageview&img_url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Ff4%2F17%2F9b%2Ff4179b0ef1f7b888bcd5fded0eae42c3.jpg&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=4&rpt=imageview&img_url=https%3A%2F%2Fyt3.googleusercontent.com%2Fytc%2FAIdro_kwmPe-eaTBXRgO4np8629Z3r0zk0CES7mEgOp6uA5uhhw%3Ds900-c-k-c0x00ffffff-no-rj&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=5&rpt=imageview&img_url=https%3A%2F%2Fstatic.wikia.nocookie.net%2Fopeclipse%2Fimages%2F6%2F61%2FGenichiro%2527s_Modified_Eye1.0.png%2Frevision%2Flatest%2Fscale-to-width-down%2F190%3Fcb%3D20241203094824&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=6&rpt=imageview&img_url=https%3A%2F%2Fytmoca.jp%2Fwp-content%2Fuploads%2F2021%2F03%2FL-6.jpg&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=7&rpt=imageview&img_url=https%3A%2F%2Fmedia.newyorker.com%2Fphotos%2F59095fec1c7a8e33fb38c7b4%2F16%3A9%2Fw_1280%2Cc_limit%2F131111_r24248illu.jpg&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=8&rpt=imageview&img_url=https%3A%2F%2Fwww.weirdhistorian.com%2Fwp-content%2Fuploads%2F2021%2F07%2Fclock-eyed-boy-CROP.jpg&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=9&rpt=imageview&img_url=https%3A%2F%2Fru-static.z-dn.net%2Ffiles%2Fd4a%2Fb4e488eac777ba403c082b31b6c5cc6a.jpg&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=10&rpt=imageview&img_url=https%3A%2F%2Fcreativelly.ru%2Fimages%2Freviews%2Fmasterclass-2%2F1-eyes%2F7.jpg&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=11&rpt=imageview&img_url=https%3A%2F%2Fi.pinimg.com%2F736x%2F90%2F25%2F50%2F9025503e6fa6bc809904ce7f896c126b.jpg&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=12&rpt=imageview&img_url=https%3A%2F%2Favatars.steamstatic.com%2F7436a0f0ba17fb25d0186e9d2b5de0ecbc223444_full.jpg&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=13&rpt=imageview&img_url=https%3A%2F%2Fiknigi.net%2Fbooks_files%2Fonline_html%2F179935%2Fi_002.png&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=14&rpt=imageview&img_url=https%3A%2F%2Fi.pinimg.com%2F736x%2F00%2Fa6%2F5d%2F00a65d10df775c15a747182bfa69e141.jpg&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=15&rpt=imageview&img_url=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F029%2F730%2F686%2Fnon_2x%2Fbeautiful-female-eyes-looking-up-illustration-vector.jpg&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=16&rpt=imageview&img_url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F98%2F27%2F0c%2F98270c9e9e959513f824cc0b9955f646.png&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=17&rpt=imageview&img_url=https%3A%2F%2Fmir-s3-cdn-cf.behance.net%2Fuser%2F276%2F4ab91e403940801.5faf1fb5e2177.jpg&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=18&rpt=imageview&img_url=https%3A%2F%2Fdigitalcommons.lmu.edu%2Fthesociologicaleyestudentjournal%2F1001%2Fpreview.jpg&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=19&rpt=imageview&img_url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F68%2F87%2F45%2F6887457462748b32bf204631963df52a.jpg&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=20&rpt=imageview&img_url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Ff9%2F13%2F7f%2Ff9137fc792b7549acac3ae2073e18432.jpg&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=21&rpt=imageview&img_url=https%3A%2F%2Fencinitashouseofart.com%2Fcdn%2Fshop%2Fproducts%2FColoringPageMarch185_1024x1024.jpg%3Fv%3D1589429901&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=22&rpt=imageview&img_url=https%3A%2F%2Fimg-edg.joomcdn.net%2F5520b78545c5f027c80a62e2d23b51e60d209683_original.jpeg&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=23&rpt=imageview&img_url=https%3A%2F%2Fi1.sndcdn.com%2Favatars-PM4lLUKBeO5zpa6q-Z8AZDw-t500x500.jpg&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=24&rpt=imageview&img_url=https%3A%2F%2Fwww.123freebrushes.com%2Fwp-content%2Fuploads%2Fthumbs%2Fbig%2Fnv%2Fhuman_img%2F123freebrushes_eye_464_photoshop_free_brush.gif&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=25&rpt=imageview&img_url=https%3A%2F%2Fi.pinimg.com%2F280x280_RS%2F72%2F70%2Fb5%2F7270b5cf6ae48d4cdde5f79ab96e71fa.jpg&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=26&rpt=imageview&img_url=https%3A%2F%2Fr1.mangarussia.com%2Fcomics%2Fpic2%2F59%2F34107%2F422659%2F1534587821766.jpg&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=27&rpt=imageview&img_url=https%3A%2F%2Fimages.mubicdn.net%2Fimages%2Ffilm%2F389687%2Fcache-907135-1745501818%2Fimage-w1280.jpg&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=28&rpt=imageview&img_url=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F029%2F730%2F687%2Foriginal%2Fbeautiful-female-eyes-looking-up-transparent-illustration-free-png.png&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=29&rpt=imageview&img_url=https%3A%2F%2Fi1.sndcdn.com%2Favatars-000214828370-ppq83k-t500x500.jpg&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=30&rpt=imageview&img_url=https%3A%2F%2Fi.pinimg.com%2F280x280_RS%2F98%2F82%2F33%2F988233838e09f7a7f318da4f7df3ec94.jpg&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=31&rpt=imageview&img_url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F27%2Fbf%2Fe7%2F27bfe7f4df4258e8eaa5c332411aa3d1.jpg&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=32&rpt=imageview&img_url=https%3A%2F%2Flibmir.com%2Fi%2F60%2F178660%2Fautogen_ebook_id19&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=33&rpt=imageview&img_url=https%3A%2F%2Favatars.yandex.net%2Fget-music-content%2F149669%2F5d41b2f1.a.9376303-1%2Fm1000x1000%3Fwebp%3Dfalse&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=34&rpt=imageview&img_url=https%3A%2F%2Fiknigi.net%2Fbooks_files%2Fonline_html%2F91182%2F_06.png&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=35&rpt=imageview&img_url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F38%2F56%2Fb8%2F3856b84431572b8e5e74ae30e4eb9818.jpg&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=36&rpt=imageview&img_url=https%3A%2F%2Fpool.hesperian.org%2Fw%2Fimages%2Fthumb%2F2%2F22%2FNWTND_eye_Page_19-1.png%2F300px-NWTND_eye_Page_19-1.png&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=37&rpt=imageview&img_url=https%3A%2F%2Fi.pinimg.com%2F736x%2Fe9%2F26%2F75%2Fe9267540240219849d5eb4d8962b211b.jpg&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=38&rpt=imageview&img_url=https%3A%2F%2Fc8.alamy.com%2Fcomp%2F2HPJK8T%2Fevil-seeing-eye-symbol-occult-mystic-emblem-graphic-design-2HPJK8T.jpg&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&pos=39&rpt=imageview&img_url=https%3A%2F%2Fi.pinimg.com%2F140x140_RS%2Fc6%2F82%2F48%2Fc68248ffe090f2972ed652468de7401e.jpg&cbir_page=similar&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=0&rpt=imageview&img_url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fd8%2Fd9%2Ff3%2Fd8d9f35b4875cfded2fe09878c7c5676.png&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=1&rpt=imageview&img_url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fe7%2F14%2F0a%2Fe7140aea973acafe70a10e7ccb48c4f8.gif&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=2&rpt=imageview&img_url=https%3A%2F%2Fblautoothdmand.wordpress.com%2Fwp-content%2Fuploads%2F2018%2F11%2Fshintaro-kago-experimental.png&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=3&rpt=imageview&img_url=https%3A%2F%2Fi.pinimg.com%2F736x%2F4c%2F70%2Fb1%2F4c70b16f5d45568a2076535e3437ef34.jpg&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=4&rpt=imageview&img_url=https%3A%2F%2Fcdn.ibispaint.com%2Fmovie%2F276%2F961%2F276961616%2Fimage276961616.png&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=5&rpt=imageview&img_url=https%3A%2F%2Fthumbs.dreamstime.com%2Fb%2F%25D0%25B3-%25D0%25B0%25D0%25B7%25D0%25B0-%25D0%25BC%25D0%25B8%25D1%2581%25D1%2582%25D0%25B8%25D0%25BA%25D0%25B0-%25D0%25B2-%25D1%2581%25D1%2582%25D0%25B8-%25D0%25B5-%25D0%25B0%25D0%25BD%25D0%25B8%25D0%25BC%25D0%25B5-%25D0%25B8-%25D0%25B8-manga-%25D1%2581-%25D1%2583%25D0%25BD%25D0%25BE%25D0%25B9-%25D0%25BD%25D0%25B0%25D1%2580%25D0%25B8%25D1%2581%25D0%25BE%25D0%25B2%25D0%25B0%25D0%25BD%25D0%25BD%25D0%25BE%25D0%25B5-%25D0%25B2%25D1%2580%25D1%2583%25D1%2587%25D0%25BD%25D1%2583%25D1%258E-vect-93031673.jpg&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=6&rpt=imageview&img_url=https%3A%2F%2Fhappybrushes.ru%2Fwp-content%2Fuploads%2F2024%2F03%2Fglaza-44.jpg&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=7&rpt=imageview&img_url=https%3A%2F%2Fmir-s3-cdn-cf.behance.net%2Fprojects%2Fmax_808%2F0d5c6049090637.Y3JvcCw4MDEsNjI3LDAsMzc.jpg&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=8&rpt=imageview&img_url=https%3A%2F%2Fhappybrushes.ru%2Fwp-content%2Fuploads%2F2024%2F03%2Fglaza-63.jpg&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=9&rpt=imageview&img_url=https%3A%2F%2Fjinxxy-cdn.com%2Fe7534c33-c80a-5a6a-bbc8-55c147ef8c30%2F3426311359736841955%2F739742898048792576.gif&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=10&rpt=imageview&img_url=https%3A%2F%2Fillustrators.ru%2Fimgproxy%2FP0-jKDtOlO8XcqWybpGAQHNQbbolgxHH3VZ4-w2k3gk%2Frs%3Aauto%3A272%3A272%2Fc%3A535%3A535%3Anowe%3A77.0%3A0.0%2FaHR0cHM6Ly9pbGx1%2Fc3RyYXRvcnMucnUv%2FdXBsb2Fkcy9pbGx1%2Fc3RyYXRpb24vaW1h%2FZ2UvMTU4MzEzMC9w%2FcmV2aWV3XyVEMSU4%2FRCVEMCVCQyVEMCVC%2FMSVEMCVCQiVEMCVC%2FNSVEMCVCQyVEMCVC%2FMF8lRDAlQkIlRDAl%2FQjAlRDAlQjklRDAl%2FQkQucG5n&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=11&rpt=imageview&img_url=https%3A%2F%2Fdigitalcrime.news%2Fwp-content%2Fuploads%2F2023%2F02%2Fa-641.jpg&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=12&rpt=imageview&img_url=https%3A%2F%2Fi.pinimg.com%2F280x280_RS%2F3f%2Fd7%2Fa3%2F3fd7a35b4065b88a3d135d855d2f011e.jpg&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=13&rpt=imageview&img_url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F39%2F24%2Ff3%2F3924f391a6cbad76250d15415dba1a8d.jpg&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=14&rpt=imageview&img_url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F33%2F07%2F0d%2F33070dc4359786494541ab6eecf6f800.jpg&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=15&rpt=imageview&img_url=https%3A%2F%2Fhappybrushes.ru%2Fwp-content%2Fuploads%2F2024%2F03%2Fglaza-11.jpg&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=16&rpt=imageview&img_url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fd1%2F4f%2F3c%2Fd14f3c2973825125fd2707d3086d8e63.jpg&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=17&rpt=imageview&img_url=https%3A%2F%2Fstatic0.gamerantimages.com%2Fwordpress%2Fwp-content%2Fuploads%2F2024%2F12%2Fmatsuri-flustered-boruto-tbv-17.png&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=18&rpt=imageview&img_url=https%3A%2F%2Fhappybrushes.ru%2Fwp-content%2Fuploads%2F2024%2F03%2Fglaza-39.jpg&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=19&rpt=imageview&img_url=https%3A%2F%2Fhappybrushes.ru%2Fwp-content%2Fuploads%2F2024%2F03%2Fglaza-57.jpg&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=20&rpt=imageview&img_url=https%3A%2F%2Fhappybrushes.ru%2Fwp-content%2Fuploads%2F2024%2F03%2Fglaza-27.jpg&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=21&rpt=imageview&img_url=https%3A%2F%2Fi.pinimg.com%2F280x280_RS%2F47%2F14%2F59%2F471459deee643834b63541d9c57ee1b8.jpg&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=22&rpt=imageview&img_url=https%3A%2F%2Fimg.itch.zone%2FaW1hZ2UvMjczOTczMi8xNjM0NjAxNS5wbmc%3D%2F270x%2FzLXKKy.png&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=23&rpt=imageview&img_url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fb%2Fb8%2FPhabricatorball.png&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=24&rpt=imageview&img_url=https%3A%2F%2Fcreativelly.ru%2Fimages%2Freviews%2Fmasterclass-2%2F1-eyes%2F3.jpg&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=25&rpt=imageview&img_url=https%3A%2F%2Fcdn4.cdn-telegram.org%2Ffile%2FQfRaWRVU2G261-Sz-apI3-sA_FXsQzQH74sXnvU8LdVAw1mk9SNjCbxIzM-SP5BLx39_8tJN80CPAcJ9mlXOxquSBpzk9Zqz5yztphCXT62RlBh3FAgQ0rr570PbLjlxsHD4QnbBnm2rIDpbpVdEMKfFB1EQ4LcFX_pZEsHOZ8w_OyZKW3a6ozKEKtWN2VGQtCfgbV75lgmP7y5LOqCPnOG2vO0llRf2JgY7N2AlByQU1vktAltVdW28hyhuYN4xHJ0EfKd5Ar_RgRaCk5y1JtmLnd4kjTVptxlQHnPzpY7rF-oDuPZwQff9okmB2SnuBXZhHQiotrw_2oR61oPqzQ.jpg&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=26&rpt=imageview&img_url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F19%2F33%2F9d%2F19339d7eb6d804ea5bb4789f8ab13009.jpg&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=27&rpt=imageview&img_url=https%3A%2F%2Fi.imgur.com%2FcS34Fti.gif&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=28&rpt=imageview&img_url=https%3A%2F%2Fstatic.wixstatic.com%2Fmedia%2F7e0b87_1a7413c9cb9c4b5086fc6632fea37867~mv2.png%2Fv1%2Ffill%2Fw_3000%2Ch_2000%2Cal_c%2F7e0b87_1a7413c9cb9c4b5086fc6632fea37867~mv2.png&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=29&rpt=imageview&img_url=https%3A%2F%2Fpng.pngtree.com%2Fpng-clipart%2F20230616%2Foriginal%2Fpngtree-an-eye-of-a-girl-vector-illustration-outline-sketch-drawing-png-image_9187714.png&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=30&rpt=imageview&img_url=https%3A%2F%2Fhappybrushes.ru%2Fwp-content%2Fuploads%2F2024%2F03%2Fglaza-28.jpg&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=31&rpt=imageview&img_url=https%3A%2F%2Fhaifainfo.com%2Fwp-content%2Fuploads%2F2018%2F03%2Fkarikatura-5-620x330.jpg&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=32&rpt=imageview&img_url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fe3%2F35%2F44%2Fe335447a221965954fa3b4a4213f1c77.jpg&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=33&rpt=imageview&img_url=https%3A%2F%2Fdistribution.faceit-cdn.net%2Fimages%2F4d7ab291-882b-42cb-b791-afe982014bfa.jpeg&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=34&rpt=imageview&img_url=https%3A%2F%2Fi.etsystatic.com%2F5942097%2Fr%2Fil%2Fce45fb%2F987883644%2Fil_680x540.987883644_oc2w.jpg&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=35&rpt=imageview&img_url=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fl9T7cbWGyHY%2Fmqdefault.jpg&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=36&rpt=imageview&img_url=https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F51me4W1jFzL._AC_SY300_SX300_QL70_ML2_.jpg&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=37&rpt=imageview&img_url=https%3A%2F%2Fcolorir.info%2Fimages%2Fimgcolor%2FDesenho-de-Olho-Incrivel-para-colorir.jpg&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=38&rpt=imageview&img_url=https%3A%2F%2Flegionfonts.com%2Fimg-fonts%2Feyes%2Feyes-font-abc.jpg&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "",
+    "url": "https://yandex.com/images/search?cbir_id=4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309&p=1&pos=39&rpt=imageview&img_url=https%3A%2F%2Flaakeinfo.fi%2FPILImages%2F52798572-daae-4b1d-95b0-5bfb5f332c9c.png&lr=21464&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4548676%2F4xWM81kj7Vy0cT7fFlDDvg7309%2Forig&cbir_page=similar",
+    "aria": null
+  },
+  {
+    "text": "Des Moines",
+    "url": "https://yandex.com/tune/geo/",
+    "aria": "Your region Des Moines"
+  },
+  {
+    "text": "Contact us",
+    "url": "https://yandex.com/support/images/troubleshooting.html",
+    "aria": null
+  },
+  {
+    "text": "Help",
+    "url": "https://yandex.com/support/images/",
+    "aria": null
+  },
+  {
+    "text": "Settings",
+    "url": "https://yandex.com/tune/search/",
+    "aria": null
+  },
+  {
+    "text": "About",
+    "url": "https://yandex.com/company/",
+    "aria": null
+  },
+  {
+    "text": "License",
+    "url": "https://yandex.com/legal/termsofuse/",
+    "aria": null
+  },
+  {
+    "text": "Privacy Policy",
+    "url": "https://yandex.com/legal/confidential/",
+    "aria": null
+  },
+  {
+    "text": "Contact us",
+    "url": "https://yandex.com/support/images/troubleshooting.html",
+    "aria": null
+  },
+  {
+    "text": "Help",
+    "url": "https://yandex.com/support/images/",
+    "aria": null
+  },
+  {
+    "text": "Terms and Conditions",
+    "url": "https://legal.yandex.com/termsofservice/",
+    "aria": null
+  },
+  {
+    "text": "Notifications about copyrights",
+    "url": "https://feedback2.yandex.com/copyright-complaint/",
+    "aria": null
+  },
+  {
+    "text": "Privacy Policy",
+    "url": "https://legal.yandex.com/privacy/",
+    "aria": null
+  },
+  {
+    "text": "Cookie Policy",
+    "url": "https://yandex.com/legal/cookies_policy_eng/",
+    "aria": null
+  },
+  {
+    "text": "Cookie Policy",
+    "url": "https://yandex.com/legal/cookies_policy_eng/",
+    "aria": null
+  }
+]
